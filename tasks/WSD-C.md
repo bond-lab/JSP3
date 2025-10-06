@@ -17,6 +17,6 @@ Not so hard, but results are slow, and free resources have cutoff
 
 ## Notes 
 
-* I have code, use that adapt to colab/Kagle
+* I have code, use that and adapt to collab/Kagle
 
-
+https://github.com/bond-lab/NTUMC/tree/refactored-tagdb
