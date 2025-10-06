@@ -6,7 +6,7 @@ Semester project 3 for Linguistics
 * analyze some text
 * learn techniques for analyzing text
 * learn some software engineering skills
-
+* learn git
 
 ## 2025 task: Word Sense Disambiguation
 
@@ -18,6 +18,7 @@ In previous work, we have done this manually:
 
 * Do this automatically
   * evaluate how well this works **EVAL** 
+    * WHO: 
     * all the WSD tasks need this
     * look at common errors
 	* fix some (e.g. *se/si*)

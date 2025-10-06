@@ -1,25 +1,25 @@
-#  test different contexts **WSD-C**
+#  find translations and use as context **ALIGN**
 
 ## Minimum
 
 Align paragraphs and then sentences for multiple languages 
-start with Czech-English
+start with Czech-English, then Czech-Czech
 
 ## Desired
 
 * find epub, extract text, split into para, align
   * use: https://github.com/averkij/lingtrain-aligner/releases/tag/0.1.0
   * then add to **WSD-C**
+  * align words/concepts
 * visualize texts
+
+
+## stretch
 * generate for all texts in NTU-MC
 
 ## Difficulty
 
-Not so hard, but results are slow, and free resources have cutoff
+
 
 
 ## Notes 
-
-* I have code, use that and adapt to collab/Kagle
-
-https://github.com/bond-lab/NTUMC/tree/refactored-tagdb
