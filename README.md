@@ -56,7 +56,9 @@ In previous work, we have done this manually:
 ## Approach
 * work on tasks in pairs
 * use github to coordinate
-
+  * [GitHub quickstart](https://docs.github.com/en/get-started/start-your-journey)
+  * [git an Introduction](https://itp.uni-frankfurt.de/~hees/transport-meeting/ss19/talk-Staudenmeier.pdf
+)
 ## Fortnightly meeting
 * 5-10 minutes progress
 * longer discussion of issues as necessary
