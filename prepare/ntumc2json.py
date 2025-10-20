@@ -81,7 +81,7 @@ def concepts_by_docid(c, did):
 
 def print_corpus(doc, data):
     with open(f'{doc}.json', 'w', encoding='utf8') as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
 def process_document(conn, did, name, annotator):
     """

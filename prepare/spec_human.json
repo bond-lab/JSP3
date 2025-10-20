@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "code": "spec",
+    "annotator": "human"
+  },
   "sent": {
     "10000": {
       "text": "The Adventure of the Speckled Band",
@@ -85712,7 +85716,7 @@
         "wids": [
           1
         ],
-        "com": "Lemma Two(Noun)\r\nDef. \u00e2\u0080\u009cThe number after 1.\u00e2\u0080\u009d\r\nEx. A marriage involves 2 people - a husband and a wife.\r\nLink Hyponym of number (13582013-n); oldcid=16723"
+        "com": "Lemma Two(Noun)\r\nDef. âThe number after 1.â\r\nEx. A marriage involves 2 people - a husband and a wife.\r\nLink Hyponym of number (13582013-n); oldcid=16723"
       },
       "10": {
         "clemma": "have",
@@ -107564,7 +107568,7 @@
           1,
           2
         ],
-        "com": "Lemma: take up\r\nDef. \u00e2\u0080\u009cTo literally take or pick something up\"\r\nEx. I bent to take up the pen. \r\nLink Synonym of pick up  (01976089-v); oldcid=3580"
+        "com": "Lemma: take up\r\nDef. âTo literally take or pick something up\"\r\nEx. I bent to take up the pen. \r\nLink Synonym of pick up  (01976089-v); oldcid=3580"
       },
       "7": {
         "clemma": "on it",
@@ -107915,7 +107919,7 @@
           18,
           20
         ],
-        "com": "Lemma Go far\r\nDef. \u00e2\u0080\u009cHow well a function is being fulfilled.\"\r\nEx. This book goes far in aiding my understanding of linguistics.  \r\nLink Hyponym of make it (02585860-v); oldcid=3612"
+        "com": "Lemma Go far\r\nDef. âHow well a function is being fulfilled.\"\r\nEx. This book goes far in aiding my understanding of linguistics.  \r\nLink Hyponym of make it (02585860-v); oldcid=3612"
       },
       "19": {
         "clemma": "a",
@@ -129472,9 +129476,5 @@
         ]
       }
     }
-  },
-  "meta": {
-    "code": "spec",
-    "annotator": "human"
   }
 }
