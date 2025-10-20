@@ -1,0 +1,908 @@
+Rejecting 77000060-a as definition is too short: <<demonstrative determiner, medial>>
+Rejecting 80000171-n as definition is too short: <<ne:per>>
+Rejecting 90000217-n as definition is too short: <<NE:loc>>
+Rejecting 90000173-n as definition is too short: <<NE:org>>
+Rejecting 80000520-n as definition is too short: <<cold dish with dressing>>
+Rejecting 80001435-v as definition is too short: <<get disarrayed>>
+Rejecting 80001800-a as definition is too short: <<clear as day>>
+Rejecting 80000151-n as definition is too short: <<ne:per>>
+Rejecting 80000612-n as definition is too short: <<enigmatic or incomprehensible symbols>>
+Rejecting 80002507-n as definition is too short: <<a poor guy>>
+Rejecting 80000756-n as definition is too short: <<ne:loc>>
+Rejecting 80000075-n as definition is too short: <<ne:org>>
+Rejecting 80001802-r as definition is too short: <<in one go>>
+Rejecting 80002282-a as definition is too short: <<being or like a geek>>
+Rejecting 80000071-n as definition is too short: <<ne:org>>
+Rejecting 80000964-v as definition is too short: <<Reduce to essentials>>
+Rejecting 80001137-n as definition is too short: <<the handle of a gun>>
+Rejecting 80000051-a as definition is too short: <<possessive determiner, 3rd person>>
+Rejecting 80000080-n as definition is too short: <<the present month; [Eng-POS]adjective:inst>>
+Rejecting 90000085-n as definition is too short: <<NE:loc>>
+Rejecting 77000104-n as definition is too short: <<time, interrogative pronoun>>
+Rejecting 90000021-n as definition is too short: <<NE:loc>>
+Rejecting 80002503-a as definition is too short: <<slimy>>
+Rejecting 80000714-v as definition is too short: <<irritate or annoy someone>>
+Rejecting 80000717-v as definition is too short: <<to die>>
+Rejecting 90000104-n as definition is too short: <<NE:loc>>
+Rejecting 80000940-a as definition is too short: <<Modern, up-to-date, fashionable>>
+Rejecting 90000207-n as definition is too short: <<NE:org>>
+Rejecting 90000166-n as definition is too short: <<NE:org>>
+Rejecting 90000210-n as definition is too short: <<NE:loc>>
+Rejecting 90000308-n as definition is too short: <<An Austronesian ethnic group>>
+Rejecting 80001921-n as definition is too short: <<new party, often political>>
+Rejecting 80000741-a as definition is too short: <<given a five-star rating>>
+Rejecting 80001150-n as definition is too short: <<an indeterminate amount>>
+Rejecting 80000598-n as definition is too short: <<ne:loc>>
+Rejecting 80000192-n as definition is too short: <<ne:org>>
+Rejecting 80001720-a as definition is too short: <<which day>>
+Rejecting 80002462-v as definition is too short: <<to tremble, shake>>
+Rejecting 90000045-n as definition is too short: <<NE:loc>>
+Rejecting 80000614-v as definition is too short: <<caused or made>>
+Rejecting 90000143-n as definition is too short: <<NE:oth>>
+Rejecting 80002485-a as definition is too short: <<drunk (informal)>>
+Rejecting 80002127-a as definition is too short: <<a man who teaches school>>
+Rejecting 90000086-n as definition is too short: <<NE:oth>>
+Rejecting 80001783-r as definition is too short: <<from a long time ago>>
+Rejecting 80002536-r as definition is too short: <<the last year>>
+Rejecting 80000106-n as definition is too short: <<ne:per>>
+Rejecting 90000111-n as definition is too short: <<NE:org>>
+Rejecting 80002296-n as definition is too short: <<the sound of a kiss>>
+Rejecting 80000884-n as definition is too short: <<Notable or exciting activity>>
+Rejecting 80001165-v as definition is too short: <<come to the limit>>
+Rejecting 80001406-a as definition is too short: <<ugly and shameful>>
+Rejecting 80000033-n as definition is too short: <<ne:org>>
+Rejecting 80000179-n as definition is too short: <<ne:oth>>
+Rejecting 90000608-n as definition is too short: <<NE:loc>>
+Rejecting 80001255-a as definition is too short: <<(informal) excellent; wonderful>>
+Rejecting 80000030-n as definition is too short: <<ne:org>>
+Rejecting 80000099-n as definition is too short: <<ne:per>>
+Rejecting 80000163-n as definition is too short: <<ne:loc>>
+Rejecting 80001916-v as definition is too short: <<to apply for a job>>
+Rejecting 80000618-n as definition is too short: <<someone who reads a text>>
+Rejecting 80000343-v as definition is too short: <<come on stage>>
+Rejecting 90000615-n as definition is too short: <<NE:loc>>
+Rejecting 90000417-n as definition is too short: <<cooked rice>>
+Rejecting 80002066-n as definition is too short: <<dead skin>>
+Rejecting 70100032-a as definition is too short: <<same as always>>
+Rejecting 80000194-n as definition is too short: <<ne:loc>>
+Rejecting 80000214-n as definition is too short: <<ne:org>>
+Rejecting 80001963-v as definition is too short: <<to change only superficially>>
+Rejecting 90000162-n as definition is too short: <<NE:oth>>
+Rejecting 80000156-n as definition is too short: <<ne:org>>
+Rejecting 80001078-a as definition is too short: <<incredibly fast;; marvelously quick>>
+Rejecting 80000279-n as definition is too short: <<a column made of granite>>
+Rejecting 80000726-v as definition is too short: <<trust someone with something>>
+Rejecting 80000607-v as definition is too short: <<being attracted by>>
+Rejecting 80000597-n as definition is too short: <<ne:oth; World Expo>>
+Rejecting 80000506-n as definition is too short: <<that very same night>>
+Rejecting 80000043-n as definition is too short: <<ne:org>>
+Rejecting 80001652-v as definition is too short: <<be disturbed>>
+Rejecting 80000689-n as definition is too short: <<ne:org>>
+Rejecting 80002522-a as definition is too short: <<big, large>>
+Rejecting 80001065-n as definition is too short: <<salability>>
+Rejecting 80000144-n as definition is too short: <<ne:org>>
+Rejecting 80000059-n as definition is too short: <<ne:org>>
+Rejecting 80000067-n as definition is too short: <<ne:loc>>
+Rejecting 80001264-a as definition is too short: <<rare and interesting>>
+Rejecting 80001546-n as definition is too short: <<the same time or timing>>
+Rejecting 80001826-n as definition is too short: <<competition or match>>
+Rejecting 90000604-n as definition is too short: <<NE:loc>>
+Rejecting 90000122-n as definition is too short: <<NE:oth>>
+Rejecting 90000095-n as definition is too short: <<NE:org>>
+Rejecting 80000904-a as definition is too short: <<high-class, elegant>>
+Rejecting 90000226-n as definition is too short: <<NE:loc>>
+Rejecting 90000179-n as definition is too short: <<NE:org>>
+Rejecting 90000096-n as definition is too short: <<NE:loc>>
+Rejecting 80001966-r as definition is too short: <<always; at every moment>>
+Rejecting 80002215-n as definition is too short: <<water of a river>>
+Rejecting 80001976-n as definition is too short: <<a bridge made of wood>>
+Rejecting 80001095-n as definition is too short: <<ne:loc>>
+Rejecting 80000855-a as definition is too short: <<Supported by cables>>
+Rejecting 90000102-n as definition is too short: <<NE:per>>
+Rejecting 90000323-n as definition is too short: <<a deep-fried dough stick>>
+Rejecting 90000141-n as definition is too short: <<NE:loc>>
+Rejecting 90000319-n as definition is too short: <<Lion dance>>
+Rejecting 80000133-n as definition is too short: <<ne:org>>
+Rejecting 90000320-n as definition is too short: <<Fragrance>>
+Rejecting 70101232-a as definition is too short: <<inconceivable>>
+Rejecting 80000624-v as definition is too short: <<fire (a weapon)>>
+Rejecting 80000161-n as definition is too short: <<ne:loc>>
+Rejecting 90000326-n as definition is too short: <<fried chicken>>
+Rejecting 80000766-n as definition is too short: <<ne:org>>
+Rejecting 90000053-n as definition is too short: <<NE:org>>
+Rejecting 80000029-n as definition is too short: <<ne:org>>
+Rejecting 80000501-n as definition is too short: <<tuna belly>>
+Rejecting 80000339-n as definition is too short: <<ne:org>>
+Rejecting 90000034-n as definition is too short: <<NE:loc>>
+Rejecting 77000001-n as definition is too short: <<other pronoun>>
+Rejecting 80002535-r as definition is too short: <<beautifully>>
+Rejecting 80000057-n as definition is too short: <<ne:org>>
+Rejecting 90000504-n as definition is too short: <<two years from now>>
+Rejecting 90000230-n as definition is too short: <<NE:oth>>
+Rejecting 90000124-n as definition is too short: <<NE:loc>>
+Rejecting 90000165-n as definition is too short: <<NE:loc>>
+Rejecting 80002241-n as definition is too short: <<positive result>>
+Rejecting 77000098-n as definition is too short: <<personal pronoun, person, reflexive>>
+Rejecting 80000054-n as definition is too short: <<ne:org>>
+Rejecting 80002576-a as definition is too short: <<to be made of tobacco>>
+Rejecting 90000126-n as definition is too short: <<NE:org>>
+Rejecting 80000530-n as definition is too short: <<fried food>>
+Rejecting 90000048-n as definition is too short: <<NE:loc>>
+Rejecting 80001690-a as definition is too short: <<very easy to do>>
+Rejecting 80000340-n as definition is too short: <<ne:org>>
+Rejecting 80000145-n as definition is too short: <<ne:per>>
+Rejecting 80001911-r as definition is too short: <<is it not>>
+Rejecting 90000185-n as definition is too short: <<NE:oth>>
+Rejecting 90000062-n as definition is too short: <<NE:loc>>
+Rejecting 90000136-n as definition is too short: <<NE:org>>
+Rejecting 90000115-n as definition is too short: <<NE:org>>
+Rejecting 77000059-a as definition is too short: <<demonstrative determiner, remote>>
+Rejecting 90000428-n as definition is too short: <<Happening late at night>>
+Rejecting 90000581-n as definition is too short: <<Japanese traditional clothing>>
+Rejecting 90000139-n as definition is too short: <<NE:loc>>
+Rejecting 80000851-a as definition is too short: <<Existing within an organization>>
+Rejecting 90000010-n as definition is too short: <<NE:loc>>
+Rejecting 90000218-n as definition is too short: <<NE:org>>
+Rejecting 80002212-n as definition is too short: <<long cherished wish>>
+Rejecting 80000571-n as definition is too short: <<ne:org>>
+Rejecting 90000107-n as definition is too short: <<NE:org>>
+Rejecting 80000195-n as definition is too short: <<ne:org>>
+Rejecting 80000242-n as definition is too short: <<ne:per>>
+Rejecting 80002011-n as definition is too short: <<stir-fried mixed vegetables>>
+Rejecting 80001886-n as definition is too short: <<external pressure>>
+Rejecting 90000076-n as definition is too short: <<NE:oth>>
+Rejecting 90000208-n as definition is too short: <<NE:oth>>
+Rejecting 80001987-r as definition is too short: <<quietly, with no sound>>
+Rejecting 90000518-n as definition is too short: <<the night before tonight>>
+Rejecting 90000163-n as definition is too short: <<NE:org>>
+Rejecting 80001099-n as definition is too short: <<a hurried or quick pace>>
+Rejecting 80000547-n as definition is too short: <<western clothing store>>
+Rejecting 90000197-n as definition is too short: <<NE:org>>
+Rejecting 80000090-n as definition is too short: <<ne:oth>>
+Rejecting 90000312-n as definition is too short: <<chilli paste>>
+Rejecting 90000600-n as definition is too short: <<NE:loc>>
+Rejecting 80001349-v as definition is too short: <<stand firmly>>
+Rejecting 80000678-v as definition is too short: <<begin to affect someone>>
+Rejecting 80001042-n as definition is too short: <<ne:org>>
+Rejecting 80002496-v as definition is too short: <<go forward; for animals>>
+Rejecting 77000089-a as definition is too short: <<demonstrative determiner, kind, proximal>>
+Rejecting 80002490-z as definition is too short: <<hello, hi>>
+Rejecting 80000482-n as definition is too short: <<ne:oth>>
+Rejecting 80001833-n as definition is too short: <<representative office>>
+Rejecting 77000061-a as definition is too short: <<demonstrative determiner, singular, proximal>>
+Rejecting 80001368-v as definition is too short: <<become clear or unclouded>>
+Rejecting 80001811-n as definition is too short: <<best policy>>
+Rejecting 90000508-n as definition is too short: <<the week after this week>>
+Rejecting 80000324-n as definition is too short: <<a plentiful, abundant harvest>>
+Rejecting 80000375-n as definition is too short: <<ne:per>>
+Rejecting 80000744-n as definition is too short: <<the Han nationality>>
+Rejecting 80000701-n as definition is too short: <<animals and plants>>
+Rejecting 80000960-a as definition is too short: <<Thoroughly or carefully prepared>>
+Rejecting 90000072-n as definition is too short: <<NE:loc>>
+Rejecting 80001860-n as definition is too short: <<original, unaltered form>>
+Rejecting 80000230-n as definition is too short: <<ne:loc>>
+Rejecting 80002508-r as definition is too short: <<to, into>>
+Rejecting 80001816-a as definition is too short: <<to not care>>
+Rejecting 80000895-n as definition is too short: <<A meat-based gravy>>
+Rejecting 80000341-n as definition is too short: <<ne:oth>>
+Rejecting 80000178-n as definition is too short: <<ne:per>>
+Rejecting 90000215-n as definition is too short: <<NE:org>>
+Rejecting 90000063-n as definition is too short: <<cuisine of india>>
+Rejecting 90000153-n as definition is too short: <<NE:loc>>
+Rejecting 80001971-v as definition is too short: <<to marry at an older age>>
+Rejecting 80002452-a as definition is too short: <<faithful to one's promise>>
+Rejecting 80001585-n as definition is too short: <<western or european cuisine/food>>
+Rejecting 80000060-n as definition is too short: <<ne:org>>
+Rejecting 90000157-n as definition is too short: <<NE:loc>>
+Rejecting 80002153-n as definition is too short: <<the next morning>>
+Rejecting 80000986-n as definition is too short: <<ne:org>>
+Rejecting 80002044-n as definition is too short: <<roast duck>>
+Rejecting 80002037-n as definition is too short: <<pine branch>>
+Rejecting 80002486-v as definition is too short: <<to be ashamed>>
+Rejecting 80000405-n as definition is too short: <<the end of the month>>
+Rejecting 80000070-n as definition is too short: <<ne:per>>
+Rejecting 80000299-n as definition is too short: <<ne:oth>>
+Rejecting 90000132-n as definition is too short: <<NE:loc>>
+Rejecting 80000052-a as definition is too short: <<quantifier>>
+Rejecting 90000145-n as definition is too short: <<NE:org>>
+Rejecting 80001223-n as definition is too short: <<the only female child>>
+Rejecting 90000177-n as definition is too short: <<NE:org>>
+Rejecting 80001770-v as definition is too short: <<borrow money>>
+Rejecting 80000439-n as definition is too short: <<ne:per>>
+Rejecting 80000258-n as definition is too short: <<fabric which is tie-dyed>>
+Rejecting 90000014-n as definition is too short: <<NE:oth>>
+Rejecting 80001468-v as definition is too short: <<throw a sight toward>>
+Rejecting 80000769-a as definition is too short: <<around the island>>
+Rejecting 90000050-n as definition is too short: <<NE:oth>>
+Rejecting 80000984-n as definition is too short: <<A large-scale resort>>
+Rejecting 90000516-n as definition is too short: <<three days from now>>
+Rejecting 80001817-r as definition is too short: <<can be heard endlessly>>
+Rejecting 80001325-a as definition is too short: <<known throughout the world>>
+Rejecting 90000130-n as definition is too short: <<NE:loc>>
+Rejecting 90000015-n as definition is too short: <<NE:loc>>
+Rejecting 90000019-n as definition is too short: <<NE:oth>>
+Rejecting 80000229-n as definition is too short: <<ne:org>>
+Rejecting 80001426-v as definition is too short: <<(one's face) get darkened>>
+Rejecting 90000178-n as definition is too short: <<NE:loc>>
+Rejecting 90000222-n as definition is too short: <<NE:oth>>
+Rejecting 90000140-n as definition is too short: <<NE:org>>
+Rejecting 80001857-n as definition is too short: <<wisdom and foresight>>
+Rejecting 90000167-n as definition is too short: <<NE:org>>
+Rejecting 77000120-a as definition is too short: <<interrogative determiner, possessive>>
+Rejecting 80002059-a as definition is too short: <<by one's ear>>
+Rejecting 90000613-n as definition is too short: <<NE:loc>>
+Rejecting 90000505-n as definition is too short: <<two weeks ago>>
+Rejecting 80002498-v as definition is too short: <<to reach out>>
+Rejecting 90000611-n as definition is too short: <<NE:loc>>
+Rejecting 80000114-n as definition is too short: <<ne:org>>
+Rejecting 80000709-a as definition is too short: <<packaged in a bottle>>
+Rejecting 80000031-n as definition is too short: <<ne:org>>
+Rejecting 80000370-n as definition is too short: <<ne:loc>>
+Rejecting 90000609-n as definition is too short: <<NE:loc>>
+Rejecting 80000353-n as definition is too short: <<one's friends and family/relatives>>
+Rejecting 80001174-v as definition is too short: <<feel shameful>>
+Rejecting 90000190-n as definition is too short: <<NE:org>>
+Rejecting 90000012-n as definition is too short: <<NE:loc>>
+Rejecting 80000646-v as definition is too short: <<utilize for a purpose>>
+Rejecting 80000379-n as definition is too short: <<ne:per>>
+Rejecting 80000725-a as definition is too short: <<to keep one's promise>>
+Rejecting 80002494-v as definition is too short: <<didn't dare>>
+Rejecting 90000612-n as definition is too short: <<NE:loc>>
+Rejecting 80000588-n as definition is too short: <<ne:org>>
+Rejecting 80002362-n as definition is too short: <<culture of aquatic products>>
+Rejecting 80000754-r as definition is too short: <<must; no matter what>>
+Rejecting 80001277-r as definition is too short: <<with the utmost effort>>
+Rejecting 90000038-n as definition is too short: <<NE:org>>
+Rejecting 90000158-n as definition is too short: <<NE:loc>>
+Rejecting 80000307-n as definition is too short: <<ne:org>>
+Rejecting 77000090-n as definition is too short: <<manner, interrogative pronoun>>
+Rejecting 80002518-r as definition is too short: <<to this place, here>>
+Rejecting 90000113-n as definition is too short: <<NE:org>>
+Rejecting 80000027-n as definition is too short: <<ne:org>>
+Rejecting 80000330-n as definition is too short: <<ne:per>>
+Rejecting 80001968-r as definition is too short: <<no way to;; 无法，没办法>>
+Rejecting 80000153-n as definition is too short: <<ne:loc>>
+Rejecting 90000187-n as definition is too short: <<NE:org>>
+Rejecting 70101224-a as definition is too short: <<to seek facts and truth>>
+Rejecting 80000443-n as definition is too short: <<eldest son>>
+Rejecting 80000385-n as definition is too short: <<ne:loc>>
+Rejecting 80001906-n as definition is too short: <<skilled makers or artists>>
+Rejecting 90000033-n as definition is too short: <<NE:loc>>
+Rejecting 90000084-n as definition is too short: <<NE:loc>>
+Rejecting 80001989-a as definition is too short: <<ridiculous>>
+Rejecting 90000183-n as definition is too short: <<NE:oth>>
+Rejecting 90000442-n as definition is too short: <<Two-coat plastering on lath>>
+Rejecting 80000165-n as definition is too short: <<ne:loc>>
+Rejecting 80000123-n as definition is too short: <<ne:org>>
+Rejecting 80001732-n as definition is too short: <<Currency used in Taiwan>>
+Rejecting 80000381-n as definition is too short: <<ne:oth>>
+Rejecting 90000170-n as definition is too short: <<NE:org>>
+Rejecting 80002504-r as definition is too short: <<here>>
+Rejecting 80000535-n as definition is too short: <<sieve for rice>>
+Rejecting 80000162-n as definition is too short: <<ne:loc>>
+Rejecting 80000758-n as definition is too short: <<caged pet bird>>
+Rejecting 80001263-v as definition is too short: <<ruin by stepping on>>
+Rejecting 80000037-n as definition is too short: <<ne:org>>
+Rejecting 90000061-n as definition is too short: <<NE:oth>>
+Rejecting 80000226-n as definition is too short: <<ne:oth>>
+Rejecting 80001596-v as definition is too short: <<to be in full bloom>>
+Rejecting 80000623-v as definition is too short: <<fire (a weapon)>>
+Rejecting 90000503-n as definition is too short: <<the year after this year>>
+Rejecting 80001938-a as definition is too short: <<extremely thrilling and frightening>>
+Rejecting 80001610-n as definition is too short: <<ne:oth>>
+Rejecting 80001525-v as definition is too short: <<to put into; to add into>>
+Rejecting 90000112-n as definition is too short: <<NE:org>>
+Rejecting 90000171-n as definition is too short: <<NE:loc>>
+Rejecting 80000096-n as definition is too short: <<ne:loc>>
+Rejecting 80001097-n as definition is too short: <<ne:org>>
+Rejecting 90000146-n as definition is too short: <<NE:org>>
+Rejecting 80000066-n as definition is too short: <<ne:org>>
+Rejecting 90000106-n as definition is too short: <<NE:loc>>
+Rejecting 77000080-a as definition is too short: <<demonstrative determiner, distal>>
+Rejecting 80001308-v as definition is too short: <<start sleeping>>
+Rejecting 90000118-n as definition is too short: <<NE:loc>>
+Rejecting 80001616-n as definition is too short: <<uncooked rice>>
+Rejecting 80001222-n as definition is too short: <<the only male child>>
+Rejecting 80001048-n as definition is too short: <<ne:per>>
+Rejecting 80001197-n as definition is too short: <<a dark, moonlight-less night>>
+Rejecting 90000029-n as definition is too short: <<NE:loc>>
+Rejecting 80000092-n as definition is too short: <<ne:org>>
+Rejecting 80002580-a as definition is too short: <<made of linen>>
+Rejecting 90000097-n as definition is too short: <<NE:loc>>
+Rejecting 80001063-a as definition is too short: <<former>>
+Rejecting 80002311-v as definition is too short: <<to exorcise>>
+Rejecting 80001865-a as definition is too short: <<anti fascism>>
+Rejecting 80001695-v as definition is too short: <<concentrate (one's passion) on>>
+Rejecting 80000617-n as definition is too short: <<ne:org>>
+Rejecting 80000002-n as definition is too short: <<A Malaysian low-cost airline.>>
+Rejecting 80001019-v as definition is too short: <<End a fast>>
+Rejecting 80000104-n as definition is too short: <<ne:per>>
+Rejecting 90000602-n as definition is too short: <<NE:loc>>
+Rejecting 80001871-v as definition is too short: <<to go mad>>
+Rejecting 90000134-n as definition is too short: <<NE:oth>>
+Rejecting 80000364-n as definition is too short: <<ne:org>>
+Rejecting 80001965-v as definition is too short: <<to loudly celebrate something>>
+Rejecting 90000016-n as definition is too short: <<NE:oth>>
+Rejecting 80000102-n as definition is too short: <<ne:org>>
+Rejecting 90000160-n as definition is too short: <<NE:oth>>
+Rejecting 80002168-n as definition is too short: <<the number of people/individuals>>
+Rejecting 80000422-n as definition is too short: <<ne:loc>>
+Rejecting 80000190-n as definition is too short: <<ne:org>>
+Rejecting 90000209-n as definition is too short: <<NE:loc>>
+Rejecting 90000164-n as definition is too short: <<NE:org>>
+Rejecting 90000040-n as definition is too short: <<NE:per>>
+Rejecting 80000337-n as definition is too short: <<ne:loc>>
+Rejecting 80000040-n as definition is too short: <<ne:loc>>
+Rejecting 90000189-n as definition is too short: <<NE:loc>>
+Rejecting 80000759-n as definition is too short: <<a path that meanders>>
+Rejecting 80002226-a as definition is too short: <<not known by many>>
+Rejecting 80000423-n as definition is too short: <<ne:oth>>
+Rejecting 80000789-n as definition is too short: <<ancient city>>
+Rejecting 80000772-n as definition is too short: <<a period of ten days>>
+Rejecting 80001145-n as definition is too short: <<hair on the temples>>
+Rejecting 90000052-n as definition is too short: <<NE:loc>>
+Rejecting 80002378-v as definition is too short: <<construct a castle>>
+Rejecting 90000520-n as definition is too short: <<the night after tonight>>
+Rejecting 80000118-n as definition is too short: <<a Thai folk dance>>
+Rejecting 80002443-v as definition is too short: <<kill by agent>>
+Rejecting 80001879-n as definition is too short: <<business opportunity>>
+Rejecting 80001475-n as definition is too short: <<stretching and shrinking>>
+Rejecting 80001121-v as definition is too short: <<to bind by looping>>
+Rejecting 80000352-n as definition is too short: <<ne:loc>>
+Rejecting 80001767-v as definition is too short: <<do the action energetically>>
+Rejecting 80001861-a as definition is too short: <<successive, previous iterations>>
+Rejecting 90000091-n as definition is too short: <<NE:oth>>
+Rejecting 80002588-n as definition is too short: <<stock exchange board>>
+Rejecting 80000643-v as definition is too short: <<touch upon, explain>>
+Rejecting 90000144-n as definition is too short: <<NE:oth>>
+Rejecting 80000193-n as definition is too short: <<ne:loc>>
+Rejecting 80001051-n as definition is too short: <<ne:loc>>
+Rejecting 80001539-n as definition is too short: <<the surface of a water>>
+Rejecting 80000073-n as definition is too short: <<ne:org>>
+Rejecting 80001517-n as definition is too short: <<understanding well and accepting>>
+Rejecting 80000922-a as definition is too short: <<very pleasant>>
+Rejecting 80002259-v as definition is too short: <<to believe someone>>
+Rejecting 80001192-a as definition is too short: <<possessive determiner, 1st person>>
+Rejecting 80001917-n as definition is too short: <<New Year meal or feast>>
+Rejecting 80001885-n as definition is too short: <<a short period of time>>
+Rejecting 80000720-a as definition is too short: <<famous or well-known>>
+Rejecting 80001935-n as definition is too short: <<filthy malpractice>>
+Rejecting 80001908-n as definition is too short: <<a big mountain>>
+Rejecting 01551633-n as definition is too short: <<pronoun, entity; quantifier: plural>>
+Rejecting 80000397-n as definition is too short: <<ne:loc>>
+Rejecting 90000055-n as definition is too short: <<NE:loc>>
+Rejecting 80001185-x as definition is too short: <<in addition>>
+Rejecting 80001845-n as definition is too short: <<the effect something has>>
+Rejecting 70100093-a as definition is too short: <<completely satisfied>>
+Rejecting 80000172-n as definition is too short: <<ne:org>>
+Rejecting 80000074-n as definition is too short: <<ne:loc>>
+Rejecting 80001350-v as definition is too short: <<stand in a place dazedly>>
+Rejecting 80000130-n as definition is too short: <<ne:loc>>
+Rejecting 80000189-n as definition is too short: <<ne:oth>>
+Rejecting 90000125-n as definition is too short: <<NE:org>>
+Rejecting 90000078-n as definition is too short: <<NE:oth>>
+Rejecting 80000613-a as definition is too short: <<lean and gaunt>>
+Rejecting 80002154-n as definition is too short: <<old-established family>>
+Rejecting 80002132-a as definition is too short: <<to thoroughly examine something>>
+Rejecting 80002125-v as definition is too short: <<replenish>>
+Rejecting 80000631-n as definition is too short: <<half day;; half of a day>>
+Rejecting 80000977-a as definition is too short: <<Without much activity>>
+Rejecting 90000206-n as definition is too short: <<NE:org>>
+Rejecting 80002510-n as definition is too short: <<a finger>>
+Rejecting 80000502-n as definition is too short: <<field operations>>
+Rejecting 80000630-n as definition is too short: <<ne:per>>
+Rejecting 80000891-a as definition is too short: <<Comparatively small or immature>>
+Rejecting 80000585-n as definition is too short: <<ne:oth>>
+Rejecting 80002326-a as definition is too short: <<a lack of shelter>>
+Rejecting 70101100-a as definition is too short: <<once a year; annually>>
+Rejecting 80001120-n as definition is too short: <<the floor above>>
+Rejecting 80000449-n as definition is too short: <<ne:org>>
+Rejecting 80002205-r as definition is too short: <<each time, every time>>
+Rejecting 80000089-n as definition is too short: <<ne:per>>
+Rejecting 90000069-n as definition is too short: <<NE:per>>
+Rejecting 80000615-a as definition is too short: <<armed>>
+Rejecting 90000310-n as definition is too short: <<vermicelli made of rice>>
+Rejecting 80000093-n as definition is too short: <<ne:org;; chinatown in Singapore>>
+Rejecting 80000470-n as definition is too short: <<ne:org>>
+Rejecting 90000060-n as definition is too short: <<NE:loc>>
+Rejecting 90000151-n as definition is too short: <<NE:org>>
+Rejecting 80000058-n as definition is too short: <<ne:org>>
+Rejecting 80000640-a as definition is too short: <<small>>
+Rejecting 80000143-n as definition is too short: <<ne:loc>>
+Rejecting 80001399-v as definition is too short: <<see and perceive>>
+Rejecting 90000216-n as definition is too short: <<NE:org>>
+Rejecting 80002286-a as definition is too short: <<the pinnacle of awesomeness>>
+Rejecting 77000091-a as definition is too short: <<interrogative determiner, general>>
+Rejecting 90000036-n as definition is too short: <<NE:loc>>
+Rejecting 80000200-n as definition is too short: <<ne:loc>>
+Rejecting 80001925-v as definition is too short: <<earnestly long for something>>
+Rejecting 80002556-r as definition is too short: <<of a rich blue colour>>
+Rejecting 90000094-n as definition is too short: <<NE:org>>
+Rejecting 80000393-n as definition is too short: <<ne:loc>>
+Rejecting 80000911-a as definition is too short: <<Extremely strong or intense>>
+Rejecting 80002330-n as definition is too short: <<the base of one's foot>>
+Rejecting 77000064-n as definition is too short: <<entity, interrogative pronoun>>
+Rejecting 80002492-v as definition is too short: <<open>>
+Rejecting 80000699-n as definition is too short: <<one's remaining years>>
+Rejecting 90000135-n as definition is too short: <<NE:oth>>
+Rejecting 80001215-n as definition is too short: <<ne:dat>>
+Rejecting 90000147-n as definition is too short: <<NE:org>>
+Rejecting 80002008-n as definition is too short: <<grilled chicken>>
+Rejecting 90000521-n as definition is too short: <<one of the past few days>>
+Rejecting 80000634-a as definition is too short: <<Without pause or interruption>>
+Rejecting 80000297-n as definition is too short: <<ne:per>>
+Rejecting 90000202-n as definition is too short: <<NE:oth>>
+Rejecting 80000149-n as definition is too short: <<ne:org>>
+Rejecting 77000114-r as definition is too short: <<manner, remote pronoun>>
+Rejecting 80001710-n as definition is too short: <<new word>>
+Rejecting 80001523-n as definition is too short: <<file(s) that was/were uploaded>>
+Rejecting 80000886-v as definition is too short: <<access or view a website>>
+Rejecting 90000098-n as definition is too short: <<NE:oth>>
+Rejecting 80001058-a as definition is too short: <<very easy>>
+Rejecting 80002229-a as definition is too short: <<describes a chaotic situation
+>>
+Rejecting 80000152-n as definition is too short: <<ne:org>>
+Rejecting 90000092-n as definition is too short: <<NE:loc>>
+Rejecting 80001939-n as definition is too short: <<painstaking effort>>
+Rejecting 80000097-n as definition is too short: <<ne:per>>
+Rejecting 80002491-z as definition is too short: <<own>>
+Rejecting 90000191-n as definition is too short: <<NE:org>>
+Rejecting 90000298-n as definition is too short: <<a mixed Chinese/Malay culture>>
+Rejecting 80000389-n as definition is too short: <<ne:loc>>
+Rejecting 80000136-n as definition is too short: <<ne:org>>
+Rejecting 80002295-v as definition is too short: <<to report something incorrectly>>
+Rejecting 90000080-n as definition is too short: <<NE:oth>>
+Rejecting 80001039-n as definition is too short: <<the head of the bed>>
+Rejecting 90000119-n as definition is too short: <<NE:loc>>
+Rejecting 80001754-v as definition is too short: <<be able to do>>
+Rejecting 90000114-n as definition is too short: <<NE:org>>
+Rejecting 80001904-n as definition is too short: <<classifier for scenes>>
+Rejecting 80000684-v as definition is too short: <<involve oneself with>>
+Rejecting 80002211-v as definition is too short: <<to make convenient>>
+Rejecting 90000201-n as definition is too short: <<NE:org>>
+Rejecting 80001096-n as definition is too short: <<ne:loc>>
+Rejecting 80000627-n as definition is too short: <<The heart of the matter>>
+Rejecting 80000534-n as definition is too short: <<public hazards and repercussions>>
+Rejecting 90000159-n as definition is too short: <<NE:org>>
+Rejecting 80002270-n as definition is too short: <<full retail price>>
+Rejecting 80000367-n as definition is too short: <<political friendship between countries>>
+Rejecting 90000174-n as definition is too short: <<NE:loc>>
+Rejecting 90000614-n as definition is too short: <<NE:loc>>
+Rejecting 90000041-n as definition is too short: <<NE:oth>>
+Rejecting 90000117-n as definition is too short: <<NE:org>>
+Rejecting 80000169-n as definition is too short: <<ne:person>>
+Rejecting 80000544-n as definition is too short: <<Russian army>>
+Rejecting 80000157-n as definition is too short: <<ne:loc>>
+Rejecting 80001339-v as definition is too short: <<cross one's arms>>
+Rejecting 70101229-a as definition is too short: <<perplexing; mysterious>>
+Rejecting 80002092-n as definition is too short: <<beautiful sounds, especially music>>
+Rejecting 90000152-n as definition is too short: <<NE:org>>
+Rejecting 90000067-n as definition is too short: <<NE:org>>
+Rejecting 80001502-n as definition is too short: <<the top of a table>>
+Rejecting 90000023-n as definition is too short: <<NE:org>>
+Rejecting 80000094-n as definition is too short: <<ne:org>>
+Rejecting 80000444-n as definition is too short: <<ne:per>>
+Rejecting 80000965-n as definition is too short: <<Performing tricks while waterskiing>>
+Rejecting 90000196-n as definition is too short: <<NE:org>>
+Rejecting 80002493-r as definition is too short: <<still, always (informal)>>
+Rejecting 80001038-r as definition is too short: <<after a meal>>
+Rejecting 77000079-a as definition is too short: <<demonstrative determiner, distal>>
+Rejecting 77000088-r as definition is too short: <<manner, medial pronoun>>
+Rejecting 70101189-v as definition is too short: <<lead by a great distance>>
+Rejecting 80001891-a as definition is too short: <<vastly different>>
+Rejecting 80000438-n as definition is too short: <<a computer programming language>>
+Rejecting 77000089-r as definition is too short: <<manner, proximal pronoun>>
+Rejecting 90000133-n as definition is too short: <<NE:oth>>
+Rejecting 80000953-a as definition is too short: <<being very close>>
+Rejecting 80000708-n as definition is too short: <<ne:loc>>
+Rejecting 80001521-n as definition is too short: <<file(s) that was/were downloaded>>
+Rejecting 80000390-n as definition is too short: <<ne:oth>>
+Rejecting 80000949-a as definition is too short: <<Very dangerous>>
+Rejecting 80000625-v as definition is too short: <<fire (a weapon)>>
+Rejecting 80000127-n as definition is too short: <<ne:org>>
+Rejecting 90000046-n as definition is too short: <<NE:oth>>
+Rejecting 80001903-v as definition is too short: <<to do one's best>>
+Rejecting 80000529-v as definition is too short: <<talk jovially>>
+Rejecting 90000607-n as definition is too short: <<NE:loc>>
+Rejecting 90000480-n as definition is too short: <<Having one side uncovered>>
+Rejecting 80000126-n as definition is too short: <<ne:oth>>
+Rejecting 90000070-n as definition is too short: <<NE:per>>
+Rejecting 80000751-v as definition is too short: <<to enter a country>>
+Rejecting 80000686-v as definition is too short: <<to look over>>
+Rejecting 80000148-n as definition is too short: <<ne:org>>
+Rejecting 90000008-n as definition is too short: <<NE:org>>
+Rejecting 80000168-n as definition is too short: <<ne:oth>>
+Rejecting 77000095-n as definition is too short: <<person, interrogative pronoun>>
+Rejecting 80001361-v as definition is too short: <<damage by eating>>
+Rejecting 80000167-n as definition is too short: <<ne:loc>>
+Rejecting 70100021-v as definition is too short: <<to spout nonsense>>
+Rejecting 80002174-v as definition is too short: <<play chess>>
+Rejecting 80002583-a as definition is too short: <<referring to a tail>>
+Rejecting 70101239-r as definition is too short: <<cautiously>>
+Rejecting 80000356-n as definition is too short: <<ne:loc>>
+Rejecting 80001814-r as definition is too short: <<delete this>>
+Rejecting 80001822-a as definition is too short: <<presiding>>
+Rejecting 90000211-n as definition is too short: <<NE:org>>
+Rejecting 80000645-v as definition is too short: <<utilize for a purpose>>
+Rejecting 80001847-r as definition is too short: <<absolutely not>>
+Rejecting 70100080-a as definition is too short: <<uniform, in unison>>
+Rejecting 80001538-v as definition is too short: <<introduce oneself>>
+Rejecting 90000603-n as definition is too short: <<NE:loc>>
+Rejecting 90000488-n as definition is too short: <<array of display lights>>
+Rejecting 80000637-a as definition is too short: <<resembling a cat>>
+Rejecting 80000570-n as definition is too short: <<ne:loc>>
+Rejecting 80002372-n as definition is too short: <<heated water>>
+Rejecting 80002506-v as definition is too short: <<to licking to the end>>
+Rejecting h0000003-n as definition is too short: <<NE:org>>
+Rejecting 80000017-n as definition is too short: <<Western region of Chester>>
+Rejecting 90000058-n as definition is too short: <<NE:loc>>
+Rejecting 80001563-v as definition is too short: <<get complex>>
+Rejecting 80000183-n as definition is too short: <<ne:org>>
+Rejecting 80002505-r as definition is too short: <<how>>
+Rejecting 90000005-n as definition is too short: <<NE:oth>>
+Rejecting 80000528-n as definition is too short: <<the full set>>
+Rejecting 90000043-n as definition is too short: <<NE:loc>>
+Rejecting 80002532-r as definition is too short: <<noisily>>
+Rejecting 77000112-n as definition is too short: <<cause, interrogative pronoun>>
+Rejecting 80000429-n as definition is too short: <<stir-fried flat rice noodles>>
+Rejecting 80002473-n as definition is too short: <<reportation>>
+Rejecting 80000982-n as definition is too short: <<ne:loc>>
+Rejecting 80000219-n as definition is too short: <<ne:per>>
+Rejecting 80000112-n as definition is too short: <<ne:per>>
+Rejecting 80000164-n as definition is too short: <<ne:loc>>
+Rejecting 80000703-a as definition is too short: <<not to be missed>>
+Rejecting 80000236-n as definition is too short: <<ne:per>>
+Rejecting 80001823-v as definition is too short: <<to lead as chefs>>
+Rejecting 80001252-n as definition is too short: <<a greenish black hue>>
+Rejecting 90000601-n as definition is too short: <<NE:loc>>
+Rejecting 80000539-a as definition is too short: <<boundless joy>>
+Rejecting 80002202-v as definition is too short: <<cleanse or purify oneself>>
+Rejecting 80002260-a as definition is too short: <<causing excitement and enthusiasm>>
+Rejecting 80000024-n as definition is too short: <<one of something [Eng-POS]preposition:among>>
+Rejecting 90000026-n as definition is too short: <<NE:oth>>
+Rejecting 80002377-n as definition is too short: <<the construction of castles>>
+Rejecting 80002511-v as definition is too short: <<see, watch>>
+Rejecting 90000198-n as definition is too short: <<NE:org>>
+Rejecting 90000123-n as definition is too short: <<NE:oth>>
+Rejecting 80002232-r as definition is too short: <<for nothing>>
+Rejecting 90000025-n as definition is too short: <<NE:oth>>
+Rejecting 80000166-n as definition is too short: <<ne:loc>>
+Rejecting 80000134-n as definition is too short: <<ne:loc>>
+Rejecting 80001986-r as definition is too short: <<in one go>>
+Rejecting 80002000-v as definition is too short: <<to work as a doctor>>
+Rejecting 80000333-n as definition is too short: <<ne:loc>>
+Rejecting 80000504-n as definition is too short: <<mythological beast>>
+Rejecting 80001183-v as definition is too short: <<do completely;; auxiliary verb>>
+Rejecting 80002470-v as definition is too short: <<to be able to do smt>>
+Rejecting 90000035-n as definition is too short: <<NE:oth>>
+Rejecting 90000199-n as definition is too short: <<NE:oth>>
+Rejecting 80001052-n as definition is too short: <<ne:org>>
+Rejecting 90000120-n as definition is too short: <<NE:org>>
+Rejecting 80000519-n as definition is too short: <<the elementary particle>>
+Rejecting 90000316-n as definition is too short: <<third smallest Malaysian state>>
+Rejecting 90000028-n as definition is too short: <<NE:loc>>
+Rejecting 80001447-a as definition is too short: <<not existing>>
+Rejecting 80002266-a as definition is too short: <<food flavoured with curry>>
+Rejecting 80000453-n as definition is too short: <<international Standard Book Number>>
+Rejecting 90000031-n as definition is too short: <<NE:oth>>
+Rejecting 90000017-n as definition is too short: <<NE:loc>>
+Rejecting 80000154-n as definition is too short: <<ne:loc>>
+Rejecting 90000068-n as definition is too short: <<NE:loc>>
+Rejecting 90000001-n as definition is too short: <<NE:org>>
+Rejecting 90000188-n as definition is too short: <<NE:oth>>
+Rejecting 80002478-x as definition is too short: <<so, thus, well>>
+Rejecting 80002385-v as definition is too short: <<fry beforehand>>
+Rejecting 90000047-n as definition is too short: <<NE:loc>>
+Rejecting 80002527-v as definition is too short: <<take place; occur>>
+Rejecting 80001549-n as definition is too short: <<ne:loc>>
+Rejecting 90000184-n as definition is too short: <<NE:oth>>
+Rejecting 80001177-n as definition is too short: <<若い年齢で発生する白髪>>
+Rejecting 80002517-r as definition is too short: <<right now (informal)>>
+Rejecting 80002360-n as definition is too short: <<wood of Japanese cypress>>
+Rejecting 80000698-n as definition is too short: <<ne:loc>>
+Rejecting 90000606-n as definition is too short: <<NE:loc>>
+Rejecting 80001671-v as definition is too short: <<organize after arranging>>
+Rejecting 80000511-n as definition is too short: <<traditional malay dance>>
+Rejecting 80000065-n as definition is too short: <<ne:org>>
+Rejecting 80000205-n as definition is too short: <<ne:org>>
+Rejecting 90000051-n as definition is too short: <<NE:org>>
+Rejecting 80002280-a as definition is too short: <<being or like a nerd>>
+Rejecting 80001126-n as definition is too short: <<a dark shade of grey>>
+Rejecting 90000148-n as definition is too short: <<NE:org>>
+Rejecting 90000224-n as definition is too short: <<NE:loc>>
+Rejecting 90000108-n as definition is too short: <<NE:org>>
+Rejecting 90000009-n as definition is too short: <<NE:oth>>
+Rejecting 80002581-a as definition is too short: <<referring to a tail>>
+Rejecting 80000111-n as definition is too short: <<ne:loc>>
+Rejecting 80001179-z as definition is too short: <<in addition>>
+Rejecting 80000793-v as definition is too short: <<to go out and in>>
+Rejecting 90000011-n as definition is too short: <<NE:loc>>
+Rejecting 80002406-n as definition is too short: <<game mammal>>
+Rejecting 90000054-n as definition is too short: <<NE:org>>
+Rejecting 80002472-n as definition is too short: <<interpretation>>
+Rejecting 80000601-n as definition is too short: <<Fish Head>>
+Rejecting 90000131-n as definition is too short: <<NE:loc>>
+Rejecting 90000156-n as definition is too short: <<NE:per>>
+Rejecting 90000507-n as definition is too short: <<this present week>>
+Rejecting 80000129-n as definition is too short: <<ne:loc>>
+Rejecting 80002514-n as definition is too short: <<a square, a market>>
+Rejecting 80000362-n as definition is too short: <<family property>>
+Rejecting 80000220-n as definition is too short: <<ne:per>>
+Rejecting 80000146-n as definition is too short: <<ne:org>>
+Rejecting 80001677-v as definition is too short: <<get drunk with alcohol>>
+Rejecting 80002474-v as definition is too short: <<watch, see>>
+Rejecting 90000175-n as definition is too short: <<NE:oth>>
+Rejecting 80000150-n as definition is too short: <<ne:org>>
+Rejecting 90000032-n as definition is too short: <<NE:oth>>
+Rejecting 80000035-n as definition is too short: <<ne:org>>
+Rejecting 80000621-n as definition is too short: <<New Year's Eve>>
+Rejecting 02269635-n as definition is too short: <<entity, singular, universal pronoun>>
+Rejecting 80000983-n as definition is too short: <<ne:org>>
+Rejecting 90000075-n as definition is too short: <<NE:org>>
+Rejecting 80000077-n as definition is too short: <<ne:per>>
+Rejecting 90000064-n as definition is too short: <<NE:loc>>
+Rejecting 90000088-n as definition is too short: <<NE:oth>>
+Rejecting 90000502-n as definition is too short: <<this present year>>
+Rejecting 80001912-v as definition is too short: <<to ponder>>
+Rejecting 80001804-n as definition is too short: <<the root of all evil>>
+Rejecting 80000632-a as definition is too short: <<fragrant and spicy>>
+Rejecting 90000311-n as definition is too short: <<Buddhists' holy day>>
+Rejecting 80000128-n as definition is too short: <<ne:per>>
+Rejecting 80001870-v as definition is too short: <<to go mad>>
+Rejecting 80000410-n as definition is too short: <<ne:org>>
+Rejecting 80000365-n as definition is too short: <<ne:loc>>
+Rejecting 80001141-v as definition is too short: <<to open eyes; to stare>>
+Rejecting 80002050-n as definition is too short: <<chicken fillet>>
+Rejecting 80000371-n as definition is too short: <<ne:org>>
+Rejecting 80000579-n as definition is too short: <<specific details about something>>
+Rejecting 90000154-n as definition is too short: <<NE:per>>
+Rejecting 70101028-a as definition is too short: <<full of white hair>>
+Rejecting 90000616-n as definition is too short: <<NE:loc>>
+Rejecting 80002429-n as definition is too short: <<very hot air>>
+Rejecting 77000076-a as definition is too short: <<quantifier, dual universal>>
+Rejecting 70100049-a as definition is too short: <<to be a trend>>
+Rejecting 80001025-n as definition is too short: <<ne:loc>>
+Rejecting 90000205-n as definition is too short: <<NE:org>>
+Rejecting 80000259-n as definition is too short: <<ne:org>>
+Rejecting 80001884-n as definition is too short: <<land price;; 地的价钱>>
+Rejecting 80001985-v as definition is too short: <<to wake up with a start>>
+Rejecting 80000738-n as definition is too short: <<A large-scale war>>
+Rejecting 80002502-n as definition is too short: <<snot>>
+Rejecting 80000108-n as definition is too short: <<ne:org>>
+Rejecting 0000074-n as definition is too short: <<NE:oth>>
+Rejecting 80001024-n as definition is too short: <<Object made by hand>>
+Rejecting 0000081-n as definition is too short: <<NE:org>>
+Rejecting 80002162-n as definition is too short: <<both hands>>
+Rejecting 80002199-a as definition is too short: <<very urgent>>
+Rejecting 90000027-n as definition is too short: <<NE:loc>>
+Rejecting 80000411-n as definition is too short: <<ne:per>>
+Rejecting 80000910-a as definition is too short: <<Following as a result>>
+Rejecting 80000591-n as definition is too short: <<ne:org>>
+Rejecting 80000635-n as definition is too short: <<ne:loc>>
+Rejecting 90000195-n as definition is too short: <<NE:oth>>
+Rejecting 80000068-n as definition is too short: <<ne:loc>>
+Rejecting 90000142-n as definition is too short: <<NE:oth>>
+Rejecting 90000186-n as definition is too short: <<NE:loc>>
+Rejecting 80000536-n as definition is too short: <<fried bean curd puff>>
+Rejecting 80001026-v as definition is too short: <<Emerging again>>
+Rejecting 90000116-n as definition is too short: <<NE:org>>
+Rejecting 80001869-n as definition is too short: <<prefectural road>>
+Rejecting 80001825-v as definition is too short: <<to complete a task>>
+Rejecting 80002495-v as definition is too short: <<to be shy>>
+Rejecting 80002314-n as definition is too short: <<a strong, distressing desire>>
+Rejecting 90000128-n as definition is too short: <<NE:oth>>
+Rejecting 80002164-n as definition is too short: <<one's own country>>
+Rejecting 90000228-n as definition is too short: <<NE:loc>>
+Rejecting 90000214-n as definition is too short: <<NE:org>>
+Rejecting 80000173-n as definition is too short: <<a town in Surrey>>
+Rejecting 80002582-a as definition is too short: <<referring to a tail>>
+Rejecting 90000066-n as definition is too short: <<NE:loc>>
+Rejecting 70101242-v as definition is too short: <<to talk to oneself>>
+Rejecting 80002489-a as definition is too short: <<pearl; made of pearls>>
+Rejecting 80000122-n as definition is too short: <<ne:org>>
+Rejecting 77000113-a as definition is too short: <<demonstrative determiner, kind, medial>>
+Rejecting 80000312-v as definition is too short: <<leave to sit overnight>>
+Rejecting 80000869-a as definition is too short: <<Involving several bodily senses>>
+Rejecting 80000745-n as definition is too short: <<ne:loc>>
+Rejecting 80001624-v as definition is too short: <<exchange information and opinions>>
+Rejecting 80000361-n as definition is too short: <<morning shift>>
+Rejecting 80002318-a as definition is too short: <<not cancelled>>
+Rejecting 80001040-n as definition is too short: <<ne:org>>
+Rejecting 90000100-n as definition is too short: <<NE:loc>>
+Rejecting 80001041-n as definition is too short: <<ne:loc>>
+Rejecting 80001913-v as definition is too short: <<to start a competition>>
+Rejecting 80001420-v as definition is too short: <<express (a lie or curse)>>
+Rejecting 90000101-n as definition is too short: <<NE:loc>>
+Rejecting 80001155-n as definition is too short: <<two/both eyeballs>>
+Rejecting 80000211-n as definition is too short: <<ne:per>>
+Rejecting 80000238-n as definition is too short: <<ne:per>>
+Rejecting 80002509-n as definition is too short: <<a shell (from nuts)>>
+Rejecting 80000894-n as definition is too short: <<each other>>
+Rejecting 90000605-n as definition is too short: <<NE:loc>>
+Rejecting 80002475-x as definition is too short: <<demonstrative determiner, singular, distal>>
+Rejecting 80000865-a as definition is too short: <<Cooked at home>>
+Rejecting 80000125-v as definition is too short: <<to keep somebody out>>
+Rejecting 80002500-r as definition is too short: <<if>>
+Rejecting 90000617-n as definition is too short: <<NE:loc>>
+Rejecting 90000082-n as definition is too short: <<NE:loc>>
+Rejecting 90000013-n as definition is too short: <<NE:loc>>
+Rejecting 90000172-n as definition is too short: <<NE:org>>
+Rejecting 80000225-n as definition is too short: <<ne:loc>>
+Rejecting 90000057-n as definition is too short: <<NE:loc>>
+Rejecting 70100045-a as definition is too short: <<startling>>
+Rejecting 90000200-n as definition is too short: <<NE:loc>>
+Rejecting 80000510-v as definition is too short: <<opening up a waterway>>
+Rejecting 90000406-n as definition is too short: <<Energetic, favourable>>
+Rejecting 80000730-v as definition is too short: <<to drink tea>>
+Rejecting 80000113-n as definition is too short: <<ne:loc>>
+Rejecting 80000004-a as definition is too short: <<metaphorical: from within >>
+Rejecting 80000023-n as definition is too short: <<the cuisine of China>>
+Rejecting 80002529-r as definition is too short: <<joyfully, merrily>>
+Rejecting 90000127-n as definition is too short: <<NE:loc>>
+Rejecting 80000280-n as definition is too short: <<ne:per>>
+Rejecting 80001835-r as definition is too short: <<so that, such that>>
+Rejecting 80002466-v as definition is too short: <<to appear true>>
+Rejecting 80002043-n as definition is too short: <<countries in the east>>
+Rejecting 80000412-v as definition is too short: <<got down on all fours>>
+Rejecting 80000382-n as definition is too short: <<ne:oth>>
+Rejecting 80000069-n as definition is too short: <<ne:org>>
+Rejecting 80000485-n as definition is too short: <<the smell of smoke>>
+Rejecting 90000204-n as definition is too short: <<NE:oth>>
+Rejecting 80000201-n as definition is too short: <<Hari Raya Haji>>
+Rejecting 80000377-n as definition is too short: <<ne:org>>
+Rejecting 80002512-v as definition is too short: <<see, watch>>
+Rejecting 80002539-v as definition is too short: <<to order, to command>>
+Rejecting 90000079-n as definition is too short: <<NE:oth>>
+Rejecting 80000155-n as definition is too short: <<ne:per>>
+Rejecting 90000180-n as definition is too short: <<NE:org>>
+Rejecting 80002319-v as definition is too short: <<to fold something again>>
+Rejecting 80000180-n as definition is too short: <<ne:org>>
+Rejecting 90000192-n as definition is too short: <<NE:loc>>
+Rejecting 80000649-v as definition is too short: <<to reiterate>>
+Rejecting 80000731-v as definition is too short: <<to try a a type of tea>>
+Rejecting 77000113-r as definition is too short: <<manner, medial pronoun>>
+Rejecting 80000378-n as definition is too short: <<ne:oth>>
+Rejecting 80000451-n as definition is too short: <<The second world war>>
+Rejecting 90000037-n as definition is too short: <<NE:loc>>
+Rejecting 80002096-n as definition is too short: <<time limit>>
+Rejecting 80000187-n as definition is too short: <<ne:org>>
+Rejecting 90000022-n as definition is too short: <<NE:org>>
+Rejecting 90000105-n as definition is too short: <<NE:loc>>
+Rejecting 80002126-z as definition is too short: <<location, or position within>>
+Rejecting 80000532-n as definition is too short: <<sense of existence>>
+Rejecting 80000091-n as definition is too short: <<ne:loc>>
+Rejecting 90000020-n as definition is too short: <<NE:loc>>
+Rejecting 80000115-n as definition is too short: <<ne:org>>
+Rejecting 90000447-n as definition is too short: <<clothing for men>>
+Rejecting 77000084-n as definition is too short: <<location, interrogative pronoun>>
+Rejecting 90000109-n as definition is too short: <<NE:loc>>
+Rejecting 80000760-n as definition is too short: <<Roast chicken>>
+Rejecting 80001854-a as definition is too short: <<second in command>>
+Rejecting 80000459-n as definition is too short: <<ne:oth>>
+Rejecting 90000065-n as definition is too short: <<NE:oth>>
+Rejecting 70101221-v as definition is too short: <<to emerge as a talent>>
+Rejecting 80000237-n as definition is too short: <<ne:per>>
+Rejecting 90000161-n as definition is too short: <<NE:loc>>
+Rejecting 80001781-r as definition is too short: <<above everything else>>
+Rejecting 80002002-a as definition is too short: <<pure white in colour>>
+Rejecting 80002435-n as definition is too short: <<female saint>>
+Rejecting 80000776-v as definition is too short: <<the sale of tickets>>
+Rejecting 90000030-n as definition is too short: <<NE:oth>>
+Rejecting 80000076-n as definition is too short: <<a plate of copper>>
+Rejecting 80000062-n as definition is too short: <<according to legend>>
+Rejecting 90000044-n as definition is too short: <<NE:loc>>
+Rejecting 80001302-n as definition is too short: <<ne:loc>>
+Rejecting 80000210-n as definition is too short: <<ne:org>>
+Rejecting 90000024-n as definition is too short: <<NE:oth>>
+Rejecting 90000083-n as definition is too short: <<NE:loc>>
+Rejecting 80002327-r as definition is too short: <<in mental discomfort>>
+Rejecting 80001219-v as definition is too short: <<to terminate or end>>
+Rejecting 80001148-n as definition is too short: <<flesh, bone and blood>>
+Rejecting 90000168-n as definition is too short: <<NE:org>>
+Rejecting 80000908-n as definition is too short: <<An expert chef>>
+Rejecting 80001914-a as definition is too short: <<widely known>>
+Rejecting 80000036-n as definition is too short: <<ne:loc>>
+Rejecting 90000077-n as definition is too short: <<NE:oth>>
+Rejecting 90000059-n as definition is too short: <<NE:oth>>
+Rejecting 80002488-v as definition is too short: <<not to be afraid>>
+Rejecting 80000566-n as definition is too short: <<ne:loc>>
+Rejecting 90000305-n as definition is too short: <<Peranakan spicy noodle soup>>
+Rejecting 90000225-n as definition is too short: <<NE:oth>>
+Rejecting 80000416-v as definition is too short: <<to be on a losing streak>>
+Rejecting 80002114-a as definition is too short: <<securely locked up>>
+Rejecting 80000056-n as definition is too short: <<ne:org>>
+Rejecting 80002524-a as definition is too short: <<having undergone education>>
+Rejecting 80001312-n as definition is too short: <<the second son>>
+Rejecting 90000150-n as definition is too short: <<NE:org>>
+Rejecting 80000981-v as definition is too short: <<to follow in order>>
+Rejecting 80000456-v as definition is too short: <<abandon corpse>>
+Rejecting 77000058-a as definition is too short: <<demonstrative determiner, plural, proximal>>
+Rejecting 77000114-a as definition is too short: <<demonstrative determiner, kind, remote>>
+Rejecting 90000213-n as definition is too short: <<NE:loc>>
+Rejecting 80001859-n as definition is too short: <<district office>>
+Rejecting 90000129-n as definition is too short: <<NE:oth>>
+Rejecting 80000565-n as definition is too short: <<ne:loc>>
+Rejecting 90000155-n as definition is too short: <<NE:org>>
+Rejecting 80000740-n as definition is too short: <<ne:loc>>
+Rejecting 90000194-n as definition is too short: <<NE:loc>>
+Rejecting 80000055-n as definition is too short: <<ne:org;; Inter Continental Hotel>>
+Rejecting 80000380-n as definition is too short: <<ne:per>>
+Rejecting 80002375-n as definition is too short: <<cold or cooled water>>
+Rejecting 80000147-n as definition is too short: <<ne:per>>
+Rejecting 80000329-n as definition is too short: <<ne:per>>
+Rejecting 90000121-n as definition is too short: <<NE:oth>>
+Rejecting 80001198-n as definition is too short: <<wind and rain>>
+Rejecting 80000376-n as definition is too short: <<ne:org>>
+Rejecting 80000682-v as definition is too short: <<be more important than>>
+Rejecting 80001193-n as definition is too short: <<the morning of today>>
+Rejecting 80001067-a as definition is too short: <<more than one>>
+Rejecting 80001484-v as definition is too short: <<be needed>>
+Rejecting 80001269-v as definition is too short: <<not exist>>
+Rejecting 80001213-v as definition is too short: <<to follow closely behind>>
+Rejecting 80001057-a as definition is too short: <<still existing>>
+Rejecting 80000072-n as definition is too short: <<ne:per>>
+Rejecting 77000075-a as definition is too short: <<demonstrative determiner, proximal>>
+Rejecting 80001216-n as definition is too short: <<ne:dat>>
+Rejecting 80000445-n as definition is too short: <<ne:loc>>
+Rejecting 90000093-n as definition is too short: <<NE:org>>
+Rejecting 90000229-n as definition is too short: <<NE:oth>>
+Rejecting 80000239-n as definition is too short: <<ne:per>>
+Rejecting 90000515-n as definition is too short: <<two days from now>>
+Rejecting 80001077-n as definition is too short: <<quantity, interrogative pronoun>>
+Rejecting 80001009-n as definition is too short: <<stuffed fried tofu>>
+Rejecting 70100661-a as definition is too short: <<too many to count>>
+Rejecting 80001878-n as definition is too short: <<sensationalism>>
+Rejecting 80002257-v as definition is too short: <<instruct>>
+Rejecting 80000223-n as definition is too short: <<ne:per>>
+Rejecting 80002569-v as definition is too short: <<to become crazy>>
+Rejecting 80000395-n as definition is too short: <<ne:oth>>
+Rejecting 90000137-n as definition is too short: <<NE:org>>
+Rejecting 80000160-n as definition is too short: <<ne:loc>>
+Rejecting 80000386-n as definition is too short: <<ne:org>>
+Rejecting 80000028-n as definition is too short: <<ne:org>>
+Rejecting 90000212-n as definition is too short: <<NE:oth>>
+Rejecting 80001547-n as definition is too short: <<the same era>>
+Rejecting 90000149-n as definition is too short: <<NE:org>>
+Rejecting 80002431-n as definition is too short: <<the position of king>>
+Rejecting 80000182-n as definition is too short: <<ne:loc>>
+Rejecting 80000034-n as definition is too short: <<ne:org>>
+Rejecting 80000342-n as definition is too short: <<historic places of interest>>
+Rejecting 80002278-a as definition is too short: <<a vulgar intensifier>>
+Rejecting 02269286-n as definition is too short: <<pronoun, entity; quantifier: universal>>
+Rejecting 80002040-n as definition is too short: <<music industry>>
+Rejecting 80001031-r as definition is too short: <<Without exception>>
+Rejecting 80001894-a as definition is too short: <<multi-user>>
+Rejecting 80002307-n as definition is too short: <<a demonic dog>>
+Rejecting 80001990-a as definition is too short: <<capable and brilliant>>
+Rejecting 90000300-n as definition is too short: <<North Indian pancake>>
+Rejecting 80000120-n as definition is too short: <<ne:org>>
+Rejecting 70100055-a as definition is too short: <<absolutely obedient>>
+Rejecting 80001944-v as definition is too short: <<to die a tragic death>>
+Rejecting 80000109-n as definition is too short: <<ne:per>>
+Rejecting 80000016-n as definition is too short: <<ne:org>>
+Rejecting 90000049-n as definition is too short: <<NE:oth>>
+Rejecting 90000510-n as definition is too short: <<three days ago>>
+Rejecting 90000181-n as definition is too short: <<NE:loc>>
+Rejecting 90000536-n as definition is too short: <<second day of the month>>
+Rejecting 80002061-a as definition is too short: <<paste-like consistency>>
+Rejecting 80002338-v as definition is too short: <<teaching in a school>>
+Rejecting 80002035-n as definition is too short: <<a man of big build>>
+Rejecting 80002408-n as definition is too short: <<birds and animals>>
+Rejecting 90000018-n as definition is too short: <<NE:oth>>
+Rejecting 80000268-n as definition is too short: <<ne:org>>
+Rejecting 80001410-v as definition is too short: <<plan something bad>>
+Rejecting 80001722-r as definition is too short: <<interrogative adverb>>
+Rejecting 80001030-r as definition is too short: <<At whatever time>>
+Rejecting 80001194-v as definition is too short: <<ignite an equipment>>
+Rejecting 80000494-n as definition is too short: <<source code controlling system>>
+Rejecting 80000170-n as definition is too short: <<ne:org>>
+Rejecting 90000004-n as definition is too short: <<NE:per>>
+Rejecting 90000610-n as definition is too short: <<NE:loc>>
+Rejecting 80000262-n as definition is too short: <<ne:per>>
+Rejecting 80002309-n as definition is too short: <<lead used for roofing>>
+Rejecting 77000082-a as definition is too short: <<demonstrative determiner, plural, distal>>
+Rejecting 80001205-a as definition is too short: <<soft, light and slow>>
+Rejecting 90000511-n as definition is too short: <<two days ago>>
+Rejecting 90000110-n as definition is too short: <<NE:org>>
+Rejecting 80001862-v as definition is too short: <<to suddenly go missing>>
+Rejecting 80001801-n as definition is too short: <<one round>>

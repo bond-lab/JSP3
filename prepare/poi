@@ -1,0 +1,2738 @@
+hi
+wn-ntu-eng.xml
+is_lmf
+b'<?xml version="1.0" encoding="UTF-8"?>'
+b'<?xml version="1.0" encoding="UTF-8"?>'
+b'<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">'
+{'<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">': '1.0', '<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.1.dtd">': '1.1'}
+b'<?xml version="1.0" encoding="UTF-8"?>'
+b'<?xml version="1.0" encoding="UTF-8"?>'
+b'<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">'
+{'<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">': '1.0', '<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.1.dtd">': '1.1'}
+ntumc:3.0           failed
+  lexical entry has no senses
+    w22872
+    w30132
+    w32609
+    w34866
+    w34867
+    w34868
+    w37401
+    w47637
+    w59144
+    w61109
+    w71127
+    w79030
+    w82344
+    w84156
+    w88928
+    w92113
+    w97089
+    w108747
+    w129562
+    w144880
+    w612667
+    w612684
+    w612704
+    w612720
+    w612781
+    w612788
+    w612803
+    w612817
+    w612853
+    w612867
+    w612879
+    w612884
+    w612919
+    w612957
+    w612967
+    w612978
+    w613015
+    w613031
+    w613038
+    w613137
+    w613147
+    w613150
+    w613156
+    w613159
+    w947035
+    w947039
+    w947067
+    w947074
+    w947161
+    w947191
+    w947347
+    w947540
+    w947700
+    w947704
+    w948109
+    w948114
+    w948559
+    w948660
+    w948661
+    w948704
+    w948718
+    w948839
+    w948919
+    w948952
+    w948953
+    w949023
+    w949156
+    w949168
+    w949170
+    w949250
+    w949263
+    w949887
+    w950412
+    w950425
+    w950551
+    w950568
+    w950612
+    w950772
+    w950778
+    w950933
+    w951015
+    w951016
+    w951210
+    w951219
+    w951336
+    w951566
+    w951568
+    w951569
+    w951604
+    w951613
+    w951631
+    w951689
+    w951762
+    w951862
+    w952013
+    w952028
+    w952029
+    w952071
+    w952110
+    w952138
+    w952148
+    w952158
+    w952162
+    w952249
+    w952282
+    w952292
+    w952316
+    w952317
+    w952320
+    w952356
+    w952357
+    w952360
+    w952368
+    w952380
+    w952453
+    w952463
+    w952468
+    w952473
+    w952479
+    w952480
+    w952501
+    w952526
+    w952527
+    w952528
+    w952529
+    w952530
+    w952531
+    w952544
+    w952545
+    w952598
+    w952608
+    w952645
+    w952748
+    w952749
+    w952765
+    w952859
+    w1005194
+    w1005223
+    w1005264
+    w1005303
+    w1005325
+    w1005336
+    w1005339
+    w1005352
+    w1005371
+    w1005474
+    w1005544
+    w1005556
+    w1005692
+    w1006048
+    w1006052
+    w1006099
+    w1006162
+    w1006248
+    w1006338
+    w1006442
+    w1006478
+    w1006614
+    w1006615
+    w1006626
+    w1006632
+    w1006633
+    w1006661
+    w1006688
+    w1006689
+    w1006704
+    w1006710
+    w1006717
+    w1006733
+    w1006789
+    w1006888
+    w1006970
+    w1007231
+    w1007232
+    w1007243
+    w1007290
+    w1007609
+    w1007625
+    w1007648
+    w1007704
+    w1007726
+    w1007812
+    w1007822
+    w1007832
+    w1007916
+    w1007935
+    w1008007
+    w1008030
+    w1008032
+    w1008033
+    w1008044
+    w1008053
+    w1008100
+    w1008101
+    w1008102
+    w1008111
+    w1008162
+    w1008532
+    w1008856
+    w1008862
+    w1008999
+    w1009028
+    w1009190
+    w1009444
+    w1009452
+    w1009463
+    w1009464
+    w1009468
+    w1009470
+    w1009471
+    w1009491
+    w1009533
+    w1009536
+    w1009544
+    w1009556
+    w1009652
+    w1009665
+    w1009919
+    w1010067
+    w1010169
+    w1010177
+    w1010254
+    w1010261
+    w1010280
+    w1010293
+    w1010343
+    w1010462
+    w1010556
+    w1010565
+    w1010566
+    w1010573
+    w1010628
+    w1010679
+    w1010767
+    w1010789
+    w1010790
+    w1010791
+    w1010822
+    w1010994
+    w1011013
+    w1011030
+    w1011045
+    w1011091
+    w1011143
+    w1011148
+    w1011198
+    w1011205
+    w1011215
+    w1011225
+    w1011318
+    w1011393
+    w1011417
+    w1011997
+    w1045909
+    w1045920
+    w1045922
+    w1045957
+    w1045971
+    w1046219
+    w1046488
+    w1046682
+  synset is empty (not associated with any lexical entries)
+    ntumc-80001272-v
+    ntumc-80002528-n
+    ntumc-77000060-a
+    ntumc-80001012-a
+    ntumc-70101089-a
+    ntumc-80001575-n
+    ntumc-80001745-v
+    ntumc-80002477-n
+    ntumc-80001842-a
+    ntumc-80000954-a
+    ntumc-80001491-v
+    ntumc-80001243-a
+    ntumc-80001435-v
+    ntumc-80001800-a
+    ntumc-76100041-x
+    ntumc-80001875-a
+    ntumc-80002394-v
+    ntumc-80001314-v
+    ntumc-80000612-n
+    ntumc-80001895-n
+    ntumc-80002541-a
+    ntumc-70101128-a
+    ntumc-76100026-x
+    ntumc-80002507-n
+    ntumc-80000756-n
+    ntumc-80000752-v
+    ntumc-80002233-v
+    ntumc-80001802-r
+    ntumc-80000071-n
+    ntumc-76100073-x
+    ntumc-80002537-n
+    ntumc-80000051-a
+    ntumc-80001936-a
+    ntumc-80000786-r
+    ntumc-80001819-n
+    ntumc-80000533-v
+    ntumc-80002503-a
+    ntumc-80002179-n
+    ntumc-80001740-n
+    ntumc-70101206-v
+    ntumc-80000727-n
+    ntumc-80001520-a
+    ntumc-80000574-n
+    ntumc-77000048-n
+    ntumc-80001178-z
+    ntumc-76100089-x
+    ntumc-90000308-n
+    ntumc-80001921-n
+    ntumc-76100116-x
+    ntumc-77000080-n
+    ntumc-80002433-n
+    ntumc-80000854-n
+    ntumc-80001481-n
+    ntumc-80000748-v
+    ntumc-80002487-n
+    ntumc-80001248-a
+    ntumc-80001150-n
+    ntumc-70100880-v
+    ntumc-80001211-v
+    ntumc-77000121-n
+    ntumc-80001144-v
+    ntumc-80001915-v
+    ntumc-70101225-a
+    ntumc-70100339-r
+    ntumc-80002561-a
+    ntumc-70100008-v
+    ntumc-80002485-a
+    ntumc-80001665-n
+    ntumc-80001656-r
+    ntumc-70100735-a
+    ntumc-70100440-a
+    ntumc-80001726-v
+    ntumc-80001783-r
+    ntumc-80002536-r
+    ntumc-80000543-a
+    ntumc-80001448-v
+    ntumc-80001808-n
+    ntumc-76100067-x
+    ntumc-80002071-a
+    ntumc-80001165-v
+    ntumc-90000575-n
+    ntumc-80001406-a
+    ntumc-80000033-n
+    ntumc-80002549-r
+    ntumc-76100087-x
+    ntumc-75100753-n
+    ntumc-80001916-v
+    ntumc-77000116-n
+    ntumc-76100025-x
+    ntumc-80001290-r
+    ntumc-80001988-v
+    ntumc-80001089-a
+    ntumc-80000343-v
+    ntumc-80001365-v
+    ntumc-80001366-x
+    ntumc-80001757-n
+    ntumc-70100949-v
+    ntumc-80002066-n
+    ntumc-80000704-r
+    ntumc-80002209-n
+    ntumc-80002369-a
+    ntumc-80002082-a
+    ntumc-80002562-n
+    ntumc-76100083-x
+    ntumc-80001963-v
+    ntumc-80001905-n
+    ntumc-80001196-v
+    ntumc-80001474-v
+    ntumc-80001872-v
+    ntumc-80001702-a
+    ntumc-77000070-n
+    ntumc-80001092-v
+    ntumc-80002234-n
+    ntumc-77000035-n
+    ntumc-80002208-n
+    ntumc-80001830-v
+    ntumc-70100027-a
+    ntumc-80001652-v
+    ntumc-80002042-n
+    ntumc-80002522-a
+    ntumc-70101238-a
+    ntumc-80000762-n
+    ntumc-80002207-v
+    ntumc-80002203-a
+    ntumc-80000819-n
+    ntumc-80002444-n
+    ntumc-80001264-a
+    ntumc-80001546-n
+    ntumc-80002412-v
+    ntumc-90000122-n
+    ntumc-80002376-n
+    ntumc-80001427-v
+    ntumc-80001883-r
+    ntumc-80001181-v
+    ntumc-80002432-n
+    ntumc-80001438-a
+    ntumc-80000185-v
+    ntumc-80000010-n
+    ntumc-80000742-n
+    ntumc-80000000-n
+    ntumc-76100082-x
+    ntumc-80002121-n
+    ntumc-80001966-r
+    ntumc-80002215-n
+    ntumc-80001976-n
+    ntumc-80001958-n
+    ntumc-76100105-x
+    ntumc-80000694-v
+    ntumc-70101235-a
+    ntumc-80002585-n
+    ntumc-76100040-x
+    ntumc-80002143-n
+    ntumc-80002191-r
+    ntumc-80001212-n
+    ntumc-80002579-a
+    ntumc-80000009-n
+    ntumc-80002559-a
+    ntumc-80000633-a
+    ntumc-80002479-n
+    ntumc-76100137-x
+    ntumc-80000575-n
+    ntumc-80001320-v
+    ntumc-80001441-a
+    ntumc-76100077-x
+    ntumc-80001680-v
+    ntumc-90000320-n
+    ntumc-76100069-x
+    ntumc-70101232-a
+    ntumc-77000004-n
+    ntumc-80000624-v
+    ntumc-80001015-a
+    ntumc-76100123-x
+    ntumc-80001295-a
+    ntumc-80001896-n
+    ntumc-80001564-v
+    ntumc-80000766-n
+    ntumc-80001535-v
+    ntumc-80001454-a
+    ntumc-76100035-x
+    ntumc-76100099-x
+    ntumc-80000339-n
+    ntumc-80001706-v
+    ntumc-80001959-v
+    ntumc-80002041-n
+    ntumc-76100022-x
+    ntumc-80002565-a
+    ntumc-80000782-n
+    ntumc-80001926-n
+    ntumc-77000001-n
+    ntumc-80002535-r
+    ntumc-80000057-n
+    ntumc-77000122-n
+    ntumc-76100012-x
+    ntumc-90000230-n
+    ntumc-80002177-n
+    ntumc-80002241-n
+    ntumc-70100090-r
+    ntumc-80002400-v
+    ntumc-77000098-n
+    ntumc-70100340-a
+    ntumc-80001803-v
+    ntumc-80000592-n
+    ntumc-80001858-v
+    ntumc-80000530-n
+    ntumc-80000018-n
+    ntumc-80001690-a
+    ntumc-80001081-v
+    ntumc-80001500-v
+    ntumc-80002558-a
+    ntumc-80001395-a
+    ntumc-80001793-x
+    ntumc-80001941-v
+    ntumc-80001371-n
+    ntumc-80001204-a
+    ntumc-80000087-a
+    ntumc-80001911-r
+    ntumc-76100055-x
+    ntumc-80001375-v
+    ntumc-77000059-a
+    ntumc-80002186-n
+    ntumc-80000481-v
+    ntumc-80001443-a
+    ntumc-80001566-a
+    ntumc-80002568-a
+    ntumc-80002416-v
+    ntumc-70100082-a
+    ntumc-70101230-v
+    ntumc-80001765-v
+    ntumc-80002256-v
+    ntumc-80002212-n
+    ntumc-80001440-n
+    ntumc-80002197-a
+    ntumc-80001388-v
+    ntumc-80001562-x
+    ntumc-80001429-v
+    ntumc-70100855-a
+    ntumc-80001886-n
+    ntumc-90000076-n
+    ntumc-80001483-r
+    ntumc-80001954-v
+    ntumc-70100070-r
+    ntumc-80001987-r
+    ntumc-80000815-n
+    ntumc-80002483-v
+    ntumc-90000577-v
+    ntumc-80000697-n
+    ntumc-76100079-x
+    ntumc-80001391-v
+    ntumc-80001099-n
+    ntumc-80002019-a
+    ntumc-70100398-v
+    ntumc-80001893-n
+    ntumc-80001130-n
+    ntumc-80000547-n
+    ntumc-80002182-n
+    ntumc-80002021-n
+    ntumc-80001349-v
+    ntumc-80002083-a
+    ntumc-80001372-n
+    ntumc-76100135-x
+    ntumc-80002557-a
+    ntumc-80002075-a
+    ntumc-80001109-a
+    ntumc-80002496-v
+    ntumc-77000089-a
+    ntumc-80002490-z
+    ntumc-80001833-n
+    ntumc-80002068-a
+    ntumc-80001421-n
+    ntumc-70100656-a
+    ntumc-80001368-v
+    ntumc-80002137-r
+    ntumc-80001771-v
+    ntumc-80001811-n
+    ntumc-80001696-n
+    ntumc-80000599-n
+    ntumc-80001600-a
+    ntumc-80000744-n
+    ntumc-80001919-a
+    ntumc-80001948-n
+    ntumc-80002024-x
+    ntumc-80002563-n
+    ntumc-70100737-a
+    ntumc-80001927-n
+    ntumc-80000647-v
+    ntumc-80002220-n
+    ntumc-80001860-n
+    ntumc-80001470-a
+    ntumc-80002508-r
+    ntumc-80002216-n
+    ntumc-80001816-a
+    ntumc-80000877-a
+    ntumc-77000075-n
+    ntumc-80001403-a
+    ntumc-76100074-x
+    ntumc-80000313-n
+    ntumc-80002399-v
+    ntumc-80001940-v
+    ntumc-80001971-v
+    ntumc-80002368-a
+    ntumc-80001585-n
+    ntumc-80001161-n
+    ntumc-70100185-v
+    ntumc-80001356-n
+    ntumc-80001955-v
+    ntumc-80000594-n
+    ntumc-80001812-v
+    ntumc-76100098-x
+    ntumc-80001855-n
+    ntumc-80001605-n
+    ntumc-80002153-n
+    ntumc-80000986-n
+    ntumc-80002044-n
+    ntumc-80002037-n
+    ntumc-80001618-r
+    ntumc-80002486-v
+    ntumc-70101236-n
+    ntumc-80000052-a
+    ntumc-80002350-n
+    ntumc-80001901-v
+    ntumc-80001108-a
+    ntumc-80001785-n
+    ntumc-80002204-n
+    ntumc-80001770-v
+    ntumc-77000108-n
+    ntumc-77000073-n
+    ntumc-80000047-n
+    ntumc-80000783-r
+    ntumc-76100126-x
+    ntumc-80001951-v
+    ntumc-70100135-n
+    ntumc-76100119-x
+    ntumc-80001468-v
+    ntumc-80002414-v
+    ntumc-90000050-n
+    ntumc-80000314-n
+    ntumc-90000427-n
+    ntumc-80002097-v
+    ntumc-76100013-x
+    ntumc-80002499-v
+    ntumc-80001497-n
+    ntumc-80001817-r
+    ntumc-76100088-x
+    ntumc-76100059-x
+    ntumc-80002366-a
+    ntumc-80002464-v
+    ntumc-80001953-v
+    ntumc-80001964-v
+    ntumc-90000019-n
+    ntumc-80000706-n
+    ntumc-80001426-v
+    ntumc-80001402-n
+    ntumc-80002578-n
+    ntumc-90000222-n
+    ntumc-76100009-x
+    ntumc-80001227-n
+    ntumc-80002373-n
+    ntumc-70100073-a
+    ntumc-76100071-x
+    ntumc-80001857-n
+    ntumc-80001296-a
+    ntumc-80002240-n
+    ntumc-80001170-a
+    ntumc-76100127-x
+    ntumc-70100303-a
+    ntumc-80001251-a
+    ntumc-80002059-a
+    ntumc-80002516-n
+    ntumc-80002407-n
+    ntumc-80001892-a
+    ntumc-80001750-v
+    ntumc-80002415-n
+    ntumc-80002498-v
+    ntumc-80001353-n
+    ntumc-80002117-v
+    ntumc-80001507-n
+    ntumc-80000031-n
+    ntumc-80001775-n
+    ntumc-80001730-v
+    ntumc-80001736-n
+    ntumc-80001897-v
+    ntumc-80000138-n
+    ntumc-80002546-a
+    ntumc-80002120-n
+    ntumc-80002180-n
+    ntumc-80001604-v
+    ntumc-77000033-n
+    ntumc-80001543-r
+    ntumc-80001813-n
+    ntumc-80002398-v
+    ntumc-70100031-n
+    ntumc-77000023-n
+    ntumc-80001174-v
+    ntumc-70100888-v
+    ntumc-80001691-n
+    ntumc-76100057-x
+    ntumc-80001728-x
+    ntumc-80002367-a
+    ntumc-80002095-v
+    ntumc-80001654-v
+    ntumc-80001418-a
+    ntumc-80002198-v
+    ntumc-70100115-r
+    ntumc-80000725-a
+    ntumc-80001209-a
+    ntumc-77000103-n
+    ntumc-80001570-n
+    ntumc-80002494-v
+    ntumc-76100091-x
+    ntumc-80002362-n
+    ntumc-80001428-a
+    ntumc-80001135-v
+    ntumc-80002210-n
+    ntumc-80002026-x
+    ntumc-70100465-a
+    ntumc-80002518-r
+    ntumc-80002425-v
+    ntumc-76100114-x
+    ntumc-80001110-n
+    ntumc-80002217-a
+    ntumc-70100489-a
+    ntumc-80001968-r
+    ntumc-80000153-n
+    ntumc-80001473-a
+    ntumc-76100005-x
+    ntumc-70101176-v
+    ntumc-80001439-n
+    ntumc-80002525-r
+    ntumc-76100043-x
+    ntumc-70101224-a
+    ntumc-80001906-n
+    ntumc-80002052-n
+    ntumc-80001289-v
+    ntumc-80002365-a
+    ntumc-80002441-v
+    ntumc-80001276-n
+    ntumc-80001458-a
+    ntumc-77000032-n
+    ntumc-76100033-x
+    ntumc-76100068-x
+    ntumc-80001550-a
+    ntumc-80000274-v
+    ntumc-80001989-a
+    ntumc-80001974-n
+    ntumc-80002036-a
+    ntumc-70100874-a
+    ntumc-80000679-v
+    ntumc-80000820-n
+    ntumc-80002086-v
+    ntumc-80001431-v
+    ntumc-80001445-v
+    ntumc-80000460-v
+    ntumc-80002001-x
+    ntumc-80001088-a
+    ntumc-80000019-n
+    ntumc-80001732-n
+    ntumc-77000011-n
+    ntumc-80000331-n
+    ntumc-80001928-x
+    ntumc-80000271-a
+    ntumc-80001818-v
+    ntumc-80002504-r
+    ntumc-80000535-n
+    ntumc-80000224-a
+    ntumc-80001772-v
+    ntumc-70100281-a
+    ntumc-90000412-n
+    ntumc-70100023-a
+    ntumc-80001105-a
+    ntumc-77000110-n
+    ntumc-80000521-n
+    ntumc-80001263-v
+    ntumc-76100045-x
+    ntumc-70100030-n
+    ntumc-90000572-v
+    ntumc-80001392-v
+    ntumc-80001411-v
+    ntumc-80002361-n
+    ntumc-80002520-v
+    ntumc-76100106-x
+    ntumc-76100122-x
+    ntumc-80002402-n
+    ntumc-80002471-n
+    ntumc-80000551-n
+    ntumc-80001782-r
+    ntumc-70100562-a
+    ntumc-80001270-v
+    ntumc-80001938-a
+    ntumc-76100104-x
+    ntumc-80002442-n
+    ntumc-80002547-a
+    ntumc-80002020-n
+    ntumc-80001525-v
+    ntumc-80002038-v
+    ntumc-80002130-v
+    ntumc-76100076-x
+    ntumc-80000721-v
+    ntumc-76100078-x
+    ntumc-80001359-v
+    ntumc-77000085-n
+    ntumc-80001510-n
+    ntumc-70100862-r
+    ntumc-80001449-v
+    ntumc-70101064-a
+    ntumc-80000045-r
+    ntumc-77000080-a
+    ntumc-80001387-v
+    ntumc-80001308-v
+    ntumc-80001763-n
+    ntumc-80001689-r
+    ntumc-80002409-n
+    ntumc-70100107-r
+    ntumc-80000478-n
+    ntumc-80001163-v
+    ntumc-80001735-n
+    ntumc-70101009-a
+    ntumc-76100065-x
+    ntumc-80001405-a
+    ntumc-80001784-n
+    ntumc-80002423-v
+    ntumc-80001583-n
+    ntumc-70100010-n
+    ntumc-80001695-v
+    ntumc-76100072-x
+    ntumc-80001805-a
+    ntumc-80002380-n
+    ntumc-80000002-n
+    ntumc-80001338-a
+    ntumc-76100024-x
+    ntumc-70100003-v
+    ntumc-80001172-v
+    ntumc-80000104-n
+    ntumc-80001463-v
+    ntumc-80001871-v
+    ntumc-80001965-v
+    ntumc-76100111-x
+    ntumc-90000016-n
+    ntumc-76100094-x
+    ntumc-80002411-v
+    ntumc-80001231-n
+    ntumc-80002194-a
+    ntumc-80001348-x
+    ntumc-80001837-n
+    ntumc-80001536-v
+    ntumc-80002236-n
+    ntumc-80002467-v
+    ntumc-80002168-n
+    ntumc-80000006-n
+    ntumc-80002526-v
+    ntumc-80000308-n
+    ntumc-80001154-a
+    ntumc-77000038-n
+    ntumc-80002481-n
+    ntumc-76100075-x
+    ntumc-80002482-v
+    ntumc-80000012-n
+    ntumc-80000792-n
+    ntumc-80001828-a
+    ntumc-76100042-x
+    ntumc-70101240-a
+    ntumc-80002226-a
+    ntumc-80001902-n
+    ntumc-80001112-a
+    ntumc-80001422-v
+    ntumc-80000248-a
+    ntumc-80001362-a
+    ntumc-80000772-n
+    ntumc-80001145-n
+    ntumc-70101234-v
+    ntumc-80000050-n
+    ntumc-80001898-n
+    ntumc-76100047-x
+    ntumc-80002378-v
+    ntumc-76100021-x
+    ntumc-80002443-v
+    ntumc-80001390-a
+    ntumc-80001168-x
+    ntumc-80001490-a
+    ntumc-80000081-a
+    ntumc-80001879-n
+    ntumc-76100018-x
+    ntumc-80001475-n
+    ntumc-80001207-v
+    ntumc-80001653-v
+    ntumc-70100598-r
+    ntumc-80002564-n
+    ntumc-80002118-n
+    ntumc-76100028-x
+    ntumc-80001848-v
+    ntumc-70100065-a
+    ntumc-80001419-v
+    ntumc-80001961-v
+    ntumc-80001767-v
+    ntumc-76100144-x
+    ntumc-80001861-a
+    ntumc-80001354-v
+    ntumc-80001146-a
+    ntumc-76100113-x
+    ntumc-90000091-n
+    ntumc-80002588-n
+    ntumc-80001434-n
+    ntumc-80001751-v
+    ntumc-80001307-v
+    ntumc-80000088-n
+    ntumc-70101116-v
+    ntumc-77000060-n
+    ntumc-90000478-n
+    ntumc-80001849-v
+    ntumc-80002420-v
+    ntumc-80002058-v
+    ntumc-76100056-x
+    ntumc-80002419-v
+    ntumc-80002072-a
+    ntumc-80001159-v
+    ntumc-80001834-v
+    ntumc-80001786-n
+    ntumc-80001539-n
+    ntumc-80000073-n
+    ntumc-80001517-n
+    ntumc-76100002-x
+    ntumc-80001326-a
+    ntumc-77000029-n
+    ntumc-80002523-a
+    ntumc-80001758-n
+    ntumc-80001192-a
+    ntumc-80001917-n
+    ntumc-80001885-n
+    ntumc-76100131-x
+    ntumc-80000693-n
+    ntumc-80001935-n
+    ntumc-80001188-v
+    ntumc-77000081-n
+    ntumc-80001908-n
+    ntumc-80002157-a
+    ntumc-80001016-a
+    ntumc-80001744-v
+    ntumc-80001129-a
+    ntumc-77000037-n
+    ntumc-80001271-n
+    ntumc-80001756-x
+    ntumc-80000038-n
+    ntumc-80001978-v
+    ntumc-80001185-x
+    ntumc-80001845-n
+    ntumc-80001335-n
+    ntumc-70100093-a
+    ntumc-80001667-v
+    ntumc-70100941-a
+    ntumc-80002079-r
+    ntumc-70100620-a
+    ntumc-80000005-n
+    ntumc-80001350-v
+    ntumc-76100020-x
+    ntumc-80002129-v
+    ntumc-80001090-v
+    ntumc-80001863-a
+    ntumc-90000078-n
+    ntumc-80002154-n
+    ntumc-80002132-a
+    ntumc-77000022-n
+    ntumc-80000247-n
+    ntumc-80001687-v
+    ntumc-70100703-a
+    ntumc-80000542-n
+    ntumc-70100436-r
+    ntumc-90000579-v
+    ntumc-70101000-a
+    ntumc-80002510-n
+    ntumc-80001759-v
+    ntumc-80002426-n
+    ntumc-80002346-n
+    ntumc-80000502-n
+    ntumc-80001762-v
+    ntumc-80002545-r
+    ntumc-80002067-n
+    ntumc-80000630-n
+    ntumc-70100039-n
+    ntumc-70101100-a
+    ntumc-70100318-a
+    ntumc-80001796-v
+    ntumc-76100015-x
+    ntumc-80002205-r
+    ntumc-80002428-n
+    ntumc-80001742-v
+    ntumc-80002225-v
+    ntumc-76100129-x
+    ntumc-77000028-n
+    ntumc-80000089-n
+    ntumc-80002538-n
+    ntumc-76100016-x
+    ntumc-76100063-x
+    ntumc-90000069-n
+    ntumc-80002138-v
+    ntumc-80001456-n
+    ntumc-80001827-v
+    ntumc-80001139-a
+    ntumc-80001367-v
+    ntumc-80001540-v
+    ntumc-80001993-r
+    ntumc-76100039-x
+    ntumc-80001561-x
+    ntumc-80002353-n
+    ntumc-80000619-a
+    ntumc-90000597-v
+    ntumc-80001399-v
+    ntumc-80002171-v
+    ntumc-80000415-n
+    ntumc-80002456-v
+    ntumc-80001512-v
+    ntumc-80002381-a
+    ntumc-80001768-v
+    ntumc-80002184-n
+    ntumc-80001925-v
+    ntumc-80002501-z
+    ntumc-80002556-r
+    ntumc-77000115-n
+    ntumc-80001643-a
+    ntumc-70100702-v
+    ntumc-70100878-v
+    ntumc-76100130-x
+    ntumc-70100823-r
+    ntumc-76100107-x
+    ntumc-70100822-a
+    ntumc-80002492-v
+    ntumc-80001809-n
+    ntumc-80001369-v
+    ntumc-80001102-a
+    ntumc-80001513-n
+    ntumc-80001175-v
+    ntumc-80000690-n
+    ntumc-80002422-v
+    ntumc-80000003-n
+    ntumc-80001815-r
+    ntumc-80002005-v
+    ntumc-80002077-a
+    ntumc-80001111-v
+    ntumc-80001632-n
+    ntumc-80001511-n
+    ntumc-80000227-n
+    ntumc-77000114-r
+    ntumc-80002188-v
+    ntumc-80001303-a
+    ntumc-80001286-v
+    ntumc-76100061-x
+    ntumc-80001710-n
+    ntumc-70100596-s
+    ntumc-80001945-v
+    ntumc-80001777-n
+    ntumc-80001700-a
+    ntumc-76100090-x
+    ntumc-80001453-a
+    ntumc-76100064-x
+    ntumc-80001946-n
+    ntumc-80002229-a
+    ntumc-77000009-n
+    ntumc-80002167-n
+    ntumc-80001515-n
+    ntumc-80001939-n
+    ntumc-80002491-z
+    ntumc-80001423-a
+    ntumc-76100052-x
+    ntumc-80001261-v
+    ntumc-80001091-a
+    ntumc-90000582-n
+    ntumc-80000548-v
+    ntumc-80002469-n
+    ntumc-77000100-n
+    ntumc-80000008-n
+    ntumc-77000072-n
+    ntumc-80001924-n
+    ntumc-80001039-n
+    ntumc-80000233-a
+    ntumc-70101075-v
+    ntumc-80001754-v
+    ntumc-80001904-n
+    ntumc-80001424-a
+    ntumc-80001694-n
+    ntumc-80000676-a
+    ntumc-80001909-n
+    ntumc-80002552-a
+    ntumc-80001380-a
+    ntumc-80002089-n
+    ntumc-70100240-a
+    ntumc-80001846-a
+    ntumc-80001840-v
+    ntumc-80000773-n
+    ntumc-80001787-r
+    ntumc-80001651-n
+    ntumc-80002540-v
+    ntumc-80001506-v
+    ntumc-80002069-v
+    ntumc-76100017-x
+    ntumc-80002076-n
+    ntumc-80001444-a
+    ntumc-76100108-x
+    ntumc-90000588-n
+    ntumc-77000057-n
+    ntumc-70100038-v
+    ntumc-80001664-r
+    ntumc-80002347-n
+    ntumc-80002222-v
+    ntumc-80001336-v
+    ntumc-80000544-n
+    ntumc-70101243-v
+    ntumc-80001339-v
+    ntumc-70101229-a
+    ntumc-76100092-x
+    ntumc-80002228-a
+    ntumc-76100038-x
+    ntumc-80002092-n
+    ntumc-70100495-a
+    ntumc-80001748-v
+    ntumc-76100062-x
+    ntumc-76100128-x
+    ntumc-80001132-n
+    ntumc-80001502-n
+    ntumc-70100012-n
+    ntumc-80001472-x
+    ntumc-80002057-n
+    ntumc-80001655-n
+    ntumc-80002390-n
+    ntumc-70101233-a
+    ntumc-80002577-r
+    ntumc-70100672-a
+    ntumc-76100096-x
+    ntumc-80001393-n
+    ntumc-80002493-r
+    ntumc-80001038-r
+    ntumc-80002227-v
+    ntumc-77000088-r
+    ntumc-80001586-v
+    ntumc-80001699-v
+    ntumc-70101189-v
+    ntumc-80001891-a
+    ntumc-80000222-v
+    ntumc-77000089-r
+    ntumc-77000071-n
+    ntumc-80001551-v
+    ntumc-80000175-n
+    ntumc-76100010-x
+    ntumc-80001851-n
+    ntumc-80001315-v
+    ntumc-80002093-n
+    ntumc-80001143-r
+    ntumc-80002348-n
+    ntumc-70101060-r
+    ntumc-80001341-v
+    ntumc-76100054-x
+    ntumc-70100022-r
+    ntumc-76100143-x
+    ntumc-80001343-v
+    ntumc-80000625-v
+    ntumc-80002124-a
+    ntumc-80001285-r
+    ntumc-76100049-x
+    ntumc-80002064-a
+    ntumc-80002530-n
+    ntumc-80001466-a
+    ntumc-80001903-v
+    ntumc-80001482-v
+    ntumc-80001377-v
+    ntumc-80001158-n
+    ntumc-80002405-x
+    ntumc-80001864-n
+    ntumc-80001357-v
+    ntumc-80002116-v
+    ntumc-70100563-v
+    ntumc-80001650-v
+    ntumc-80002590-n
+    ntumc-70100007-v
+    ntumc-80002533-r
+    ntumc-70100083-a
+    ntumc-80002088-a
+    ntumc-80001451-v
+    ntumc-80001663-r
+    ntumc-80001361-v
+    ntumc-80001619-a
+    ntumc-70100021-v
+    ntumc-80001400-a
+    ntumc-80002174-v
+    ntumc-80002583-a
+    ntumc-70101239-r
+    ntumc-70100205-v
+    ntumc-80001814-r
+    ntumc-80001822-a
+    ntumc-80000358-v
+    ntumc-80001943-n
+    ntumc-80002237-v
+    ntumc-80000645-v
+    ntumc-80001847-r
+    ntumc-80002192-n
+    ntumc-80001471-v
+    ntumc-80001832-n
+    ntumc-70100080-a
+    ntumc-80002461-a
+    ntumc-80001538-v
+    ntumc-80002531-v
+    ntumc-70100343-v
+    ntumc-80001633-v
+    ntumc-80001755-v
+    ntumc-80002364-a
+    ntumc-80001774-n
+    ntumc-70100155-n
+    ntumc-80002506-v
+    ntumc-h0000003-n
+    ntumc-80000017-n
+    ntumc-80002085-x
+    ntumc-80002200-v
+    ntumc-70100722-v
+    ntumc-80001563-v
+    ntumc-80001877-a
+    ntumc-90000589-n
+    ntumc-80001479-v
+    ntumc-80001351-v
+    ntumc-70100009-r
+    ntumc-70100057-v
+    ntumc-80002505-r
+    ntumc-80002231-n
+    ntumc-76100109-x
+    ntumc-77000013-n
+    ntumc-80002172-v
+    ntumc-70101244-a
+    ntumc-80002430-v
+    ntumc-80001589-v
+    ntumc-80002532-r
+    ntumc-80001360-v
+    ntumc-80002473-n
+    ntumc-90000580-n
+    ntumc-80001409-a
+    ntumc-80001749-v
+    ntumc-70100889-a
+    ntumc-80001173-n
+    ntumc-80001922-n
+    ntumc-80001923-n
+    ntumc-80002193-v
+    ntumc-80001180-z
+    ntumc-80002566-n
+    ntumc-80001333-v
+    ntumc-80000112-n
+    ntumc-80001142-a
+    ntumc-76100008-x
+    ntumc-80001046-n
+    ntumc-80001823-v
+    ntumc-80002006-a
+    ntumc-80001918-n
+    ntumc-80002039-v
+    ntumc-80000568-a
+    ntumc-80002513-v
+    ntumc-80001220-n
+    ntumc-80002202-v
+    ntumc-80001606-v
+    ntumc-80002544-a
+    ntumc-76100036-x
+    ntumc-80002166-n
+    ntumc-80002255-v
+    ntumc-80000024-n
+    ntumc-90000026-n
+    ntumc-80002374-n
+    ntumc-80002377-n
+    ntumc-80001396-a
+    ntumc-80000159-v
+    ntumc-80002511-v
+    ntumc-80002090-n
+    ntumc-80001123-n
+    ntumc-80002515-v
+    ntumc-80002232-r
+    ntumc-80000166-n
+    ntumc-80001986-r
+    ntumc-80000432-n
+    ntumc-80002000-v
+    ntumc-76100120-x
+    ntumc-80000512-a
+    ntumc-80002084-v
+    ntumc-80000504-n
+    ntumc-80002391-v
+    ntumc-80001844-n
+    ntumc-80000392-n
+    ntumc-76100141-x
+    ntumc-80001183-v
+    ntumc-80002470-v
+    ntumc-80001519-a
+    ntumc-80000020-n
+    ntumc-90000035-n
+    ntumc-90000199-n
+    ntumc-80001620-a
+    ntumc-80000750-n
+    ntumc-80001447-a
+    ntumc-70101228-a
+    ntumc-80001437-n
+    ntumc-76100001-x
+    ntumc-80002403-n
+    ntumc-70100011-r
+    ntumc-76100117-x
+    ntumc-80001636-a
+    ntumc-80002152-n
+    ntumc-80001662-v
+    ntumc-76100081-x
+    ntumc-90000031-n
+    ntumc-80001972-a
+    ntumc-80001122-v
+    ntumc-80001724-n
+    ntumc-80001412-n
+    ntumc-80001703-n
+    ntumc-80001404-n
+    ntumc-76100070-x
+    ntumc-90000188-n
+    ntumc-80001824-a
+    ntumc-80002478-x
+    ntumc-80001430-a
+    ntumc-80001478-n
+    ntumc-76100138-x
+    ntumc-80001952-v
+    ntumc-80001124-v
+    ntumc-80001591-n
+    ntumc-70100043-a
+    ntumc-80002074-n
+    ntumc-80001417-a
+    ntumc-80002517-r
+    ntumc-76100136-x
+    ntumc-80001069-n
+    ntumc-80001036-n
+    ntumc-70100781-a
+    ntumc-80000805-v
+    ntumc-80001661-n
+    ntumc-80002073-n
+    ntumc-70100721-a
+    ntumc-76100124-x
+    ntumc-80000086-a
+    ntumc-80002022-n
+    ntumc-80001671-v
+    ntumc-80001100-a
+    ntumc-80001037-a
+    ntumc-90000595-v
+    ntumc-70100471-a
+    ntumc-80002219-n
+    ntumc-76100031-x
+    ntumc-80002592-r
+    ntumc-80001764-n
+    ntumc-80002218-a
+    ntumc-80001292-v
+    ntumc-80001675-r
+    ntumc-80001739-n
+    ntumc-80001401-n
+    ntumc-76100110-x
+    ntumc-80002238-n
+    ntumc-80001856-n
+    ntumc-90000006-n
+    ntumc-80002392-v
+    ntumc-90000009-n
+    ntumc-77000026-n
+    ntumc-80002581-a
+    ntumc-80002553-n
+    ntumc-80002175-n
+    ntumc-80000576-n
+    ntumc-80001552-n
+    ntumc-80002421-v
+    ntumc-80001179-z
+    ntumc-80001169-x
+    ntumc-80002018-n
+    ntumc-80001332-v
+    ntumc-80001190-n
+    ntumc-80001127-n
+    ntumc-80001889-a
+    ntumc-90000475-n
+    ntumc-80002406-n
+    ntumc-80001098-a
+    ntumc-80001080-v
+    ntumc-80002135-v
+    ntumc-70100077-a
+    ntumc-80001692-n
+    ntumc-80002593-r
+    ntumc-80001956-v
+    ntumc-76100118-x
+    ntumc-80001994-x
+    ntumc-80000791-n
+    ntumc-80002136-v
+    ntumc-80001831-v
+    ntumc-70100453-a
+    ntumc-90000596-n
+    ntumc-80001593-v
+    ntumc-76100046-x
+    ntumc-80002472-n
+    ntumc-80002063-a
+    ntumc-70101231-a
+    ntumc-80002424-v
+    ntumc-80001059-v
+    ntumc-77000065-n
+    ntumc-80001408-v
+    ntumc-80001455-n
+    ntumc-70100324-a
+    ntumc-80001697-n
+    ntumc-80001337-n
+    ntumc-80000557-v
+    ntumc-80002349-n
+    ntumc-80000046-r
+    ntumc-76100051-x
+    ntumc-80000743-n
+    ntumc-80001107-a
+    ntumc-80001669-r
+    ntumc-80000739-n
+    ntumc-80001685-n
+    ntumc-80002574-a
+    ntumc-80002224-n
+    ntumc-70100566-r
+    ntumc-80002514-n
+    ntumc-80000933-n
+    ntumc-80002181-n
+    ntumc-80000220-n
+    ntumc-80001657-r
+    ntumc-70100939-v
+    ntumc-80001677-v
+    ntumc-80001087-v
+    ntumc-80001942-n
+    ntumc-80002474-v
+    ntumc-80002170-v
+    ntumc-80001265-a
+    ntumc-80002476-a
+    ntumc-80001133-n
+    ntumc-70101215-a
+    ntumc-76100101-x
+    ntumc-80002388-n
+    ntumc-76100014-x
+    ntumc-70100716-a
+    ntumc-80000983-n
+    ntumc-80000261-a
+    ntumc-80001698-n
+    ntumc-90000088-n
+    ntumc-80001476-v
+    ntumc-80001152-a
+    ntumc-80001912-v
+    ntumc-80002062-n
+    ntumc-76100032-x
+    ntumc-90000583-n
+    ntumc-80001281-a
+    ntumc-80001666-v
+    ntumc-80002070-v
+    ntumc-80001592-v
+    ntumc-80001804-n
+    ntumc-80001962-n
+    ntumc-80002413-n
+    ntumc-76100048-x
+    ntumc-80001284-v
+    ntumc-80001686-n
+    ntumc-76100003-x
+    ntumc-80001313-n
+    ntumc-90000099-n
+    ntumc-80001266-v
+    ntumc-80001870-v
+    ntumc-77000012-n
+    ntumc-80001125-a
+    ntumc-80002468-n
+    ntumc-80001141-v
+    ntumc-80001581-n
+    ntumc-80002050-n
+    ntumc-80000332-n
+    ntumc-80001880-v
+    ntumc-70101241-v
+    ntumc-80000371-n
+    ntumc-80001327-a
+    ntumc-80002151-v
+    ntumc-80002221-a
+    ntumc-80001138-v
+    ntumc-77000017-n
+    ntumc-70101028-a
+    ntumc-80001217-a
+    ntumc-80002196-n
+    ntumc-70101031-a
+    ntumc-80002429-n
+    ntumc-80001533-n
+    ntumc-80001560-n
+    ntumc-80002484-v
+    ntumc-76100095-x
+    ntumc-70100049-a
+    ntumc-80002155-a
+    ntumc-80001094-a
+    ntumc-80002144-n
+    ntumc-80002440-n
+    ntumc-80001884-n
+    ntumc-77000018-n
+    ntumc-80001985-v
+    ntumc-80002235-v
+    ntumc-80000738-n
+    ntumc-80001464-a
+    ntumc-80002502-n
+    ntumc-80002091-v
+    ntumc-70101171-v
+    ntumc-0000074-n
+    ntumc-80002087-n
+    ntumc-80001711-z
+    ntumc-70101157-v
+    ntumc-80001293-v
+    ntumc-70100081-v
+    ntumc-80000269-n
+    ntumc-0000081-n
+    ntumc-80001457-v
+    ntumc-80000328-n
+    ntumc-80002162-n
+    ntumc-70100417-v
+    ntumc-80001469-n
+    ntumc-76100011-x
+    ntumc-80002199-a
+    ntumc-80000053-n
+    ntumc-80002447-n
+    ntumc-90000470-n
+    ntumc-70100066-a
+    ntumc-80001850-v
+    ntumc-80001518-a
+    ntumc-76100066-x
+    ntumc-80001221-n
+    ntumc-70100315-n
+    ntumc-80001436-v
+    ntumc-90000142-n
+    ntumc-80001378-n
+    ntumc-76100133-x
+    ntumc-80001189-v
+    ntumc-80001882-v
+    ntumc-80001208-v
+    ntumc-80002393-v
+    ntumc-80001310-v
+    ntumc-80002206-n
+    ntumc-90000330-n
+    ntumc-80001328-v
+    ntumc-70100056-a
+    ntumc-80002575-r
+    ntumc-80001381-v
+    ntumc-77000040-n
+    ntumc-80001869-n
+    ntumc-80001825-v
+    ntumc-80001741-v
+    ntumc-76100086-x
+    ntumc-80002495-v
+    ntumc-80002004-v
+    ntumc-80001195-v
+    ntumc-80001232-v
+    ntumc-80002119-n
+    ntumc-80000761-n
+    ntumc-80001033-v
+    ntumc-80001485-a
+    ntumc-80002164-n
+    ntumc-80002584-a
+    ntumc-80001134-a
+    ntumc-90000332-n
+    ntumc-76100019-x
+    ntumc-80002582-a
+    ntumc-76100037-x
+    ntumc-70101242-v
+    ntumc-80001947-v
+    ntumc-80000582-n
+    ntumc-80001273-v
+    ntumc-70100399-a
+    ntumc-80002489-a
+    ntumc-80000505-a
+    ntumc-80001799-n
+    ntumc-80001274-n
+    ntumc-80000310-a
+    ntumc-80001670-n
+    ntumc-80002065-a
+    ntumc-80001376-n
+    ntumc-80001753-v
+    ntumc-80001683-n
+    ntumc-80001899-a
+    ntumc-77000113-a
+    ntumc-80000312-v
+    ntumc-80001900-n
+    ntumc-77000109-n
+    ntumc-70101237-a
+    ntumc-80001414-v
+    ntumc-80001386-x
+    ntumc-80000856-r
+    ntumc-80001035-v
+    ntumc-80001556-a
+    ntumc-80000600-n
+    ntumc-90000100-n
+    ntumc-80002427-n
+    ntumc-80001761-v
+    ntumc-80001913-v
+    ntumc-70100574-a
+    ntumc-80001516-v
+    ntumc-76100029-x
+    ntumc-80001420-v
+    ntumc-76100093-x
+    ntumc-80002542-a
+    ntumc-70100647-v
+    ntumc-80002509-n
+    ntumc-80002401-v
+    ntumc-80000555-v
+    ntumc-80002475-x
+    ntumc-80002131-a
+    ntumc-80001682-n
+    ntumc-80000298-n
+    ntumc-80001355-n
+    ntumc-80002500-r
+    ntumc-80002354-n
+    ntumc-80001996-x
+    ntumc-80002573-a
+    ntumc-80000273-r
+    ntumc-70100045-a
+    ntumc-90000200-n
+    ntumc-80002201-r
+    ntumc-80001459-v
+    ntumc-76100100-x
+    ntumc-80000730-v
+    ntumc-90000590-n
+    ntumc-80001836-n
+    ntumc-80000004-a
+    ntumc-80001853-v
+    ntumc-80000577-n
+    ntumc-80001779-v
+    ntumc-80001603-n
+    ntumc-80002554-r
+    ntumc-80002529-r
+    ntumc-76100006-x
+    ntumc-80001034-v
+    ntumc-80000011-n
+    ntumc-80001835-r
+    ntumc-80002466-v
+    ntumc-80002183-n
+    ntumc-80001316-v
+    ntumc-80001957-n
+    ntumc-80001673-n
+    ntumc-76100139-x
+    ntumc-80002548-n
+    ntumc-76100102-x
+    ntumc-80002043-n
+    ntumc-80002176-v
+    ntumc-70100026-v
+    ntumc-80001131-n
+    ntumc-80002344-n
+    ntumc-76100085-x
+    ntumc-80001881-v
+    ntumc-90000204-n
+    ntumc-70100033-a
+    ntumc-80000653-v
+    ntumc-70100795-a
+    ntumc-80001527-v
+    ntumc-80001288-n
+    ntumc-76100044-x
+    ntumc-80001876-v
+    ntumc-80000266-a
+    ntumc-80002512-v
+    ntumc-80002539-v
+    ntumc-90000079-n
+    ntumc-90000487-n
+    ntumc-80001462-v
+    ntumc-76100142-x
+    ntumc-80001746-v
+    ntumc-80001093-a
+    ntumc-80000155-n
+    ntumc-80001949-v
+    ntumc-80001738-n
+    ntumc-80000176-n
+    ntumc-80000603-n
+    ntumc-80001888-v
+    ntumc-80001617-v
+    ntumc-80002567-n
+    ntumc-80001499-a
+    ntumc-80001082-v
+    ntumc-80000731-v
+    ntumc-80002025-n
+    ntumc-80001773-n
+    ntumc-80000808-n
+    ntumc-77000113-r
+    ntumc-76100097-x
+    ntumc-70101087-a
+    ntumc-80002543-a
+    ntumc-80002587-n
+    ntumc-70100019-a
+    ntumc-80000293-v
+    ntumc-70101227-a
+    ntumc-80001186-x
+    ntumc-90000037-n
+    ntumc-80002096-n
+    ntumc-80001780-n
+    ntumc-80002115-r
+    ntumc-80002521-n
+    ntumc-76100125-x
+    ntumc-80001797-v
+    ntumc-80000532-n
+    ntumc-70101029-a
+    ntumc-80001838-r
+    ntumc-80002195-v
+    ntumc-80001347-n
+    ntumc-70100641-a
+    ntumc-80001937-a
+    ntumc-80001852-n
+    ntumc-80001960-v
+    ntumc-90000438-n
+    ntumc-70100602-a
+    ntumc-80001477-a
+    ntumc-80001545-n
+    ntumc-80002555-n
+    ntumc-80002185-n
+    ntumc-80002023-v
+    ntumc-80000552-n
+    ntumc-80001769-v
+    ntumc-80001385-v
+    ntumc-80002356-n
+    ntumc-80000246-v
+    ntumc-80001013-a
+    ntumc-70101221-v
+    ntumc-80001574-n
+    ntumc-80001394-n
+    ntumc-80001164-v
+    ntumc-76100132-x
+    ntumc-80002448-a
+    ntumc-80001548-n
+    ntumc-80001701-a
+    ntumc-90000325-n
+    ntumc-80001781-r
+    ntumc-80002446-v
+    ntumc-80001321-v
+    ntumc-80002435-n
+    ntumc-80001379-n
+    ntumc-80000137-n
+    ntumc-76100115-x
+    ntumc-80001103-a
+    ntumc-80002586-n
+    ntumc-80000076-n
+    ntumc-80001501-v
+    ntumc-80000062-n
+    ntumc-80002178-v
+    ntumc-80002397-n
+    ntumc-80001890-n
+    ntumc-80001760-v
+    ntumc-70100451-r
+    ntumc-80000085-a
+    ntumc-80001821-a
+    ntumc-76100060-x
+    ntumc-76100121-x
+    ntumc-80001914-a
+    ntumc-77000066-n
+    ntumc-70100588-a
+    ntumc-76100053-x
+    ntumc-80000822-n
+    ntumc-90000077-n
+    ntumc-80002434-n
+    ntumc-80002488-v
+    ntumc-80001672-v
+    ntumc-70100035-v
+    ntumc-76100112-x
+    ntumc-80002123-v
+    ntumc-80001704-a
+    ntumc-70100796-n
+    ntumc-80000416-v
+    ntumc-77000139-n
+    ntumc-70100455-a
+    ntumc-80001577-n
+    ntumc-76100140-x
+    ntumc-80002524-a
+    ntumc-80001752-v
+    ntumc-80001660-n
+    ntumc-77000059-n
+    ntumc-80001294-n
+    ntumc-80001766-v
+    ntumc-70100072-v
+    ntumc-80001312-n
+    ntumc-80000981-v
+    ntumc-80001334-v
+    ntumc-80001678-r
+    ntumc-77000114-a
+    ntumc-80001529-v
+    ntumc-70101226-v
+    ntumc-80001859-n
+    ntumc-80000208-n
+    ntumc-80002080-n
+    ntumc-80001147-v
+    ntumc-80000244-v
+    ntumc-80001340-v
+    ntumc-80000257-v
+    ntumc-80002551-v
+    ntumc-80001167-x
+    ntumc-80000055-n
+    ntumc-80002357-n
+    ntumc-80002375-n
+    ntumc-80001995-a
+    ntumc-80001920-n
+    ntumc-80001322-v
+    ntumc-70100500-v
+    ntumc-80001887-n
+    ntumc-80000692-v
+    ntumc-90000121-n
+    ntumc-80001495-a
+    ntumc-80002254-v
+    ntumc-80002345-n
+    ntumc-80002571-a
+    ntumc-76100080-x
+    ntumc-80000376-n
+    ntumc-77000094-n
+    ntumc-80002418-v
+    ntumc-80001684-n
+    ntumc-80001807-n
+    ntumc-80001484-v
+    ntumc-80001297-a
+    ntumc-80001269-v
+    ntumc-70100069-r
+    ntumc-80001544-a
+    ntumc-80000241-n
+    ntumc-80001743-v
+    ntumc-80002053-n
+    ntumc-77000123-n
+    ntumc-80001668-r
+    ntumc-80002417-v
+    ntumc-80001658-v
+    ntumc-76100058-x
+    ntumc-76100030-x
+    ntumc-76100084-x
+    ntumc-77000027-n
+    ntumc-76100000-x
+    ntumc-80001576-n
+    ntumc-80002404-x
+    ntumc-80000072-n
+    ntumc-77000075-a
+    ntumc-80002591-a
+    ntumc-80002078-n
+    ntumc-80001843-n
+    ntumc-80002439-n
+    ntumc-80001452-v
+    ntumc-80001182-v
+    ntumc-80001384-n
+    ntumc-80002142-a
+    ntumc-80001688-v
+    ntumc-80001311-n
+    ntumc-80000628-n
+    ntumc-70100661-a
+    ntumc-90000573-n
+    ntumc-76100134-x
+    ntumc-77000117-n
+    ntumc-70100515-a
+    ntumc-80002480-v
+    ntumc-76100004-x
+    ntumc-80001878-n
+    ntumc-70100734-a
+    ntumc-80001200-v
+    ntumc-76100034-x
+    ntumc-80001151-a
+    ntumc-80002395-v
+    ntumc-80001461-v
+    ntumc-80000540-n
+    ntumc-80002214-v
+    ntumc-80002497-v
+    ntumc-80002569-v
+    ntumc-80001642-a
+    ntumc-80002570-v
+    ntumc-80000100-v
+    ntumc-80002396-n
+    ntumc-80000917-n
+    ntumc-80000916-n
+    ntumc-70100068-a
+    ntumc-76100050-x
+    ntumc-80002534-n
+    ntumc-80001363-v
+    ntumc-80002572-a
+    ntumc-80002081-a
+    ntumc-80001778-n
+    ntumc-80002230-v
+    ntumc-80001309-a
+    ntumc-80001140-a
+    ntumc-80000387-v
+    ntumc-80001776-n
+    ntumc-80001547-n
+    ntumc-80002550-a
+    ntumc-80002431-n
+    ntumc-80001973-n
+    ntumc-80000034-n
+    ntumc-70100608-v
+    ntumc-76100007-x
+    ntumc-80000479-v
+    ntumc-70100581-a
+    ntumc-80002040-n
+    ntumc-76100027-x
+    ntumc-80001737-n
+    ntumc-76100023-x
+    ntumc-80000572-v
+    ntumc-80002169-v
+    ntumc-80001970-a
+    ntumc-80000142-a
+    ntumc-80001990-a
+    ntumc-77000003-n
+    ntumc-80001480-n
+    ntumc-80001323-v
+    ntumc-70100055-a
+    ntumc-80002560-r
+    ntumc-80001910-n
+    ntumc-80001944-v
+    ntumc-80001873-n
+    ntumc-80001330-x
+    ntumc-76100103-x
+    ntumc-80000016-n
+    ntumc-80001171-n
+    ntumc-80001498-n
+    ntumc-80001528-v
+    ntumc-90000049-n
+    ntumc-80000351-n
+    ntumc-80000781-n
+    ntumc-80001558-a
+    ntumc-80000602-n
+    ntumc-80002061-a
+    ntumc-80002187-v
+    ntumc-70100309-r
+    ntumc-80001413-n
+    ntumc-80002035-n
+    ntumc-80002408-n
+    ntumc-80000013-n
+    ntumc-80001410-v
+    ntumc-80001153-v
+    ntumc-80001194-v
+    ntumc-80002465-v
+    ntumc-80001907-n
+    ntumc-80001659-a
+    ntumc-80001187-x
+    ntumc-80002438-v
+    ntumc-80001862-v
+    ntumc-80001801-n
+  reverse relation is missing
+    ntumc-01899360-a: {'type': 'also', 'target': 'ntumc-00067767-a'}
+    ntumc-01638438-a: {'type': 'also', 'target': 'ntumc-00973844-a'}
+    ntumc-02317327-a: {'type': 'also', 'target': 'ntumc-02043898-a'}
+    ntumc-02483267-v: {'type': 'is_entailed_by', 'target': 'ntumc-02309621-v'}
+    ntumc-01835496-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002188-v'}
+    ntumc-02244472-a: {'type': 'also', 'target': 'ntumc-01360692-a'}
+    ntumc-01382086-a: {'type': 'also', 'target': 'ntumc-02385102-a'}
+    ntumc-00384411-v: {'type': 'is_caused_by', 'target': 'ntumc-00385385-v'}
+    ntumc-00238372-v: {'type': 'is_caused_by', 'target': 'ntumc-00238542-v'}
+    ntumc-00785962-v: {'type': 'is_entailed_by', 'target': 'ntumc-00785690-v'}
+    ntumc-00173338-v: {'type': 'is_entailed_by', 'target': 'ntumc-01244351-v'}
+    ntumc-00031264-n: {'type': 'instance_hypernym', 'target': 'ntumc-h0000003-n'}
+    ntumc-00637259-v: {'type': 'is_entailed_by', 'target': 'ntumc-00639849-v'}
+    ntumc-00448680-v: {'type': 'is_caused_by', 'target': 'ntumc-00449692-v'}
+    ntumc-00219403-v: {'type': 'is_entailed_by', 'target': 'ntumc-00356789-v'}
+    ntumc-01846916-v: {'type': 'is_caused_by', 'target': 'ntumc-80001849-v'}
+    ntumc-00564151-v: {'type': 'is_caused_by', 'target': 'ntumc-00564300-v'}
+    ntumc-00314782-v: {'type': 'is_caused_by', 'target': 'ntumc-00314272-v'}
+    ntumc-00339934-v: {'type': 'is_caused_by', 'target': 'ntumc-01642924-v'}
+    ntumc-02022359-v: {'type': 'is_caused_by', 'target': 'ntumc-02022486-v'}
+    ntumc-00959827-v: {'type': 'is_entailed_by', 'target': 'ntumc-00960562-v'}
+    ntumc-01970826-v: {'type': 'is_entailed_by', 'target': 'ntumc-01968275-v'}
+    ntumc-01013040-v: {'type': 'is_entailed_by', 'target': 'ntumc-00834745-v'}
+    ntumc-00004227-v: {'type': 'is_entailed_by', 'target': 'ntumc-00004819-v'}
+    ntumc-00469030-v: {'type': 'is_caused_by', 'target': 'ntumc-00469187-v'}
+    ntumc-01290422-v: {'type': 'is_entailed_by', 'target': 'ntumc-01220885-v'}
+    ntumc-00303465-v: {'type': 'is_caused_by', 'target': 'ntumc-00303661-v'}
+    ntumc-00027167-n: {'type': 'instance_hypernym', 'target': 'ntumc-90000045-n'}
+    ntumc-02074092-a: {'type': 'also', 'target': 'ntumc-01595596-a'}
+    ntumc-02753426-v: {'type': 'is_caused_by', 'target': 'ntumc-02753642-v'}
+    ntumc-00679147-a: {'type': 'also', 'target': 'ntumc-02274253-a'}
+    ntumc-00001740-n: {'type': 'instance_hypernym', 'target': 'ntumc-90000078-n'}
+    ntumc-00935500-a: {'type': 'also', 'target': 'ntumc-01643620-a'}
+    ntumc-02066939-v: {'type': 'is_caused_by', 'target': 'ntumc-02067689-v'}
+    ntumc-01329239-v: {'type': 'is_entailed_by', 'target': 'ntumc-01667449-v'}
+    ntumc-01984902-v: {'type': 'is_entailed_by', 'target': 'ntumc-01543123-v'}
+    ntumc-01209220-n: {'type': 'is_caused_by', 'target': 'ntumc-80000357-n'}
+    ntumc-01280014-v: {'type': 'is_entailed_by', 'target': 'ntumc-00362128-v'}
+    ntumc-01150915-a: {'type': 'also', 'target': 'ntumc-02260035-a'}
+    ntumc-01807219-a: {'type': 'also', 'target': 'ntumc-02015571-a'}
+    ntumc-02379753-v: {'type': 'is_caused_by', 'target': 'ntumc-02380571-v'}
+    ntumc-00204077-a: {'type': 'also', 'target': 'ntumc-01987341-a'}
+    ntumc-01222360-a: {'type': 'also', 'target': 'ntumc-01225398-a'}
+    ntumc-01762283-v: {'type': 'is_entailed_by', 'target': 'ntumc-01803641-v'}
+    ntumc-01115585-v: {'type': 'is_entailed_by', 'target': 'ntumc-01118081-v'}
+    ntumc-01791973-v: {'type': 'is_caused_by', 'target': 'ntumc-01790383-v'}
+    ntumc-01201856-v: {'type': 'is_entailed_by', 'target': 'ntumc-01202068-v'}
+    ntumc-00024047-v: {'type': 'is_caused_by', 'target': 'ntumc-00098083-v'}
+    ntumc-02681524-v: {'type': 'is_caused_by', 'target': 'ntumc-02681639-v'}
+    ntumc-01655347-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002254-v'}
+    ntumc-02462386-v: {'type': 'is_entailed_by', 'target': 'ntumc-02473431-v'}
+    ntumc-00870213-v: {'type': 'is_entailed_by', 'target': 'ntumc-01819554-v'}
+    ntumc-02251743-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001319-a'}
+    ntumc-00156601-v: {'type': 'is_entailed_by', 'target': 'ntumc-00428418-v'}
+    ntumc-01983771-v: {'type': 'is_entailed_by', 'target': 'ntumc-02062632-v'}
+    ntumc-00843468-v: {'type': 'is_entailed_by', 'target': 'ntumc-02497992-v'}
+    ntumc-01952907-a: {'type': 'is_caused_by', 'target': 'ntumc-80001674-v'}
+    ntumc-01945516-v: {'type': 'is_entailed_by', 'target': 'ntumc-01927992-v'}
+    ntumc-01156834-v: {'type': 'is_entailed_by', 'target': 'ntumc-01197338-v'}
+    ntumc-02169891-v: {'type': 'is_entailed_by', 'target': 'ntumc-02189168-v'}
+    ntumc-02073113-a: {'type': 'also', 'target': 'ntumc-02064745-a'}
+    ntumc-01543123-v: {'type': 'is_caused_by', 'target': 'ntumc-01543998-v'}
+    ntumc-05142641-n: {'type': 'is_caused_by', 'target': 'ntumc-80001846-a'}
+    ntumc-01723308-a: {'type': 'also', 'target': 'ntumc-00958151-a'}
+    ntumc-01989669-a: {'type': 'also', 'target': 'ntumc-00685638-a'}
+    ntumc-00260648-v: {'type': 'is_entailed_by', 'target': 'ntumc-00262076-v'}
+    ntumc-00601043-v: {'type': 'is_caused_by', 'target': 'ntumc-00601378-v'}
+    ntumc-01462005-v: {'type': 'is_entailed_by', 'target': 'ntumc-01418536-v'}
+    ntumc-00007846-n: {'type': 'instance_hypernym', 'target': 'ntumc-90000070-n'}
+    ntumc-01570935-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001422-v'}
+    ntumc-01787106-v: {'type': 'is_caused_by', 'target': 'ntumc-01785971-v'}
+    ntumc-01798936-v: {'type': 'is_entailed_by', 'target': 'ntumc-01816645-v'}
+    ntumc-02207206-v: {'type': 'is_entailed_by', 'target': 'ntumc-02325968-v'}
+    ntumc-00322847-v: {'type': 'is_entailed_by', 'target': 'ntumc-01358855-v'}
+    ntumc-02166346-a: {'type': 'also', 'target': 'ntumc-02245403-a'}
+    ntumc-02130524-v: {'type': 'is_entailed_by', 'target': 'ntumc-02150510-v'}
+    ntumc-00366691-a: {'type': 'also', 'target': 'ntumc-00402419-a'}
+    ntumc-01574036-a: {'type': 'also', 'target': 'ntumc-01569965-a'}
+    ntumc-11418138-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002235-v'}
+    ntumc-01562061-v: {'type': 'is_caused_by', 'target': 'ntumc-01562209-v'}
+    ntumc-00896555-a: {'type': 'also', 'target': 'ntumc-00940437-a'}
+    ntumc-02603699-v: {'type': 'is_entailed_by', 'target': 'ntumc-02614387-v'}
+    ntumc-01555133-a: {'type': 'also', 'target': 'ntumc-01556355-a'}
+    ntumc-00889831-a: {'type': 'also', 'target': 'ntumc-01411065-a'}
+    ntumc-00428000-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002039-v'}
+    ntumc-00500638-v: {'type': 'is_caused_by', 'target': 'ntumc-00500834-v'}
+    ntumc-02194286-v: {'type': 'is_caused_by', 'target': 'ntumc-02191766-v'}
+    ntumc-80001524-n: {'type': 'is_caused_by', 'target': 'ntumc-02233898-v'}
+    ntumc-01989053-v: {'type': 'is_caused_by', 'target': 'ntumc-01989562-v'}
+    ntumc-10601078-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001111-v'}
+    ntumc-00419137-v: {'type': 'is_caused_by', 'target': 'ntumc-00419375-v'}
+    ntumc-01675780-v: {'type': 'is_entailed_by', 'target': 'ntumc-01639364-v'}
+    ntumc-00151689-v: {'type': 'is_entailed_by', 'target': 'ntumc-00428247-v'}
+    ntumc-01072262-v: {'type': 'is_entailed_by', 'target': 'ntumc-01100145-v'}
+    ntumc-01277974-v: {'type': 'is_entailed_by', 'target': 'ntumc-02040054-v'}
+    ntumc-00829745-a: {'type': 'also', 'target': 'ntumc-01421077-a'}
+    ntumc-15245990-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001038-r'}
+    ntumc-01249724-v: {'type': 'is_entailed_by', 'target': 'ntumc-01387022-v'}
+    ntumc-02220461-v: {'type': 'is_entailed_by', 'target': 'ntumc-02255081-v'}
+    ntumc-01942718-v: {'type': 'is_entailed_by', 'target': 'ntumc-01940248-v'}
+    ntumc-02064131-v: {'type': 'is_caused_by', 'target': 'ntumc-02086963-v'}
+    ntumc-00007012-v: {'type': 'is_entailed_by', 'target': 'ntumc-01733829-v'}
+    ntumc-01904930-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001099-n'}
+    ntumc-01864230-v: {'type': 'is_caused_by', 'target': 'ntumc-01857717-v'}
+    ntumc-01344140-v: {'type': 'is_caused_by', 'target': 'ntumc-01344293-v'}
+    ntumc-00652900-v: {'type': 'is_entailed_by', 'target': 'ntumc-00679389-v'}
+    ntumc-00445169-v: {'type': 'is_entailed_by', 'target': 'ntumc-00374135-v'}
+    ntumc-02366200-a: {'type': 'also', 'target': 'ntumc-02400218-a'}
+    ntumc-01740892-a: {'type': 'also', 'target': 'ntumc-00302761-a'}
+    ntumc-01519977-v: {'type': 'is_entailed_by', 'target': 'ntumc-01348987-v'}
+    ntumc-00062397-v: {'type': 'is_entailed_by', 'target': 'ntumc-00062203-v'}
+    ntumc-07420770-n: {'type': 'is_caused_by', 'target': 'ntumc-80001874-v'}
+    ntumc-01258617-a: {'type': 'also', 'target': 'ntumc-01261867-a'}
+    ntumc-01795428-v: {'type': 'is_caused_by', 'target': 'ntumc-01786419-v'}
+    ntumc-02570684-v: {'type': 'is_entailed_by', 'target': 'ntumc-02571511-v'}
+    ntumc-02172888-v: {'type': 'is_entailed_by', 'target': 'ntumc-02190077-v'}
+    ntumc-01113806-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-01613463-a: {'type': 'also', 'target': 'ntumc-00620585-a'}
+    ntumc-01592456-v: {'type': 'is_entailed_by', 'target': 'ntumc-01732713-v'}
+    ntumc-00372665-v: {'type': 'is_entailed_by', 'target': 'ntumc-00397192-v'}
+    ntumc-00963570-v: {'type': 'is_entailed_by', 'target': 'ntumc-00989201-v'}
+    ntumc-02428924-v: {'type': 'is_caused_by', 'target': 'ntumc-02598143-v'}
+    ntumc-01855606-v: {'type': 'is_entailed_by', 'target': 'ntumc-00413876-v'}
+    ntumc-02410855-v: {'type': 'is_entailed_by', 'target': 'ntumc-02568672-v'}
+    ntumc-01926376-a: {'type': 'also', 'target': 'ntumc-02074092-a'}
+    ntumc-00162386-a: {'type': 'also', 'target': 'ntumc-00091311-a'}
+    ntumc-00032297-v: {'type': 'is_caused_by', 'target': 'ntumc-00859937-v'}
+    ntumc-00458471-v: {'type': 'is_entailed_by', 'target': 'ntumc-01663920-v'}
+    ntumc-02608347-v: {'type': 'is_caused_by', 'target': 'ntumc-00348746-v'}
+    ntumc-02319428-v: {'type': 'is_entailed_by', 'target': 'ntumc-02351467-v'}
+    ntumc-00670741-a: {'type': 'also', 'target': 'ntumc-01451498-a'}
+    ntumc-02270648-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002232-r'}
+    ntumc-01999766-a: {'type': 'also', 'target': 'ntumc-02375828-a'}
+    ntumc-00501048-v: {'type': 'is_caused_by', 'target': 'ntumc-00501159-v'}
+    ntumc-01807882-v: {'type': 'is_entailed_by', 'target': 'ntumc-00793785-v'}
+    ntumc-02176268-v: {'type': 'is_caused_by', 'target': 'ntumc-02181538-v'}
+    ntumc-01072949-v: {'type': 'is_entailed_by', 'target': 'ntumc-01076615-v'}
+    ntumc-02153709-v: {'type': 'is_entailed_by', 'target': 'ntumc-02292265-v'}
+    ntumc-01831531-v: {'type': 'is_caused_by', 'target': 'ntumc-00270005-v'}
+    ntumc-00378664-v: {'type': 'is_entailed_by', 'target': 'ntumc-02485322-v'}
+    ntumc-01773346-v: {'type': 'is_caused_by', 'target': 'ntumc-01773535-v'}
+    ntumc-01983134-v: {'type': 'is_caused_by', 'target': 'ntumc-01975587-v'}
+    ntumc-00812580-v: {'type': 'is_entailed_by', 'target': 'ntumc-00697589-v'}
+    ntumc-01997119-v: {'type': 'is_caused_by', 'target': 'ntumc-01997512-v'}
+    ntumc-00170695-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002221-a'}
+    ntumc-07314838-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001138-v'}
+    ntumc-01968569-v: {'type': 'is_entailed_by', 'target': 'ntumc-02008066-v'}
+    ntumc-01527271-v: {'type': 'is_entailed_by', 'target': 'ntumc-01575388-v'}
+    ntumc-01955984-v: {'type': 'is_entailed_by', 'target': 'ntumc-01930117-v'}
+    ntumc-00404642-v: {'type': 'is_entailed_by', 'target': 'ntumc-01632103-v'}
+    ntumc-02123672-v: {'type': 'is_caused_by', 'target': 'ntumc-02125641-v'}
+    ntumc-80002095-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002096-n'}
+    ntumc-00827730-v: {'type': 'is_entailed_by', 'target': 'ntumc-00769834-v'}
+    ntumc-00005041-v: {'type': 'is_entailed_by', 'target': 'ntumc-01198101-v'}
+    ntumc-02533313-a: {'type': 'also', 'target': 'ntumc-01156112-a'}
+    ntumc-02106506-v: {'type': 'is_entailed_by', 'target': 'ntumc-02118933-v'}
+    ntumc-14925526-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002129-v'}
+    ntumc-00598502-v: {'type': 'is_caused_by', 'target': 'ntumc-00830498-v'}
+    ntumc-01925372-a: {'type': 'also', 'target': 'ntumc-00464513-a'}
+    ntumc-00935987-v: {'type': 'is_caused_by', 'target': 'ntumc-00937023-v'}
+    ntumc-00438567-a: {'type': 'also', 'target': 'ntumc-00303727-a'}
+    ntumc-00226566-v: {'type': 'is_caused_by', 'target': 'ntumc-00227165-v'}
+    ntumc-01919391-v: {'type': 'is_caused_by', 'target': 'ntumc-02084380-v'}
+    ntumc-01218593-n: {'type': 'is_caused_by', 'target': 'ntumc-80001396-a'}
+    ntumc-01440801-v: {'type': 'is_entailed_by', 'target': 'ntumc-01681333-v'}
+    ntumc-02487573-v: {'type': 'is_entailed_by', 'target': 'ntumc-02488168-v'}
+    ntumc-00804695-a: {'type': 'also', 'target': 'ntumc-00119875-a'}
+    ntumc-00329831-a: {'type': 'also', 'target': 'ntumc-00950272-a'}
+    ntumc-01993843-a: {'type': 'also', 'target': 'ntumc-01983797-a'}
+    ntumc-13429006-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001135-v'}
+    ntumc-01874320-v: {'type': 'is_caused_by', 'target': 'ntumc-01874424-v'}
+    ntumc-01001945-a: {'type': 'also', 'target': 'ntumc-01001689-a'}
+    ntumc-01275562-a: {'type': 'is_entailed_by', 'target': 'ntumc-80002224-n'}
+    ntumc-01928838-v: {'type': 'is_entailed_by', 'target': 'ntumc-01904930-v'}
+    ntumc-01257173-v: {'type': 'is_entailed_by', 'target': 'ntumc-01442578-v'}
+    ntumc-00152629-a: {'type': 'is_caused_by', 'target': 'ntumc-80001566-a'}
+    ntumc-02122164-v: {'type': 'is_caused_by', 'target': 'ntumc-00064643-v'}
+    ntumc-01426397-v: {'type': 'is_entailed_by', 'target': 'ntumc-01428578-v'}
+    ntumc-01794363-v: {'type': 'is_caused_by', 'target': 'ntumc-01794523-v'}
+    ntumc-01849221-v: {'type': 'is_entailed_by', 'target': 'ntumc-01433294-v'}
+    ntumc-02259829-v: {'type': 'is_entailed_by', 'target': 'ntumc-02298632-v'}
+    ntumc-02076280-v: {'type': 'is_caused_by', 'target': 'ntumc-02076501-v'}
+    ntumc-00594337-v: {'type': 'is_entailed_by', 'target': 'ntumc-00610374-v'}
+    ntumc-00231557-v: {'type': 'is_caused_by', 'target': 'ntumc-00245457-v'}
+    ntumc-00162990-a: {'type': 'also', 'target': 'ntumc-00092551-a'}
+    ntumc-02614181-v: {'type': 'is_entailed_by', 'target': 'ntumc-02618149-v'}
+    ntumc-02723754-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000480-n'}
+    ntumc-02575082-v: {'type': 'is_entailed_by', 'target': 'ntumc-02573275-v'}
+    ntumc-01462625-a: {'type': 'is_entailed_by', 'target': 'ntumc-80002212-n'}
+    ntumc-00370263-v: {'type': 'is_caused_by', 'target': 'ntumc-00372501-v'}
+    ntumc-80001516-v: {'type': 'is_caused_by', 'target': 'ntumc-00769553-v'}
+    ntumc-00364868-v: {'type': 'is_caused_by', 'target': 'ntumc-00364629-v'}
+    ntumc-01200934-v: {'type': 'is_caused_by', 'target': 'ntumc-01200440-v'}
+    ntumc-02395115-a: {'type': 'also', 'target': 'ntumc-00133851-a'}
+    ntumc-00255308-a: {'type': 'is_entailed_by', 'target': 'ntumc-80001933-v'}
+    ntumc-00931467-v: {'type': 'is_entailed_by', 'target': 'ntumc-01026728-v'}
+    ntumc-01156112-a: {'type': 'also', 'target': 'ntumc-00749230-a'}
+    ntumc-02659763-v: {'type': 'is_caused_by', 'target': 'ntumc-02660290-v'}
+    ntumc-02035919-v: {'type': 'is_entailed_by', 'target': 'ntumc-02035559-v'}
+    ntumc-02253956-v: {'type': 'is_entailed_by', 'target': 'ntumc-02253766-v'}
+    ntumc-00892379-a: {'type': 'also', 'target': 'ntumc-01411291-a'}
+    ntumc-02243806-a: {'type': 'also', 'target': 'ntumc-01360413-a'}
+    ntumc-01291069-v: {'type': 'is_caused_by', 'target': 'ntumc-01295275-v'}
+    ntumc-02225510-a: {'type': 'also', 'target': 'ntumc-02555954-a'}
+    ntumc-00133851-a: {'type': 'also', 'target': 'ntumc-02399399-a'}
+    ntumc-01834896-v: {'type': 'is_caused_by', 'target': 'ntumc-01835103-v'}
+    ntumc-01369663-a: {'type': 'also', 'target': 'ntumc-00958151-a'}
+    ntumc-01892953-a: {'type': 'also', 'target': 'ntumc-01993940-a'}
+    ntumc-01582645-v: {'type': 'is_entailed_by', 'target': 'ntumc-01690163-v'}
+    ntumc-00014742-v: {'type': 'is_entailed_by', 'target': 'ntumc-02118242-v'}
+    ntumc-07480896-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002222-v'}
+    ntumc-02009433-v: {'type': 'is_caused_by', 'target': 'ntumc-01955009-v'}
+    ntumc-00002724-v: {'type': 'is_caused_by', 'target': 'ntumc-00077950-v'}
+    ntumc-02186506-v: {'type': 'is_caused_by', 'target': 'ntumc-02186690-v'}
+    ntumc-00070939-a: {'type': 'also', 'target': 'ntumc-01570470-a'}
+    ntumc-05670343-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002222-v'}
+    ntumc-01206218-v: {'type': 'is_entailed_by', 'target': 'ntumc-01249724-v'}
+    ntumc-00789448-v: {'type': 'is_entailed_by', 'target': 'ntumc-00790509-v'}
+    ntumc-00798539-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002230-v'}
+    ntumc-01552519-v: {'type': 'is_entailed_by', 'target': 'ntumc-01322854-v'}
+    ntumc-00684480-a: {'type': 'also', 'target': 'ntumc-01989669-a'}
+    ntumc-00371264-v: {'type': 'is_entailed_by', 'target': 'ntumc-01390833-v'}
+    ntumc-00688947-a: {'type': 'also', 'target': 'ntumc-00682932-a'}
+    ntumc-01813400-a: {'type': 'also', 'target': 'ntumc-00931555-a'}
+    ntumc-00374135-v: {'type': 'is_caused_by', 'target': 'ntumc-00375865-v'}
+    ntumc-01848465-v: {'type': 'is_caused_by', 'target': 'ntumc-01154175-v'}
+    ntumc-01557774-v: {'type': 'is_caused_by', 'target': 'ntumc-01556921-v'}
+    ntumc-02071627-v: {'type': 'is_caused_by', 'target': 'ntumc-02071837-v'}
+    ntumc-05647156-n: {'type': 'is_caused_by', 'target': 'ntumc-80001870-v'}
+    ntumc-00036362-v: {'type': 'is_entailed_by', 'target': 'ntumc-00036932-v'}
+    ntumc-00055539-v: {'type': 'is_caused_by', 'target': 'ntumc-00055871-v'}
+    ntumc-01860795-v: {'type': 'is_entailed_by', 'target': 'ntumc-00808343-v'}
+    ntumc-02341266-a: {'type': 'also', 'target': 'ntumc-01675190-a'}
+    ntumc-00422090-v: {'type': 'is_caused_by', 'target': 'ntumc-02138075-v'}
+    ntumc-00611256-v: {'type': 'is_entailed_by', 'target': 'ntumc-00617605-v'}
+    ntumc-01699896-v: {'type': 'is_entailed_by', 'target': 'ntumc-01698271-v'}
+    ntumc-01944692-v: {'type': 'is_entailed_by', 'target': 'ntumc-01086854-v'}
+    ntumc-01090335-v: {'type': 'is_entailed_by', 'target': 'ntumc-01127795-v'}
+    ntumc-01225783-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002230-v'}
+    ntumc-01898129-a: {'type': 'also', 'target': 'ntumc-00067038-a'}
+    ntumc-00329227-n: {'type': 'is_caused_by', 'target': 'ntumc-80001674-v'}
+    ntumc-00053889-v: {'type': 'is_caused_by', 'target': 'ntumc-00053656-v'}
+    ntumc-01666327-v: {'type': 'is_entailed_by', 'target': 'ntumc-01670645-v'}
+    ntumc-00888786-v: {'type': 'is_entailed_by', 'target': 'ntumc-02460883-v'}
+    ntumc-00974367-v: {'type': 'is_entailed_by', 'target': 'ntumc-01591621-v'}
+    ntumc-01104637-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001035-v'}
+    ntumc-01684663-v: {'type': 'is_entailed_by', 'target': 'ntumc-01683758-v'}
+    ntumc-01201089-v: {'type': 'is_entailed_by', 'target': 'ntumc-01168468-v'}
+    ntumc-00948071-v: {'type': 'is_entailed_by', 'target': 'ntumc-00949841-v'}
+    ntumc-02525044-v: {'type': 'is_caused_by', 'target': 'ntumc-02523953-v'}
+    ntumc-02127358-v: {'type': 'is_entailed_by', 'target': 'ntumc-02127613-v'}
+    ntumc-01309701-v: {'type': 'is_entailed_by', 'target': 'ntumc-01742556-v'}
+    ntumc-08272860-n: {'type': 'has_domain_topic', 'target': 'ntumc-90000583-n'}
+    ntumc-00056930-v: {'type': 'is_entailed_by', 'target': 'ntumc-00057410-v'}
+    ntumc-00361797-v: {'type': 'is_caused_by', 'target': 'ntumc-00361952-v'}
+    ntumc-01428853-v: {'type': 'is_entailed_by', 'target': 'ntumc-00054285-v'}
+    ntumc-00249852-v: {'type': 'is_caused_by', 'target': 'ntumc-00249969-v'}
+    ntumc-01711445-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000343-v'}
+    ntumc-02271544-a: {'type': 'also', 'target': 'ntumc-00936740-a'}
+    ntumc-01166351-v: {'type': 'is_entailed_by', 'target': 'ntumc-01173208-v'}
+    ntumc-00849523-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002233-v'}
+    ntumc-01133825-v: {'type': 'is_entailed_by', 'target': 'ntumc-01135371-v'}
+    ntumc-01446901-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002207-v'}
+    ntumc-00073343-v: {'type': 'is_caused_by', 'target': 'ntumc-00073813-v'}
+    ntumc-01654377-a: {'type': 'is_entailed_by', 'target': 'ntumc-80001141-v'}
+    ntumc-00804802-v: {'type': 'is_entailed_by', 'target': 'ntumc-00773432-v'}
+    ntumc-01850315-v: {'type': 'is_entailed_by', 'target': 'ntumc-02220461-v'}
+    ntumc-00389238-v: {'type': 'is_caused_by', 'target': 'ntumc-00389406-v'}
+    ntumc-02157399-a: {'type': 'also', 'target': 'ntumc-01894758-a'}
+    ntumc-00054285-v: {'type': 'is_entailed_by', 'target': 'ntumc-00056930-v'}
+    ntumc-02124748-v: {'type': 'is_entailed_by', 'target': 'ntumc-02125460-v'}
+    ntumc-01356750-v: {'type': 'is_caused_by', 'target': 'ntumc-01356370-v'}
+    ntumc-01797347-v: {'type': 'is_entailed_by', 'target': 'ntumc-01802219-v'}
+    ntumc-01771535-v: {'type': 'is_caused_by', 'target': 'ntumc-01767949-v'}
+    ntumc-02758826-v: {'type': 'is_entailed_by', 'target': 'ntumc-02758581-v'}
+    ntumc-00806502-v: {'type': 'is_entailed_by', 'target': 'ntumc-00806314-v'}
+    ntumc-00065791-a: {'type': 'also', 'target': 'ntumc-00884778-a'}
+    ntumc-02129289-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001093-a'}
+    ntumc-02763740-v: {'type': 'is_caused_by', 'target': 'ntumc-02763283-v'}
+    ntumc-01746605-a: {'type': 'also', 'target': 'ntumc-01717117-a'}
+    ntumc-01226215-v: {'type': 'is_entailed_by', 'target': 'ntumc-01430633-v'}
+    ntumc-00377715-v: {'type': 'is_entailed_by', 'target': 'ntumc-00373766-v'}
+    ntumc-01902783-v: {'type': 'is_caused_by', 'target': 'ntumc-01848058-v'}
+    ntumc-01555416-a: {'type': 'also', 'target': 'ntumc-01556616-a'}
+    ntumc-04718563-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002211-v'}
+    ntumc-00308370-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000778-r'}
+    ntumc-01172889-a: {'type': 'also', 'target': 'ntumc-02274253-a'}
+    ntumc-01932973-a: {'type': 'also', 'target': 'ntumc-00693743-a'}
+    ntumc-00673983-v: {'type': 'is_entailed_by', 'target': 'ntumc-01777210-v'}
+    ntumc-00134701-a: {'type': 'also', 'target': 'ntumc-00562116-a'}
+    ntumc-02713184-v: {'type': 'is_caused_by', 'target': 'ntumc-02712914-v'}
+    ntumc-00941990-v: {'type': 'is_entailed_by', 'target': 'ntumc-00978549-v'}
+    ntumc-00231252-a: {'type': 'also', 'target': 'ntumc-01125429-a'}
+    ntumc-00099290-a: {'type': 'also', 'target': 'ntumc-00041361-a'}
+    ntumc-01252971-v: {'type': 'is_entailed_by', 'target': 'ntumc-01308008-v'}
+    ntumc-02106006-v: {'type': 'is_caused_by', 'target': 'ntumc-02115778-v'}
+    ntumc-01655162-a: {'type': 'is_caused_by', 'target': 'ntumc-80001202-v'}
+    ntumc-00817311-v: {'type': 'is_entailed_by', 'target': 'ntumc-00892923-v'}
+    ntumc-00069879-v: {'type': 'is_entailed_by', 'target': 'ntumc-01241490-v'}
+    ntumc-00885695-a: {'type': 'also', 'target': 'ntumc-00810916-a'}
+    ntumc-00550546-v: {'type': 'is_caused_by', 'target': 'ntumc-00550823-v'}
+    ntumc-01170052-v: {'type': 'is_entailed_by', 'target': 'ntumc-01187385-v'}
+    ntumc-01421602-a: {'type': 'also', 'target': 'ntumc-00829745-a'}
+    ntumc-00683185-a: {'type': 'also', 'target': 'ntumc-01538858-a'}
+    ntumc-02373599-a: {'type': 'also', 'target': 'ntumc-02140492-a'}
+    ntumc-00969873-v: {'type': 'is_caused_by', 'target': 'ntumc-00968211-v'}
+    ntumc-01197338-v: {'type': 'is_entailed_by', 'target': 'ntumc-01197750-v'}
+    ntumc-01555742-v: {'type': 'is_entailed_by', 'target': 'ntumc-01551195-v'}
+    ntumc-02025829-v: {'type': 'is_entailed_by', 'target': 'ntumc-02026868-v'}
+    ntumc-00654015-v: {'type': 'is_entailed_by', 'target': 'ntumc-00654446-v'}
+    ntumc-00369864-v: {'type': 'is_caused_by', 'target': 'ntumc-00370412-v'}
+    ntumc-01134238-v: {'type': 'is_caused_by', 'target': 'ntumc-01133825-v'}
+    ntumc-10077593-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002222-v'}
+    ntumc-02713594-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001955-v'}
+    ntumc-06929742-n: {'type': 'has_domain_topic', 'target': 'ntumc-70100000-n'}
+    ntumc-01128193-v: {'type': 'is_entailed_by', 'target': 'ntumc-02026433-v'}
+    ntumc-01115081-a: {'type': 'also', 'target': 'ntumc-00359862-a'}
+    ntumc-00786195-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002235-v'}
+    ntumc-01796582-v: {'type': 'is_entailed_by', 'target': 'ntumc-01805523-v'}
+    ntumc-02434238-v: {'type': 'is_caused_by', 'target': 'ntumc-02435867-v'}
+    ntumc-00511214-a: {'type': 'also', 'target': 'ntumc-00307474-a'}
+    ntumc-00672433-v: {'type': 'is_entailed_by', 'target': 'ntumc-02499629-v'}
+    ntumc-02327200-v: {'type': 'is_entailed_by', 'target': 'ntumc-02342132-v'}
+    ntumc-01496021-a: {'type': 'also', 'target': 'ntumc-00106456-a'}
+    ntumc-80000264-n: {'type': 'is_caused_by', 'target': 'ntumc-80000263-v'}
+    ntumc-00099721-v: {'type': 'is_caused_by', 'target': 'ntumc-00100551-v'}
+    ntumc-01332730-v: {'type': 'is_entailed_by', 'target': 'ntumc-01483247-v'}
+    ntumc-00358431-v: {'type': 'is_entailed_by', 'target': 'ntumc-00360092-v'}
+    ntumc-00906367-v: {'type': 'is_entailed_by', 'target': 'ntumc-00906735-v'}
+    ntumc-00373209-a: {'type': 'also', 'target': 'ntumc-00366691-a'}
+    ntumc-01271700-a: {'type': 'also', 'target': 'ntumc-00980527-a'}
+    ntumc-01133876-a: {'type': 'also', 'target': 'ntumc-00020787-a'}
+    ntumc-01888295-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001261-v'}
+    ntumc-01346804-v: {'type': 'is_caused_by', 'target': 'ntumc-01346003-v'}
+    ntumc-01168468-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000762-n'}
+    ntumc-00638981-a: {'type': 'also', 'target': 'ntumc-02418872-a'}
+    ntumc-80000408-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000407-n'}
+    ntumc-06336904-n: {'type': 'is_caused_by', 'target': 'ntumc-80000348-v'}
+    ntumc-00443670-v: {'type': 'is_caused_by', 'target': 'ntumc-00445940-v'}
+    ntumc-00059019-v: {'type': 'is_entailed_by', 'target': 'ntumc-00059559-v'}
+    ntumc-00076114-v: {'type': 'is_caused_by', 'target': 'ntumc-00075021-v'}
+    ntumc-01308160-v: {'type': 'is_entailed_by', 'target': 'ntumc-01306853-v'}
+    ntumc-00795475-v: {'type': 'is_entailed_by', 'target': 'ntumc-02642814-v'}
+    ntumc-01447257-v: {'type': 'is_entailed_by', 'target': 'ntumc-01389329-v'}
+    ntumc-00632627-v: {'type': 'is_entailed_by', 'target': 'ntumc-00634906-v'}
+    ntumc-00026153-v: {'type': 'is_caused_by', 'target': 'ntumc-00025203-v'}
+    ntumc-07516997-n: {'type': 'is_caused_by', 'target': 'ntumc-80001870-v'}
+    ntumc-01340439-v: {'type': 'is_entailed_by', 'target': 'ntumc-01353405-v'}
+    ntumc-01021301-a: {'type': 'also', 'target': 'ntumc-01880531-a'}
+    ntumc-00446514-v: {'type': 'is_caused_by', 'target': 'ntumc-00446695-v'}
+    ntumc-00321486-v: {'type': 'is_entailed_by', 'target': 'ntumc-01667304-v'}
+    ntumc-01400044-v: {'type': 'is_entailed_by', 'target': 'ntumc-01279631-v'}
+    ntumc-00682932-a: {'type': 'also', 'target': 'ntumc-01537885-a'}
+    ntumc-02720544-v: {'type': 'is_caused_by', 'target': 'ntumc-02720697-v'}
+    ntumc-80000693-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000694-v'}
+    ntumc-01508368-v: {'type': 'is_entailed_by', 'target': 'ntumc-01121320-v'}
+    ntumc-00312380-v: {'type': 'is_caused_by', 'target': 'ntumc-00311559-v'}
+    ntumc-00316494-v: {'type': 'is_caused_by', 'target': 'ntumc-00316768-v'}
+    ntumc-01719302-v: {'type': 'is_entailed_by', 'target': 'ntumc-01720660-v'}
+    ntumc-00119409-a: {'type': 'also', 'target': 'ntumc-00806512-a'}
+    ntumc-01997862-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-90000583-n: {'type': 'has_domain_topic', 'target': 'ntumc-08272860-n'}
+    ntumc-00334186-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-01767163-v: {'type': 'is_caused_by', 'target': 'ntumc-01765908-v'}
+    ntumc-00442361-a: {'type': 'also', 'target': 'ntumc-00445548-a'}
+    ntumc-01395617-a: {'type': 'also', 'target': 'ntumc-00178575-a'}
+    ntumc-02530167-v: {'type': 'is_entailed_by', 'target': 'ntumc-02524171-v'}
+    ntumc-01724459-v: {'type': 'is_entailed_by', 'target': 'ntumc-01728052-v'}
+    ntumc-00257947-v: {'type': 'is_caused_by', 'target': 'ntumc-00258528-v'}
+    ntumc-02242464-v: {'type': 'is_entailed_by', 'target': 'ntumc-02247584-v'}
+    ntumc-02191546-v: {'type': 'is_entailed_by', 'target': 'ntumc-02192992-v'}
+    ntumc-02264397-v: {'type': 'is_caused_by', 'target': 'ntumc-02264179-v'}
+    ntumc-00415228-a: {'type': 'also', 'target': 'ntumc-02002227-a'}
+    ntumc-00956131-a: {'type': 'also', 'target': 'ntumc-00958151-a'}
+    ntumc-04820258-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002217-a'}
+    ntumc-00216216-v: {'type': 'is_entailed_by', 'target': 'ntumc-00398484-v'}
+    ntumc-00066800-a: {'type': 'also', 'target': 'ntumc-00885415-a'}
+    ntumc-07473441-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001153-v'}
+    ntumc-01564144-v: {'type': 'is_entailed_by', 'target': 'ntumc-02345048-v'}
+    ntumc-01777210-v: {'type': 'is_entailed_by', 'target': 'ntumc-01820302-v'}
+    ntumc-00278551-a: {'type': 'also', 'target': 'ntumc-01811997-a'}
+    ntumc-01929467-v: {'type': 'is_entailed_by', 'target': 'ntumc-01756006-v'}
+    ntumc-80001874-v: {'type': 'is_entailed_by', 'target': 'ntumc-00069879-v'}
+    ntumc-00688377-v: {'type': 'is_entailed_by', 'target': 'ntumc-00936465-v'}
+    ntumc-00744916-a: {'type': 'also', 'target': 'ntumc-02176178-a'}
+    ntumc-00773109-a: {'type': 'also', 'target': 'ntumc-00579084-a'}
+    ntumc-02309165-v: {'type': 'is_entailed_by', 'target': 'ntumc-00081072-v'}
+    ntumc-01282014-a: {'type': 'also', 'target': 'ntumc-01675190-a'}
+    ntumc-01880531-a: {'type': 'also', 'target': 'ntumc-00632438-a'}
+    ntumc-01442186-a: {'type': 'also', 'target': 'ntumc-00004413-a'}
+    ntumc-02676789-v: {'type': 'is_caused_by', 'target': 'ntumc-01158872-v'}
+    ntumc-00451838-v: {'type': 'is_caused_by', 'target': 'ntumc-00452512-v'}
+    ntumc-02058994-v: {'type': 'is_caused_by', 'target': 'ntumc-80000798-v'}
+    ntumc-01178565-v: {'type': 'is_entailed_by', 'target': 'ntumc-01176897-v'}
+    ntumc-01646021-a: {'type': 'is_entailed_by', 'target': 'ntumc-80002240-n'}
+    ntumc-00046534-v: {'type': 'is_entailed_by', 'target': 'ntumc-00052374-v'}
+    ntumc-01064286-a: {'type': 'also', 'target': 'ntumc-01066070-a'}
+    ntumc-01900408-v: {'type': 'is_caused_by', 'target': 'ntumc-01900760-v'}
+    ntumc-01120069-v: {'type': 'is_entailed_by', 'target': 'ntumc-02277448-v'}
+    ntumc-02329355-a: {'type': 'also', 'target': 'ntumc-02100709-a'}
+    ntumc-00606093-v: {'type': 'is_entailed_by', 'target': 'ntumc-00597634-v'}
+    ntumc-00670261-v: {'type': 'is_entailed_by', 'target': 'ntumc-00826509-v'}
+    ntumc-06156968-n: {'type': 'has_domain_topic', 'target': 'ntumc-90000441-n'}
+    ntumc-01372049-a: {'type': 'also', 'target': 'ntumc-02374914-a'}
+    ntumc-00430999-v: {'type': 'is_caused_by', 'target': 'ntumc-00430625-v'}
+    ntumc-07527656-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001534-v'}
+    ntumc-01337486-a: {'type': 'also', 'target': 'ntumc-02520219-a'}
+    ntumc-02016535-a: {'type': 'also', 'target': 'ntumc-01045216-a'}
+    ntumc-01907258-v: {'type': 'is_entailed_by', 'target': 'ntumc-01991744-v'}
+    ntumc-00273963-v: {'type': 'is_entailed_by', 'target': 'ntumc-01750421-v'}
+    ntumc-01942347-v: {'type': 'is_entailed_by', 'target': 'ntumc-01968275-v'}
+    ntumc-01451176-v: {'type': 'is_entailed_by', 'target': 'ntumc-01926031-v'}
+    ntumc-01813393-v: {'type': 'is_caused_by', 'target': 'ntumc-01813053-v'}
+    ntumc-01380638-v: {'type': 'is_entailed_by', 'target': 'ntumc-01385759-v'}
+    ntumc-00240571-v: {'type': 'is_caused_by', 'target': 'ntumc-00241038-v'}
+    ntumc-02015598-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000793-v'}
+    ntumc-02367363-v: {'type': 'is_caused_by', 'target': 'ntumc-02504562-v'}
+    ntumc-02521410-v: {'type': 'is_entailed_by', 'target': 'ntumc-02584097-v'}
+    ntumc-00538323-v: {'type': 'is_caused_by', 'target': 'ntumc-00538454-v'}
+    ntumc-00026385-v: {'type': 'is_caused_by', 'target': 'ntumc-00025654-v'}
+    ntumc-01870889-a: {'type': 'also', 'target': 'ntumc-02015571-a'}
+    ntumc-02258600-a: {'type': 'also', 'target': 'ntumc-01351021-a'}
+    ntumc-80000696-a: {'type': 'is_caused_by', 'target': 'ntumc-00326310-v'}
+    ntumc-00832200-a: {'type': 'also', 'target': 'ntumc-00830717-a'}
+    ntumc-00862225-v: {'type': 'is_entailed_by', 'target': 'ntumc-00862467-v'}
+    ntumc-00654625-v: {'type': 'is_entailed_by', 'target': 'ntumc-00652346-v'}
+    ntumc-01556921-v: {'type': 'is_entailed_by', 'target': 'ntumc-01520844-v'}
+    ntumc-07883031-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000266-a'}
+    ntumc-01944660-a: {'type': 'also', 'target': 'ntumc-02074092-a'}
+    ntumc-02236842-a: {'type': 'also', 'target': 'ntumc-01005063-a'}
+    ntumc-01776727-v: {'type': 'is_caused_by', 'target': 'ntumc-01817130-v'}
+    ntumc-80000407-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000409-n'}
+    ntumc-01157517-v: {'type': 'is_entailed_by', 'target': 'ntumc-01158572-v'}
+    ntumc-90000441-n: {'type': 'has_domain_topic', 'target': 'ntumc-06156968-n'}
+    ntumc-00109660-v: {'type': 'is_caused_by', 'target': 'ntumc-00126264-v'}
+    ntumc-00737973-a: {'type': 'also', 'target': 'ntumc-01753365-a'}
+    ntumc-00773432-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001826-n'}
+    ntumc-01797862-a: {'type': 'also', 'target': 'ntumc-01843092-a'}
+    ntumc-00092690-v: {'type': 'is_entailed_by', 'target': 'ntumc-02619924-v'}
+    ntumc-00397405-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-01198101-v: {'type': 'is_entailed_by', 'target': 'ntumc-01199009-v'}
+    ntumc-00419375-v: {'type': 'is_entailed_by', 'target': 'ntumc-01593254-v'}
+    ntumc-01100145-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000346-v'}
+    ntumc-00204391-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-00394562-a: {'type': 'also', 'target': 'ntumc-00366691-a'}
+    ntumc-05144663-n: {'type': 'is_caused_by', 'target': 'ntumc-80001111-v'}
+    ntumc-01200440-v: {'type': 'is_entailed_by', 'target': 'ntumc-01200245-v'}
+    ntumc-01922763-a: {'type': 'also', 'target': 'ntumc-02459109-a'}
+    ntumc-00625119-v: {'type': 'is_entailed_by', 'target': 'ntumc-00607114-v'}
+    ntumc-01977155-a: {'type': 'also', 'target': 'ntumc-02005756-a'}
+    ntumc-01309991-a: {'type': 'also', 'target': 'ntumc-01222360-a'}
+    ntumc-01387786-v: {'type': 'is_entailed_by', 'target': 'ntumc-01349318-v'}
+    ntumc-13983515-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000955-v'}
+    ntumc-01076615-v: {'type': 'is_entailed_by', 'target': 'ntumc-01114764-v'}
+    ntumc-01361414-a: {'type': 'also', 'target': 'ntumc-01148283-a'}
+    ntumc-02169702-v: {'type': 'is_entailed_by', 'target': 'ntumc-02169891-v'}
+    ntumc-00859153-v: {'type': 'is_caused_by', 'target': 'ntumc-00859325-v'}
+    ntumc-00967625-v: {'type': 'is_caused_by', 'target': 'ntumc-80001864-n'}
+    ntumc-01941093-v: {'type': 'is_entailed_by', 'target': 'ntumc-01942959-v'}
+    ntumc-02507968-a: {'type': 'also', 'target': 'ntumc-00355258-a'}
+    ntumc-01171183-v: {'type': 'is_entailed_by', 'target': 'ntumc-01175467-v'}
+    ntumc-02637938-v: {'type': 'is_entailed_by', 'target': 'ntumc-02036755-v'}
+    ntumc-01912893-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001099-n'}
+    ntumc-00442917-a: {'type': 'is_entailed_by', 'target': 'ntumc-80001034-v'}
+    ntumc-02199590-v: {'type': 'is_entailed_by', 'target': 'ntumc-02242464-v'}
+    ntumc-01086545-a: {'type': 'also', 'target': 'ntumc-02263982-a'}
+    ntumc-01170243-a: {'type': 'also', 'target': 'ntumc-02273326-a'}
+    ntumc-01151110-v: {'type': 'is_entailed_by', 'target': 'ntumc-01152396-v'}
+    ntumc-01926311-v: {'type': 'is_entailed_by', 'target': 'ntumc-02056300-v'}
+    ntumc-00588888-v: {'type': 'is_entailed_by', 'target': 'ntumc-00597385-v'}
+    ntumc-00418563-v: {'type': 'is_caused_by', 'target': 'ntumc-00417596-v'}
+    ntumc-00933821-v: {'type': 'is_entailed_by', 'target': 'ntumc-00936763-v'}
+    ntumc-01299268-v: {'type': 'is_entailed_by', 'target': 'ntumc-00317241-v'}
+    ntumc-15249636-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000556-n'}
+    ntumc-00248026-v: {'type': 'is_caused_by', 'target': 'ntumc-00249679-v'}
+    ntumc-02547586-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001973-n'}
+    ntumc-01992149-a: {'type': 'also', 'target': 'ntumc-00686081-a'}
+    ntumc-10014939-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001822-a'}
+    ntumc-02488834-v: {'type': 'is_entailed_by', 'target': 'ntumc-02490634-v'}
+    ntumc-01936753-v: {'type': 'is_entailed_by', 'target': 'ntumc-01938288-v'}
+    ntumc-02308741-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002189-n'}
+    ntumc-00758459-a: {'type': 'also', 'target': 'ntumc-00753093-a'}
+    ntumc-01780202-v: {'type': 'is_caused_by', 'target': 'ntumc-01779165-v'}
+    ntumc-00136354-a: {'type': 'also', 'target': 'ntumc-01709815-a'}
+    ntumc-01254013-v: {'type': 'is_entailed_by', 'target': 'ntumc-01253621-v'}
+    ntumc-00040804-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001992-v'}
+    ntumc-01031256-v: {'type': 'is_entailed_by', 'target': 'ntumc-01032451-v'}
+    ntumc-01856626-v: {'type': 'is_entailed_by', 'target': 'ntumc-00415044-v'}
+    ntumc-02084538-a: {'type': 'also', 'target': 'ntumc-00650351-a'}
+    ntumc-02477755-v: {'type': 'is_entailed_by', 'target': 'ntumc-02642814-v'}
+    ntumc-00366858-v: {'type': 'is_entailed_by', 'target': 'ntumc-00365810-v'}
+    ntumc-01940403-v: {'type': 'is_entailed_by', 'target': 'ntumc-01941093-v'}
+    ntumc-00903668-a: {'type': 'also', 'target': 'ntumc-00900616-a'}
+    ntumc-02594290-v: {'type': 'is_caused_by', 'target': 'ntumc-02594469-v'}
+    ntumc-00411886-a: {'type': 'also', 'target': 'ntumc-01261867-a'}
+    ntumc-02069551-v: {'type': 'is_entailed_by', 'target': 'ntumc-01853310-v'}
+    ntumc-02217266-v: {'type': 'is_entailed_by', 'target': 'ntumc-02215506-v'}
+    ntumc-01188144-v: {'type': 'is_caused_by', 'target': 'ntumc-01187740-v'}
+    ntumc-00489108-a: {'type': 'also', 'target': 'ntumc-01672607-a'}
+    ntumc-01909397-v: {'type': 'is_caused_by', 'target': 'ntumc-01909978-v'}
+    ntumc-00884011-v: {'type': 'is_entailed_by', 'target': 'ntumc-00800242-v'}
+    ntumc-00223500-v: {'type': 'is_caused_by', 'target': 'ntumc-00224901-v'}
+    ntumc-13968092-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002225-v'}
+    ntumc-02320374-v: {'type': 'is_entailed_by', 'target': 'ntumc-02319050-v'}
+    ntumc-01947887-v: {'type': 'is_entailed_by', 'target': 'ntumc-01947543-v'}
+    ntumc-02040049-a: {'type': 'also', 'target': 'ntumc-01172889-a'}
+    ntumc-80000695-a: {'type': 'is_caused_by', 'target': 'ntumc-00326049-v'}
+    ntumc-00266197-v: {'type': 'is_caused_by', 'target': 'ntumc-00266586-v'}
+    ntumc-01577635-v: {'type': 'is_entailed_by', 'target': 'ntumc-01579622-v'}
+    ntumc-00078760-v: {'type': 'is_entailed_by', 'target': 'ntumc-00081725-v'}
+    ntumc-01186428-v: {'type': 'is_entailed_by', 'target': 'ntumc-01186958-v'}
+    ntumc-00846052-a: {'type': 'also', 'target': 'ntumc-00715140-a'}
+    ntumc-02499629-v: {'type': 'is_entailed_by', 'target': 'ntumc-02502037-v'}
+    ntumc-01654900-a: {'type': 'is_caused_by', 'target': 'ntumc-80001122-v'}
+    ntumc-01711965-v: {'type': 'is_entailed_by', 'target': 'ntumc-01710481-v'}
+    ntumc-01794668-v: {'type': 'is_caused_by', 'target': 'ntumc-01792567-v'}
+    ntumc-01812950-v: {'type': 'is_caused_by', 'target': 'ntumc-01813499-v'}
+    ntumc-01652731-v: {'type': 'is_caused_by', 'target': 'ntumc-01652895-v'}
+    ntumc-02005948-v: {'type': 'is_entailed_by', 'target': 'ntumc-00413432-v'}
+    ntumc-02238462-a: {'type': 'also', 'target': 'ntumc-01005675-a'}
+    ntumc-01898893-v: {'type': 'is_entailed_by', 'target': 'ntumc-01899017-v'}
+    ntumc-02759614-v: {'type': 'is_entailed_by', 'target': 'ntumc-02760139-v'}
+    ntumc-00317468-v: {'type': 'is_caused_by', 'target': 'ntumc-00317569-v'}
+    ntumc-10639925-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002222-v'}
+    ntumc-01657977-v: {'type': 'is_entailed_by', 'target': 'ntumc-01162143-v'}
+    ntumc-01361863-a: {'type': 'also', 'target': 'ntumc-01149494-a'}
+    ntumc-01546111-v: {'type': 'is_caused_by', 'target': 'ntumc-01546768-v'}
+    ntumc-05637965-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000586-v'}
+    ntumc-02540347-v: {'type': 'is_caused_by', 'target': 'ntumc-02539788-v'}
+    ntumc-00589344-a: {'type': 'is_entailed_by', 'target': 'ntumc-80000261-a'}
+    ntumc-01131043-a: {'type': 'also', 'target': 'ntumc-01303776-a'}
+    ntumc-00816481-a: {'type': 'also', 'target': 'ntumc-01535709-a'}
+    ntumc-01992503-v: {'type': 'is_entailed_by', 'target': 'ntumc-02053941-v'}
+    ntumc-01569965-a: {'type': 'also', 'target': 'ntumc-00149861-a'}
+    ntumc-01244410-a: {'type': 'also', 'target': 'ntumc-00996448-a'}
+    ntumc-02609764-v: {'type': 'is_caused_by', 'target': 'ntumc-00352826-v'}
+    ntumc-00263231-v: {'type': 'is_caused_by', 'target': 'ntumc-00256369-v'}
+    ntumc-00320536-v: {'type': 'is_entailed_by', 'target': 'ntumc-01681723-v'}
+    ntumc-01673732-v: {'type': 'is_entailed_by', 'target': 'ntumc-01674544-v'}
+    ntumc-01923391-a: {'type': 'also', 'target': 'ntumc-02455297-a'}
+    ntumc-00359459-a: {'type': 'also', 'target': 'ntumc-02436341-a'}
+    ntumc-01727926-a: {'type': 'also', 'target': 'ntumc-01536911-a'}
+    ntumc-00815686-v: {'type': 'is_entailed_by', 'target': 'ntumc-00876200-v'}
+    ntumc-01813884-v: {'type': 'is_caused_by', 'target': 'ntumc-01811736-v'}
+    ntumc-14285662-n: {'type': 'is_caused_by', 'target': 'ntumc-80001874-v'}
+    ntumc-02045790-v: {'type': 'is_entailed_by', 'target': 'ntumc-01352528-v'}
+    ntumc-00903449-a: {'type': 'also', 'target': 'ntumc-00902652-a'}
+    ntumc-00708017-a: {'type': 'also', 'target': 'ntumc-00705891-a'}
+    ntumc-01034457-a: {'type': 'also', 'target': 'ntumc-00966477-a'}
+    ntumc-02110220-v: {'type': 'is_caused_by', 'target': 'ntumc-02110927-v'}
+    ntumc-02228335-a: {'type': 'also', 'target': 'ntumc-02556720-a'}
+    ntumc-00490035-a: {'type': 'also', 'target': 'ntumc-01675190-a'}
+    ntumc-00786291-a: {'type': 'also', 'target': 'ntumc-00342250-a'}
+    ntumc-00090708-v: {'type': 'is_entailed_by', 'target': 'ntumc-01232098-v'}
+    ntumc-00834745-v: {'type': 'is_caused_by', 'target': 'ntumc-00834943-v'}
+    ntumc-00471711-v: {'type': 'is_entailed_by', 'target': 'ntumc-00697419-v'}
+    ntumc-80000326-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000327-v'}
+    ntumc-01887576-v: {'type': 'is_entailed_by', 'target': 'ntumc-01943153-v'}
+    ntumc-00973728-v: {'type': 'is_caused_by', 'target': 'ntumc-00973056-v'}
+    ntumc-02045043-v: {'type': 'is_caused_by', 'target': 'ntumc-02045790-v'}
+    ntumc-05696020-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000700-n'}
+    ntumc-00597915-v: {'type': 'is_entailed_by', 'target': 'ntumc-00597634-v'}
+    ntumc-02225492-v: {'type': 'is_entailed_by', 'target': 'ntumc-02226833-v'}
+    ntumc-02530003-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-00898691-v: {'type': 'is_entailed_by', 'target': 'ntumc-00899352-v'}
+    ntumc-02016523-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000793-v'}
+    ntumc-01989873-v: {'type': 'is_caused_by', 'target': 'ntumc-01986869-v'}
+    ntumc-02213270-a: {'type': 'also', 'target': 'ntumc-02284578-a'}
+    ntumc-01767461-v: {'type': 'is_caused_by', 'target': 'ntumc-01789164-v'}
+    ntumc-01549291-a: {'type': 'also', 'target': 'ntumc-02035337-a'}
+    ntumc-00394813-v: {'type': 'is_entailed_by', 'target': 'ntumc-01595830-v'}
+    ntumc-01020356-v: {'type': 'is_entailed_by', 'target': 'ntumc-01020731-v'}
+    ntumc-00687523-v: {'type': 'is_entailed_by', 'target': 'ntumc-02640440-v'}
+    ntumc-02055062-a: {'type': 'also', 'target': 'ntumc-02053818-a'}
+    ntumc-02041877-v: {'type': 'is_caused_by', 'target': 'ntumc-01370126-v'}
+    ntumc-00461354-v: {'type': 'is_caused_by', 'target': 'ntumc-00461493-v'}
+    ntumc-00118066-a: {'type': 'also', 'target': 'ntumc-00094448-a'}
+    ntumc-02365397-a: {'type': 'also', 'target': 'ntumc-02400929-a'}
+    ntumc-02092039-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001263-v'}
+    ntumc-07509996-n: {'type': 'is_caused_by', 'target': 'ntumc-80001396-a'}
+    ntumc-00316631-v: {'type': 'is_caused_by', 'target': 'ntumc-00317700-v'}
+    ntumc-01369346-v: {'type': 'is_entailed_by', 'target': 'ntumc-00258109-v'}
+    ntumc-70100000-n: {'type': 'has_domain_topic', 'target': 'ntumc-06929742-n'}
+    ntumc-00443116-v: {'type': 'is_caused_by', 'target': 'ntumc-00443384-v'}
+    ntumc-00281101-v: {'type': 'is_caused_by', 'target': 'ntumc-00282076-v'}
+    ntumc-01579153-v: {'type': 'is_entailed_by', 'target': 'ntumc-01456341-v'}
+    ntumc-02769900-v: {'type': 'is_entailed_by', 'target': 'ntumc-02770535-v'}
+    ntumc-00421408-v: {'type': 'is_caused_by', 'target': 'ntumc-00421125-v'}
+    ntumc-00392314-v: {'type': 'is_caused_by', 'target': 'ntumc-00392426-v'}
+    ntumc-00459498-v: {'type': 'is_caused_by', 'target': 'ntumc-00459296-v'}
+    ntumc-02238770-v: {'type': 'is_entailed_by', 'target': 'ntumc-02498320-v'}
+    ntumc-00178575-a: {'type': 'also', 'target': 'ntumc-00342250-a'}
+    ntumc-01106614-a: {'type': 'also', 'target': 'ntumc-02270342-a'}
+    ntumc-00306298-v: {'type': 'is_caused_by', 'target': 'ntumc-00306723-v'}
+    ntumc-14705287-n: {'type': 'is_entailed_by', 'target': 'ntumc-80002061-a'}
+    ntumc-01563724-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000577-n'}
+    ntumc-01421622-v: {'type': 'is_entailed_by', 'target': 'ntumc-01422886-v'}
+    ntumc-02756558-v: {'type': 'is_entailed_by', 'target': 'ntumc-02770170-v'}
+    ntumc-00205046-v: {'type': 'is_caused_by', 'target': 'ntumc-00205885-v'}
+    ntumc-01704761-a: {'type': 'also', 'target': 'ntumc-01618053-a'}
+    ntumc-01776952-v: {'type': 'is_caused_by', 'target': 'ntumc-01815628-v'}
+    ntumc-01025913-a: {'type': 'also', 'target': 'ntumc-02326695-a'}
+    ntumc-01978003-a: {'type': 'also', 'target': 'ntumc-02006031-a'}
+    ntumc-01963942-v: {'type': 'is_caused_by', 'target': 'ntumc-01965156-v'}
+    ntumc-02203362-v: {'type': 'is_caused_by', 'target': 'ntumc-02199590-v'}
+    ntumc-00220461-v: {'type': 'is_caused_by', 'target': 'ntumc-00220869-v'}
+    ntumc-00118567-a: {'type': 'also', 'target': 'ntumc-00804695-a'}
+    ntumc-00238867-v: {'type': 'is_entailed_by', 'target': 'ntumc-00504901-v'}
+    ntumc-00997794-v: {'type': 'is_entailed_by', 'target': 'ntumc-02464866-v'}
+    ntumc-00730731-a: {'type': 'also', 'target': 'ntumc-01971046-a'}
+    ntumc-00311113-v: {'type': 'is_caused_by', 'target': 'ntumc-00312990-v'}
+    ntumc-80000691-v: {'type': 'is_caused_by', 'target': 'ntumc-80000692-v'}
+    ntumc-01165043-v: {'type': 'is_entailed_by', 'target': 'ntumc-01165290-v'}
+    ntumc-01323958-v: {'type': 'is_entailed_by', 'target': 'ntumc-00542809-v'}
+    ntumc-00511430-v: {'type': 'is_entailed_by', 'target': 'ntumc-00497555-v'}
+    ntumc-01974740-a: {'type': 'also', 'target': 'ntumc-00567593-a'}
+    ntumc-00674607-v: {'type': 'is_entailed_by', 'target': 'ntumc-02207206-v'}
+    ntumc-00165943-a: {'type': 'also', 'target': 'ntumc-00164863-a'}
+    ntumc-01258302-v: {'type': 'is_entailed_by', 'target': 'ntumc-01257621-v'}
+    ntumc-01922895-v: {'type': 'is_entailed_by', 'target': 'ntumc-01923058-v'}
+    ntumc-00202784-v: {'type': 'is_caused_by', 'target': 'ntumc-00202569-v'}
+    ntumc-01111816-v: {'type': 'is_caused_by', 'target': 'ntumc-01113620-v'}
+    ntumc-00674340-v: {'type': 'is_entailed_by', 'target': 'ntumc-01776727-v'}
+    ntumc-01985247-a: {'type': 'also', 'target': 'ntumc-00286214-a'}
+    ntumc-00664483-v: {'type': 'is_entailed_by', 'target': 'ntumc-00664276-v'}
+    ntumc-00252019-v: {'type': 'is_caused_by', 'target': 'ntumc-00253761-v'}
+    ntumc-01991744-v: {'type': 'is_entailed_by', 'target': 'ntumc-01939037-v'}
+    ntumc-00767477-n: {'type': 'is_caused_by', 'target': 'ntumc-80001111-v'}
+    ntumc-01450607-a: {'type': 'is_entailed_by', 'target': 'ntumc-80000587-v'}
+    ntumc-00993014-v: {'type': 'is_entailed_by', 'target': 'ntumc-01006810-v'}
+    ntumc-00841125-v: {'type': 'is_entailed_by', 'target': 'ntumc-00841394-v'}
+    ntumc-00932695-a: {'type': 'also', 'target': 'ntumc-00902652-a'}
+    ntumc-02289295-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001853-v'}
+    ntumc-02042404-v: {'type': 'is_caused_by', 'target': 'ntumc-02042843-v'}
+    ntumc-00730301-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000577-n'}
+    ntumc-01595596-a: {'type': 'also', 'target': 'ntumc-02469928-a'}
+    ntumc-01871979-v: {'type': 'is_entailed_by', 'target': 'ntumc-01372189-v'}
+    ntumc-01983264-v: {'type': 'is_entailed_by', 'target': 'ntumc-01546111-v'}
+    ntumc-00230335-a: {'type': 'also', 'target': 'ntumc-01123148-a'}
+    ntumc-00230746-v: {'type': 'is_caused_by', 'target': 'ntumc-00253761-v'}
+    ntumc-00359862-a: {'type': 'also', 'target': 'ntumc-02436622-a'}
+    ntumc-01640850-a: {'type': 'also', 'target': 'ntumc-01646941-a'}
+    ntumc-02254923-v: {'type': 'is_caused_by', 'target': 'ntumc-02254767-v'}
+    ntumc-02324397-a: {'type': 'also', 'target': 'ntumc-02040049-a'}
+    ntumc-01134781-v: {'type': 'is_entailed_by', 'target': 'ntumc-01152532-v'}
+    ntumc-01295275-v: {'type': 'is_entailed_by', 'target': 'ntumc-01421122-v'}
+    ntumc-01782218-v: {'type': 'is_caused_by', 'target': 'ntumc-01781983-v'}
+    ntumc-01216670-v: {'type': 'is_entailed_by', 'target': 'ntumc-01446901-v'}
+    ntumc-02630189-v: {'type': 'is_entailed_by', 'target': 'ntumc-02632940-v'}
+    ntumc-00489837-v: {'type': 'is_entailed_by', 'target': 'ntumc-00646738-v'}
+    ntumc-00989201-v: {'type': 'is_entailed_by', 'target': 'ntumc-00989490-v'}
+    ntumc-01536168-v: {'type': 'is_entailed_by', 'target': 'ntumc-01536344-v'}
+    ntumc-00765396-v: {'type': 'is_entailed_by', 'target': 'ntumc-00809453-v'}
+    ntumc-02540236-a: {'type': 'also', 'target': 'ntumc-00018584-a'}
+    ntumc-01574446-a: {'type': 'also', 'target': 'ntumc-01570470-a'}
+    ntumc-01457954-v: {'type': 'is_caused_by', 'target': 'ntumc-01458228-v'}
+    ntumc-01811997-a: {'type': 'also', 'target': 'ntumc-01947266-a'}
+    ntumc-14440488-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001144-v'}
+    ntumc-00254867-v: {'type': 'is_caused_by', 'target': 'ntumc-00255389-v'}
+    ntumc-00154270-a: {'type': 'is_caused_by', 'target': 'ntumc-80001144-v'}
+    ntumc-02056300-v: {'type': 'is_caused_by', 'target': 'ntumc-02086805-v'}
+    ntumc-01222884-a: {'type': 'also', 'target': 'ntumc-01225898-a'}
+    ntumc-00089051-a: {'type': 'also', 'target': 'ntumc-01133876-a'}
+    ntumc-00375021-v: {'type': 'is_caused_by', 'target': 'ntumc-00374668-v'}
+    ntumc-00446329-v: {'type': 'is_caused_by', 'target': 'ntumc-00447309-v'}
+    ntumc-00431117-v: {'type': 'is_caused_by', 'target': 'ntumc-00431327-v'}
+    ntumc-00867409-v: {'type': 'is_entailed_by', 'target': 'ntumc-00869126-v'}
+    ntumc-02584981-a: {'type': 'also', 'target': 'ntumc-01993140-a'}
+    ntumc-07290144-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000261-a'}
+    ntumc-01812846-a: {'type': 'also', 'target': 'ntumc-02238462-a'}
+    ntumc-00669478-a: {'type': 'also', 'target': 'ntumc-01450969-a'}
+    ntumc-01815628-v: {'type': 'is_entailed_by', 'target': 'ntumc-01816219-v'}
+    ntumc-01879251-v: {'type': 'is_caused_by', 'target': 'ntumc-01879777-v'}
+    ntumc-00811375-v: {'type': 'is_entailed_by', 'target': 'ntumc-02465658-v'}
+    ntumc-01323338-v: {'type': 'is_entailed_by', 'target': 'ntumc-80002097-v'}
+    ntumc-02270342-a: {'type': 'also', 'target': 'ntumc-01421077-a'}
+    ntumc-01449591-v: {'type': 'is_entailed_by', 'target': 'ntumc-01669419-v'}
+    ntumc-04885784-n: {'type': 'is_caused_by', 'target': 'ntumc-80001870-v'}
+    ntumc-01067512-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001129-a'}
+    ntumc-02064745-a: {'type': 'also', 'target': 'ntumc-01198737-a'}
+    ntumc-00519056-v: {'type': 'is_caused_by', 'target': 'ntumc-00519229-v'}
+    ntumc-00503237-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001812-v'}
+    ntumc-00386392-a: {'type': 'also', 'target': 'ntumc-00401650-a'}
+    ntumc-01779986-a: {'type': 'also', 'target': 'ntumc-01332386-a'}
+    ntumc-01158572-v: {'type': 'is_entailed_by', 'target': 'ntumc-01190948-v'}
+    ntumc-00697589-v: {'type': 'is_caused_by', 'target': 'ntumc-00699485-v'}
+    ntumc-00141524-v: {'type': 'is_caused_by', 'target': 'ntumc-00144169-v'}
+    ntumc-00992041-v: {'type': 'is_entailed_by', 'target': 'ntumc-00899956-v'}
+    ntumc-02062670-a: {'type': 'also', 'target': 'ntumc-01199751-a'}
+    ntumc-00413432-v: {'type': 'is_entailed_by', 'target': 'ntumc-00412292-v'}
+    ntumc-01547001-v: {'type': 'is_caused_by', 'target': 'ntumc-01544692-v'}
+    ntumc-00405645-r: {'type': 'is_entailed_by', 'target': 'ntumc-80001830-v'}
+    ntumc-02221959-v: {'type': 'is_caused_by', 'target': 'ntumc-02220461-v'}
+    ntumc-00416880-v: {'type': 'is_caused_by', 'target': 'ntumc-00416705-v'}
+    ntumc-01602318-v: {'type': 'is_caused_by', 'target': 'ntumc-01602665-v'}
+    ntumc-01346978-v: {'type': 'is_caused_by', 'target': 'ntumc-01345109-v'}
+    ntumc-00607780-v: {'type': 'is_caused_by', 'target': 'ntumc-00610538-v'}
+    ntumc-00240810-v: {'type': 'is_caused_by', 'target': 'ntumc-00318816-v'}
+    ntumc-02521284-v: {'type': 'is_entailed_by', 'target': 'ntumc-02497992-v'}
+    ntumc-00540101-v: {'type': 'is_caused_by', 'target': 'ntumc-00539936-v'}
+    ntumc-00211108-v: {'type': 'is_entailed_by', 'target': 'ntumc-00211852-v'}
+    ntumc-00681094-a: {'type': 'also', 'target': 'ntumc-02273326-a'}
+    ntumc-01482075-v: {'type': 'is_caused_by', 'target': 'ntumc-01481360-v'}
+    ntumc-80001576-n: {'type': 'is_caused_by', 'target': 'ntumc-01160342-n'}
+    ntumc-02050132-v: {'type': 'is_caused_by', 'target': 'ntumc-02052476-v'}
+    ntumc-01985029-v: {'type': 'is_entailed_by', 'target': 'ntumc-01547001-v'}
+    ntumc-02294179-v: {'type': 'is_entailed_by', 'target': 'ntumc-02295082-v'}
+    ntumc-01499686-a: {'type': 'also', 'target': 'ntumc-00181476-a'}
+    ntumc-01441100-v: {'type': 'is_entailed_by', 'target': 'ntumc-01572003-v'}
+    ntumc-00927578-a: {'type': 'also', 'target': 'ntumc-00929164-a'}
+    ntumc-13962498-n: {'type': 'is_caused_by', 'target': 'ntumc-80001157-n'}
+    ntumc-00377002-v: {'type': 'is_caused_by', 'target': 'ntumc-02762468-v'}
+    ntumc-01811441-v: {'type': 'is_caused_by', 'target': 'ntumc-01818235-v'}
+    ntumc-01679433-v: {'type': 'is_entailed_by', 'target': 'ntumc-80000753-n'}
+    ntumc-01741446-v: {'type': 'is_entailed_by', 'target': 'ntumc-01740608-v'}
+    ntumc-01370561-v: {'type': 'is_entailed_by', 'target': 'ntumc-01936048-v'}
+    ntumc-02537642-v: {'type': 'also', 'target': 'ntumc-00147815-v'}
+    ntumc-01410363-a: {'type': 'also', 'target': 'ntumc-02064745-a'}
+    ntumc-01712704-v: {'type': 'is_entailed_by', 'target': 'ntumc-01710481-v'}
+    ntumc-02784998-n: {'type': 'is_caused_by', 'target': 'ntumc-80001121-v'}
+    ntumc-00958896-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000739-n'}
+    ntumc-00773759-a: {'type': 'also', 'target': 'ntumc-00772360-a'}
+    ntumc-01708676-v: {'type': 'is_entailed_by', 'target': 'ntumc-01937394-v'}
+    ntumc-01581115-a: {'type': 'also', 'target': 'ntumc-00903449-a'}
+    ntumc-01796033-v: {'type': 'is_caused_by', 'target': 'ntumc-01795888-v'}
+    ntumc-01966488-a: {'type': 'also', 'target': 'ntumc-01199751-a'}
+    ntumc-00040325-a: {'type': 'also', 'target': 'ntumc-00099290-a'}
+    ntumc-00256507-v: {'type': 'is_caused_by', 'target': 'ntumc-00257650-v'}
+    ntumc-00917613-a: {'type': 'also', 'target': 'ntumc-00344125-a'}
+    ntumc-00860136-v: {'type': 'is_caused_by', 'target': 'ntumc-01814074-v'}
+    ntumc-01196037-v: {'type': 'is_entailed_by', 'target': 'ntumc-01801847-v'}
+    ntumc-01998432-v: {'type': 'is_entailed_by', 'target': 'ntumc-01998793-v'}
+    ntumc-00041051-a: {'type': 'also', 'target': 'ntumc-00927578-a'}
+    ntumc-02166460-v: {'type': 'is_caused_by', 'target': 'ntumc-02166761-v'}
+    ntumc-01137138-v: {'type': 'is_entailed_by', 'target': 'ntumc-01136835-v'}
+    ntumc-01243809-v: {'type': 'is_entailed_by', 'target': 'ntumc-01531635-v'}
+    ntumc-00912048-v: {'type': 'is_entailed_by', 'target': 'ntumc-80001338-a'}
+    ntumc-00805376-v: {'type': 'is_entailed_by', 'target': 'ntumc-01035380-v'}
+    ntumc-01488245-a: {'type': 'also', 'target': 'ntumc-01495381-a'}
+    ntumc-02073443-a: {'type': 'also', 'target': 'ntumc-01593649-a'}
+    ntumc-01093172-v: {'type': 'is_entailed_by', 'target': 'ntumc-01093786-v'}
+    ntumc-00417413-a: {'type': 'also', 'target': 'ntumc-00427331-a'}
+    ntumc-01343892-v: {'type': 'is_caused_by', 'target': 'ntumc-01340439-v'}
+    ntumc-00790308-v: {'type': 'is_entailed_by', 'target': 'ntumc-00789448-v'}
+    ntumc-00366275-v: {'type': 'is_entailed_by', 'target': 'ntumc-00365810-v'}
+    ntumc-07531255-n: {'type': 'is_entailed_by', 'target': 'ntumc-80001423-a'}
+    ntumc-06536389-n: {'type': 'is_caused_by', 'target': 'ntumc-80001553-n'}
+    ntumc-01294182-v: {'type': 'is_caused_by', 'target': 'ntumc-01294396-v'}
+    ntumc-00721141-n: {'type': 'is_entailed_by', 'target': 'ntumc-80000465-v'}
+    ntumc-01979901-v: {'type': 'is_caused_by', 'target': 'ntumc-01981036-v'}
+    ntumc-00020259-v: {'type': 'is_caused_by', 'target': 'ntumc-00020449-v'}
+    ntumc-00254298-v: {'type': 'is_caused_by', 'target': 'ntumc-00254672-v'}
+    ntumc-01006566-a: {'type': 'also', 'target': 'ntumc-00257742-a'}
+  synset's part-of-speech is different from its hypernym's
+    ntumc-01412721-a: {'type': 'hypernym', 'target': 'ntumc-80001630-v'}
+    ntumc-80000954-a: {'type': 'hypernym', 'target': 'ntumc-04980008-n'}
+    ntumc-80002233-v: {'type': 'hypernym', 'target': 'ntumc-13550318-n'}
+    ntumc-80000533-v: {'type': 'hypernym', 'target': 'ntumc-00037396-n'}
+    ntumc-80000574-n: {'type': 'hypernym', 'target': 'ntumc-02964782-a'}
+    ntumc-80000741-a: {'type': 'hypernym', 'target': 'ntumc-14429382-n'}
+    ntumc-80000531-a: {'type': 'hypernym', 'target': 'ntumc-00026192-n'}
+    ntumc-77000024-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80000221-n: {'type': 'hypernym', 'target': 'ntumc-02367363-v'}
+    ntumc-80001196-v: {'type': 'hypernym', 'target': 'ntumc-02250691-a'}
+    ntumc-80002284-n: {'type': 'hypernym', 'target': 'ntumc-01426397-v'}
+    ntumc-90000428-n: {'type': 'hypernym', 'target': 'ntumc-00816481-a'}
+    ntumc-01163779-n: {'type': 'hypernym', 'target': 'ntumc-80001932-a'}
+    ntumc-80000284-n: {'type': 'hypernym', 'target': 'ntumc-00559530-a'}
+    ntumc-80000769-a: {'type': 'hypernym', 'target': 'ntumc-00071601-r'}
+    ntumc-80001629-v: {'type': 'hypernym', 'target': 'ntumc-01799457-a'}
+    ntumc-80001730-v: {'type': 'hypernym', 'target': 'ntumc-06746005-n'}
+    ntumc-80001865-a: {'type': 'hypernym', 'target': 'ntumc-00798245-n'}
+    ntumc-77000107-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80000081-a: {'type': 'hypernym', 'target': 'ntumc-06326797-n'}
+    ntumc-77000054-a: {'type': 'hypernym', 'target': 'ntumc-00001740-n'}
+    ntumc-01799457-a: {'type': 'hypernym', 'target': 'ntumc-80001629-v'}
+    ntumc-80002326-a: {'type': 'hypernym', 'target': 'ntumc-04191943-n'}
+    ntumc-77000050-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80001796-v: {'type': 'hypernym', 'target': 'ntumc-09807754-n'}
+    ntumc-77000039-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80001934-v: {'type': 'hypernym', 'target': 'ntumc-00957743-a'}
+    ntumc-80000548-v: {'type': 'hypernym', 'target': 'ntumc-00037396-n'}
+    ntumc-80002274-x: {'type': 'hypernym', 'target': 'ntumc-80002273-n'}
+    ntumc-77000088-r: {'type': 'hypernym', 'target': 'ntumc-04928903-n'}
+    ntumc-05622196-n: {'type': 'hypernym', 'target': 'ntumc-80001792-x'}
+    ntumc-80000503-n: {'type': 'hypernym', 'target': 'ntumc-02750432-v'}
+    ntumc-80000529-v: {'type': 'hypernym', 'target': 'ntumc-07134850-n'}
+    ntumc-80000499-n: {'type': 'hypernym', 'target': 'ntumc-01824339-v'}
+    ntumc-80002583-a: {'type': 'hypernym', 'target': 'ntumc-02157557-n'}
+    ntumc-77000006-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-05124057-n: {'type': 'hypernym', 'target': 'ntumc-80001792-x'}
+    ntumc-80002056-a: {'type': 'hypernym', 'target': 'ntumc-01818235-v'}
+    ntumc-80002232-r: {'type': 'hypernym', 'target': 'ntumc-02270404-v'}
+    ntumc-80000512-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80002266-a: {'type': 'hypernym', 'target': 'ntumc-07823951-n'}
+    ntumc-80000554-a: {'type': 'hypernym', 'target': 'ntumc-00262249-n'}
+    ntumc-80002265-v: {'type': 'hypernym', 'target': 'ntumc-09911226-n'}
+    ntumc-80002238-n: {'type': 'hypernym', 'target': 'ntumc-02608004-v'}
+    ntumc-80002581-a: {'type': 'hypernym', 'target': 'ntumc-02157557-n'}
+    ntumc-80001098-a: {'type': 'hypernym', 'target': 'ntumc-00941990-v'}
+    ntumc-00829107-v: {'type': 'hypernym', 'target': 'ntumc-80002056-a'}
+    ntumc-77000043-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80000557-v: {'type': 'hypernym', 'target': 'ntumc-00048374-n'}
+    ntumc-80000228-a: {'type': 'hypernym', 'target': 'ntumc-04433905-n'}
+    ntumc-90000453-n: {'type': 'hypernym', 'target': 'ntumc-01185304-v'}
+    ntumc-80001281-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-80001711-z: {'type': 'hypernym', 'target': 'ntumc-06291318-n'}
+    ntumc-80000778-r: {'type': 'hypernym', 'target': 'ntumc-01678729-a'}
+    ntumc-05618056-n: {'type': 'hypernym', 'target': 'ntumc-80001792-x'}
+    ntumc-80000813-v: {'type': 'hypernym', 'target': 'ntumc-13764213-n'}
+    ntumc-90000405-n: {'type': 'hypernym', 'target': 'ntumc-01726172-v'}
+    ntumc-80002582-a: {'type': 'hypernym', 'target': 'ntumc-02157557-n'}
+    ntumc-80001790-n: {'type': 'hypernym', 'target': 'ntumc-80001795-v'}
+    ntumc-80000664-x: {'type': 'hypernym', 'target': 'ntumc-06630017-n'}
+    ntumc-80002111-v: {'type': 'hypernym', 'target': 'ntumc-07496463-n'}
+    ntumc-90000406-n: {'type': 'hypernym', 'target': 'ntumc-00873603-a'}
+    ntumc-80001949-v: {'type': 'hypernym', 'target': 'ntumc-80001865-a'}
+    ntumc-80002319-v: {'type': 'hypernym', 'target': 'ntumc-00406612-n'}
+    ntumc-80002293-v: {'type': 'hypernym', 'target': 'ntumc-00148057-n'}
+    ntumc-80002448-a: {'type': 'hypernym', 'target': 'ntumc-09917593-n'}
+    ntumc-80000062-n: {'type': 'hypernym', 'target': 'ntumc-00471572-a'}
+    ntumc-80002114-a: {'type': 'hypernym', 'target': 'ntumc-02494356-v'}
+    ntumc-80000196-n: {'type': 'hypernym', 'target': 'ntumc-00051440-r'}
+    ntumc-80002142-a: {'type': 'hypernym', 'target': 'ntumc-11515734-n'}
+    ntumc-90000450-n: {'type': 'hypernym', 'target': 'ntumc-00158701-a'}
+    ntumc-80000142-a: {'type': 'hypernym', 'target': 'ntumc-00007846-n'}
+    ntumc-02791483-a: {'type': 'hypernym', 'target': 'ntumc-80002304-n'}
+    ntumc-80000351-n: {'type': 'hypernym', 'target': 'ntumc-01037540-a'}
+    ntumc-80002061-a: {'type': 'hypernym', 'target': 'ntumc-04934546-n'}
+    ntumc-80002049-a: {'type': 'hypernym', 'target': 'ntumc-80000158-n'}
+  relation is a self-loop
+    ntumc-00149138-r: {'type': 'hypernym', 'target': 'ntumc-00149138-r'}
+    ntumc-02165543-v: {'type': 'hyponym', 'target': 'ntumc-02165543-v'}
+    ntumc-09363970-n: {'type': 'hyponym', 'target': 'ntumc-09363970-n'}
+    ntumc-00419576-r: {'type': 'hyponym', 'target': 'ntumc-00419576-r'}
+    ntumc-00065184-r: {'type': 'hypernym', 'target': 'ntumc-00065184-r'}
+    ntumc-80000901-a: {'type': 'hypernym', 'target': 'ntumc-80000901-a'}
+    ntumc-80002455-n: {'type': 'eq_synonym', 'target': 'ntumc-80002455-n'}
+    ntumc-77000091-a: {'type': 'hyponym', 'target': 'ntumc-77000091-a'}
+    ntumc-80002456-v: {'type': 'eq_synonym', 'target': 'ntumc-80002456-v'}
+    ntumc-02767701-a: {'type': 'hypernym', 'target': 'ntumc-02767701-a'}
+    ntumc-00057149-a: {'type': 'eq_synonym', 'target': 'ntumc-00057149-a'}
+    ntumc-01788843-a: {'type': 'hypernym', 'target': 'ntumc-01788843-a'}
+    ntumc-08489765-n: {'type': 'hypernym', 'target': 'ntumc-08489765-n'}
+    ntumc-00158309-r: {'type': 'hypernym', 'target': 'ntumc-00158309-r'}
+    ntumc-77000084-n: {'type': 'hyponym', 'target': 'ntumc-77000084-n'}
+    ntumc-01250835-a: {'type': 'hypernym', 'target': 'ntumc-01250835-a'}
+    ntumc-00108479-r: {'type': 'hyponym', 'target': 'ntumc-00108479-r'}
+    ntumc-00017639-r: {'type': 'hypernym', 'target': 'ntumc-00017639-r'}

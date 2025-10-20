@@ -1,0 +1,20 @@
+++++++Try to tag SPEC and DANC with qwen.
+
+scp  compling.upol.cz:/var/www/ntumc/db/eng.db .
+scp  compling.upol.cz:/var/www/ntumc/db/wn-ntumc.db .
+
+
+[train]
+first = 10000
+last = 10336
+length = 6905
+
+[dev]
+first = 10337
+last = 10490
+length = 2425
+
+[test]
+first = 10491
+last = 10598
+length = 2411

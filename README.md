@@ -25,7 +25,7 @@ In previous work, we have done this manually:
   * test different contexts **WSD-C**
     * [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
   * test different wordnet information **WSD-W**
-	* watch [Let the LLM Write the Prompts: An Intro to DSPy in Compound AI Pipelines](https://youtu.be/I9ZtkgYZnOw?si=66uDbpaDWra9TaIj)
+    * watch [Let the LLM Write the Prompts: An Intro to DSPy in Compound AI Pipelines](https://youtu.be/I9ZtkgYZnOw?si=66uDbpaDWra9TaIj)
   * test different LLM models **WSD-M**
 	* look at settings to make it more efficient
 	* e.g., prompt caching
