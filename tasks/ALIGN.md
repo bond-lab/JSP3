@@ -9,6 +9,7 @@ start with Czech-English, then Czech-Czech
 
 * find epub, extract text, split into para, align
   * use: https://github.com/averkij/lingtrain-aligner/releases/tag/0.1.0
+  * https://habr.com/ru/articles/586574/
   * then add to **WSD-C**
   * align words/concepts
 * visualize texts
