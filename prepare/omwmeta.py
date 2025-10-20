@@ -27,8 +27,21 @@ meta['eng'] = {'id':'ntumc',
               'url':'URL',
                'conf':'1.0',
                'description':"An enhanced English wordnet, forked from Princeton WordNet 3.0."
-               
    }
+
+meta['ces'] = {'id':'cswn', 
+              'label':'Czech WordNet',
+              'lg':'cs',
+              'email':'wordnet@gmail.com',
+              'license':'wordnet',
+              'version':'3.0',
+              'citation':'Cite me',
+              'url':'URL',
+               'conf':'1.0',
+               'description':"An enhanced Czech wordnet, forked from Masarych's WordNet."
+   }
+
+
 meta['cmn'] = {'id':'cow', 
               'label':'Chinese Open Wordnet',
               'lg':'cmn-Hans',
