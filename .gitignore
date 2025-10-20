@@ -3,6 +3,9 @@
 README.html
 # databases
 *.db
+# large wordnet files
+wn*.xml
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
