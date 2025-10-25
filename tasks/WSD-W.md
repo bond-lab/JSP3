@@ -16,6 +16,12 @@ Automate the testing (maybe)?
 * Many different possibilities, so need to plan how to test
 * What works for English may not work fo Czech
 
+## Next steps
+
+* collaborate with WSD-*
+* take a look at https://github.com/bond-lab/NTUMC/blob/refactored-tagdb/ntumc/taggers/tag-llm.py
+* make sure you know exactly what your models are
+* use wn <https://pypi.org/project/wn/> for the wordnet module, wordnets are in prepare/wn-ntumc*.xml
 
 ## Notes 
 

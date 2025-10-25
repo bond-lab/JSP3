@@ -14,13 +14,20 @@ start with Czech-English, then Czech-Czech
   * align words/concepts
 * visualize texts
 
-
 ## stretch
 * generate for all texts in NTU-MC
 
 ## Difficulty
 
+## Next Task(s)
 
+* get lingtrain-aligner working
+
+* align CS-EN
+  * start with `twwtn-cs_human.json` and `twwtn-en_human.json` (in `prepare`)
+
+* align CS-CS
+  * align `twwtn-en_human.json` to https://www.eknihyzdarma.cz/eshop-valka-s-mloky.html
 
 
 ## Notes 

@@ -21,6 +21,11 @@ Sentiment for each paragraph, all named entities
 
 Not so hard, but results are slow, and free resources have cutoff
 
+## Next tasks
+
+* try analyzing with Vader -- https://www.nltk.org/_modules/nltk/sentiment/vader.html
+* look for Czech Sentiment
+
 
 ## Notes 
 

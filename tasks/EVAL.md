@@ -17,3 +17,11 @@ Look at common mistakes and try to fix them (e.g. *se/si*)
 
 Not so hard, but requires some interaction with SQL
 
+## Next tasks
+
+* get a simple script to evaluate `spec_qwen3:14b.json` vs `spec_human.json`
+  * give one accuracy
+  * take the file names as input (use argparse)
+  * break down results by tag type
+  
+

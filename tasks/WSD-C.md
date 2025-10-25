@@ -14,6 +14,11 @@ Find models that can be used cheaply
 
 Not so hard, but results are slow, and free resources have cutoff
 
+## Next steps
+
+* take a look at https://github.com/bond-lab/NTUMC/blob/refactored-tagdb/ntumc/taggers/tag-llm.py
+* make sure you know exactly what your models are
+* use wn <https://pypi.org/project/wn/> for the wordnet module, wordnets are in prepare/wn-ntumc*.xml
 
 ## Notes 
 
