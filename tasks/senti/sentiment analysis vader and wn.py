@@ -7,9 +7,9 @@ import re
 import json
 import pprint
 
-text_path = "/Users/macbook/desktop/literatura/Metamorphosis.txt"
-wordnet_path = "/Users/macbook/Desktop/programovani_uloziste/JSP3/sentiment_wordnet.yml"
-data_path = "/Users/macbook/desktop/škola/JSP3 a JPC1/sentiment data.json"
+text_path = "Metamorphosis.txt"
+wordnet_path = "sentiment_wordnet.yml"
+data_path = "sentiment data.json"
 
 
 def read_document(file_path):
