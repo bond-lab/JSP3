@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import pprint
 
-data_path = "/Users/macbook/desktop/škola/JSP3 a JPC1/sentiment data.json"
+data_path = "sentiment data.json"
 
 
 def read_json(file_path):
