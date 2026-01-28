@@ -2,9 +2,9 @@ from nltk.tokenize import sent_tokenize
 import json
 import re
 
-text_path = "/Users/macbook/desktop/literatura/Metamorphosis.txt"
-wordnet_path = "/Users/macbook/Desktop/programovani_uloziste/JSP3/sentiment_wordnet.yml"
-data_path = "/Users/macbook/desktop/škola/JSP3 a JPC1/3th method senti data.json"
+text_path = "Metamorphosis.txt"
+wordnet_path = "sentiment_wordnet.yml"
+data_path = "3th method senti data.json"
 
 def read_document(file_path):
     """
