@@ -4,8 +4,8 @@ import json
 
 nlp = spacy.load("en_core_web_sm")
 
-text_path = "/Users/macbook/desktop/literatura/Metamorphosis.txt"
-results_path = "/Users/macbook/desktop/škola/JSP3 a JPC1/entities locations.json"
+text_path = "Metamorphosis.txt"
+results_path = "entities locations.json"
 
 def read_document(file_path):
     """Reads the content of a text file (.txt) and returns it as a string."""
