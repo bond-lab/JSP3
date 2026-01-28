@@ -1,7 +1,7 @@
 import json
 import matplotlib.pyplot as plt
 
-data_path = "/Users/macbook/desktop/škola/JSP3 a JPC1/entities locations.json"
+data_path = "entities locations.json"
 
 def read_json(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
