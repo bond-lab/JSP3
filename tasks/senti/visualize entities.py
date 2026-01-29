@@ -54,9 +54,9 @@ def plot_entities_positions_from_json(file_path, categories=None, exclude=None):
 
     plt.yticks(y_positions, y_labels)
     plt.ylim(-0.5, total_rows - 0.5)  # odskok nahoře a dole
-    plt.xlabel("Pozice ve slovech")
+    plt.xlabel("Position in words")
     plt.xlim(0, text_length)
-    plt.title("Rozložení entit v textu")
+    plt.title("Distribution of entities in the text")
     plt.grid(axis="x", linestyle="--", alpha=0.5)
     plt.tight_layout()
     plt.show()
