@@ -1,0 +1,151 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+    citecolor=OliveGreen,
+    linkcolor=NavyBlue,
+    urlcolor=NavyBlue
+}
+\usepackage{url}
+\usepackage{graphicx} 
+
+\title{JSP3: Sentiment and Entity Analysis}
+\author{
+Jakub Pokorný (\href{https://github.com/pokoja12}{pokoja12})\\
+\href{mailto:student1@email.com}{pokoja12@upol.cz}
+\and
+Bára Havlíčková\\
+\href{mailto:student2@email.com}{bara.havlickova01@upol.cz}
+}
+\date{29 January 2026}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This work presents an analysis of literary text, focusing on measuring sentiment and identifying named entities through natural language processing techniques. Sentiment is evaluated using three complementary methods: VADER for context-sensitive sentence-level scoring, a WordNet-based lexicon approach for sense-aware word-level sentiment, and TextBlob for sentence-level polarity analysis. The average sentiment for each method is calculated over both text chapters and textual blocks of defined length, independent of chapters, and the results are visualized.
+
+In addition, the code identifies and tracks named entities throughout the text, recording their positions and categorizing them by type. This structured representation enables the mapping of characters, locations, times, and other entities, with the results also visualized.
+
+\section{Background}
+\label{sec:background}
+
+This work relies on several natural language processing resources to perform sentiment and entity analysis on literary texts. 
+For sentiment analysis, we use lexicon-based and rule-based approaches, complemented by Python libraries. 
+For entity analysis, we employ NLP models capable of recognizing named entities and their positions in the text.
+
+\clearpage  % nová stránka
+
+\subsection*{Resources}
+
+\subsubsection*{Sentiment Analyses}
+
+\begin{itemize}
+
+\item \textbf{Hutto, C.J.} and \textbf{Gilbert, E.E.}, 
+\textit{VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text}, 
+Eighth International Conference on Weblogs and Social Media (ICWSM-14), Ann Arbor, MI, June 2014.  
+
+In our work, the VADER library evaluates sentence sentiment using a lexicon of words with weighted scores, taking into account intensifiers, negations, and context.
+
+\item \textbf{Bond, Francis} and \textbf{Choo, Merrick}, 
+\textit{Sense and Sentiment}, 
+Proceedings of the Thirteenth Language Resources and Evaluation Conference, Marseille, France, 2022.  
+\url{https://aclanthology.org/2022.lrec-1.7/}
+
+In our work, the WordNet-based sentiment lexicon determines word sentiment according to word senses.  
+
+\item \textbf{Loria, Steven}, 
+\textit{textblob Documentation}, 
+Release 0.15, 2018. 
+
+In our work, the TextBlob library analyzes sentence sentiment based on word-level polarity scores and aggregates them across the sentence.
+
+\end{itemize}
+
+\subsubsection*{Entity Analyses}
+
+\begin{itemize}
+
+\item \textbf{Honnibal, Matthew} and \textbf{Montani, Ines}, 
+\textit{spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing}, 
+2017. To appear in journal.  
+
+In our work, spaCy provides models for automatic named entity recognition (NER), including people, organizations, locations, and other categories, and allows tracking of their positions in the text.
+
+\end{itemize}
+
+
+\section{Approach}
+The book \textit{Metamorphosis} by Franz Kafka was chosen for its intense emotional content. The entire code was written in Python, as it is a great language for NLP tasks, thanks to its rich ecosystem of libraries and tools specifically designed for text processing and analysis.
+
+\subsection*{Sentiment Analysis}
+
+The sentiment analysis begins by loading the text from a file using the \texttt{read\_document} function, which reads the full content of the text file and returns it as a string for further processing. The text is then cleaned using the \texttt{trim\_text\_edges} function, which removes a fixed number of lines from the beginning and end of the document to exclude non-narrative content.
+
+Since chapters can vary significantly in size, with some being much larger than others, which can skew the analysis results, the text is divided into nearly equal-sized blocks, regardless of chapter boundaries, to mitigate this. The cleaned text is cut into segments of 7,000 characters, as this amount has been identified as an ideal block—neither too large nor too small—for our visualization. This is done using the \texttt{safe\_block\_split} function, which splits the text into blocks of a predefined maximum length while preserving sentence boundaries, ensuring that no sentence is split between blocks. As a result, most blocks are slightly shorter than the maximum size. The block locations are then calculated using the \texttt{cumulative\_text\_lengths} function, which accumulates the lengths of the blocks in words.
+
+Similarly, the text is segmented into chapters using the \texttt{split\_and\_locate\_chapters} function, which uses a regular expression to identify chapter boundaries and returns separate chapter segments and their boundary locations.
+
+For both chapters and text blocks, sentiment is computed using three methods implemented by the functions \texttt{vader\_senti\_sentences}, \texttt{spacytextblob\_senti\_sentences}, and \texttt{new\_wn\_senti\_sentences}. The WordNet-based method does not consider sentence context like the other two methods; instead, it calculates the average sentiment of all words in a sentence and considers this value the sentence sentiment. In all methods, sentiment is computed for individual sentences, which are treated as atomic units, and then averaged across the corresponding segments (blocks or chapters) to obtain a sentiment score per segment.
+
+Finally, the program aggregates all computed sentiment values into a structured dictionary that associates segment positions (blocks and chapters) with their sentiment scores from all three methods. The results are printed and saved in JSON format using the \texttt{save\_json} function for further processing or visualization. The results are then visualized to illustrate sentiment progression using the \texttt{graph\_block\_and\_chapters\_sentiment} function.
+
+\clearpage  % nová stránka
+
+\subsection*{Entity Analysis}
+
+The program performs a textual analysis of a document by identifying entities and locating them within the text. It begins by reading the text file using the \texttt{read\_document} function and cleaning it with the \texttt{trim\_text\_edges} function.
+
+Named entities, such as people, organizations, and locations, are automatically extracted using the \texttt{find\_entities} function, which leverages spaCy's NLP model (vide \textit{Resources}). For each entity, the program returns its category and all positions where it occurs in the text.
+
+In addition to automatic entity recognition, the program allows for manual searches to find positions of unrecognized entities using the \texttt{find\_words} function.
+
+These two results are then combined, producing a structured mapping of both automatically and manually found entities to their positions in the text. Along with the total word count (important for reference, as positions are relative), the results are printed and saved in JSON format using the \texttt{save\_json} function, enabling further analysis or visualization.
+
+Finally, the results are visualized using the \texttt{plot\_entities\_positions\_from\_json} function, allowing the selection of categories to visualize and the exclusion of specific entities. This flexibility ensures the visualization highlights the most relevant data.
+
+\clearpage  % nová stránka
+
+\section{Results}
+\subsection*{Sentiment Visualization}
+In contrast to the original data, the average sentiment for all methods is added to the individual methods and displayed as a red line. The sentiment for the blocks is shown as a curve, while the average sentiment for the chapters is represented by a short horizontal line in the middle of the chapter blocks.
+
+For reference, \textbf{Method 1} employs \textbf{VADER}, \textbf{Method 2} relies on \textbf{WordNet}, and \textbf{Method 3} makes use of \textbf{TextBlob}.
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{sentiment_graph.png}
+    \caption{Sentiment progression across blocks and chapters.}
+    \label{fig:sentiment}
+\end{figure}
+
+\clearpage  % nová stránka
+
+\subsection*{Entities Visualization}
+The same characters are sometimes referred to in different ways: \textit{Mrs. Samsa} as \textit{Mother}, \textit{Mr. Samsa} as \textit{Father}, and \textit{Sister} as \textit{Grete}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{entities_graph.png}
+    \caption{Distribution of named entities across the text.}
+    \label{fig:entities}
+\end{figure}
+
+\clearpage  % nová stránka
+
+\section{Discussion}
+\subsection*{Sentiment Visualization}
+We can observe that the sentiment remains generally neutral, with higher sentiment peaks occurring in five distinct waves. Furthermore, the methods appear to share similar trends, which supports their apparent effectiveness. Overall, we can conclude that the sentiment is slightly positive, which is surprising given the book's typically depressive reputation.
+
+\subsection*{Entities Visualization}
+The data clearly show that Gregor is the main character, as he appears most frequently and consistently throughout the text. Interestingly, different references to the same person (e.g., \textit{Mrs. Samsa – Mother} ) don’t overlap, which seems to suggest a change in the narrator’s relationship with the characters, offering insights into the evolving dynamics between them.
+
+\section{Conclusions}
+In conclusion, this analysis applied natural language processing techniques to assess sentiment and identify named entities within the text. We measured sentiment across both chapters and defined blocks, with results visualized for clearer insights. Named entity recognition mapped the book’s characters and locations, which may shed light on character relationships and narrative dynamics. Overall, this work highlights the potential of NLP in deepening literary analysis.
+
+\end{document}
+
+}
