@@ -3,7 +3,6 @@ import json
 import re
 
 text_path = "Metamorphosis.txt"
-wordnet_path = "sentiment_wordnet.yml"
 data_path = "3th method senti data.json"
 
 def read_document(file_path):
