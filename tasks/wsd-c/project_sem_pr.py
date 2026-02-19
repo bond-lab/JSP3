@@ -7,29 +7,29 @@ Original file is located at
     https://colab.research.google.com/drive/1DTkn8v-nB66B6adZHfv4skkdBbUKN7Sn
 """
 
-! curl -fsSL https://ollama.com./install.sh | sh
+#! curl -fsSL https://ollama.com./install.sh | sh
 
-import subprocess
-process = subprocess.Popen ("ollama serve", shell=True)
+#import subprocess
+#process = subprocess.Popen ("ollama serve", shell=True)
 
-!ollama pull llama3
+#!ollama pull llama3
 
-!ollama run llama3
+#!ollama run llama3
 
-!pip install ollama wn
+#!pip install ollama wn
 
-!pip install wn
+#!pip install wn
 
 import threading
-import subprocess
+#import subprocess
 import time
 
-def run_ollama_serve():
-  subprocess.Popen(["ollama", "serve"])
+#def run_ollama_serve():
+#  subprocess.Popen(["ollama", "serve"])
 
-thread = threading.Thread(target=run_ollama_serve)
-thread.start()
-time.sleep(5)
+#thread = threading.Thread(target=run_ollama_serve)
+#thread.start()
+#time.sleep(5)
 
 prompt = 'What does the word *dog* mean'
 from ollama import chat, ChatResponse, generate
@@ -67,7 +67,7 @@ result = generate(model='llama3',prompt=prompt)
 response = result['response']
 print(response)
 
-!ollama pull qwen3
+#!ollama pull qwen3
 
 result = generate(model='qwen3',prompt=prompt)
 response = result['response']
