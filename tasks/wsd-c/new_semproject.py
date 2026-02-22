@@ -7,11 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1xznh5oPFhfUpbkVtvPZT3eJH4wAcYmZ5
 """
 
-!sudo apt-get update && sudo apt-get install -y zstd
+#!sudo apt-get update && sudo apt-get install -y zstd
 
-!curl -fsSL https://ollama.com/install.sh | sh
+#!curl -fsSL https://ollama.com/install.sh | sh
 
-!pip install ollama wn
+#!pip install ollama wn
 
 import subprocess
 import threading
@@ -26,7 +26,7 @@ thread.daemon = True
 thread.start()
 time.sleep(5)
 
-!ollama pull llama3
+#!ollama pull llama3
 
 import wn
 wn.download('oewn:2025+')
