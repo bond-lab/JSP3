@@ -41,6 +41,7 @@ import wn
 
 word = "log"
 wn.download('oewn:2024')
+wn.add('oewn:2024')
 
 ewn = wn.Wordnet('oewn:2024', lang='en')
 
