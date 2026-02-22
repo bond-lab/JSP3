@@ -40,9 +40,9 @@ print(response)
 import wn
 
 word = "log"
-wn.download('oewn')
+wn.download('oewn:2024')
 
-ewn = wn.Wordnet('oewn:2024')
+ewn = wn.Wordnet('oewn:2024', lang='en')
 
 import json
 sentence = 'I entered it in the log.'
