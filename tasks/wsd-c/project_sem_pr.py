@@ -40,8 +40,8 @@ print(response)
 import wn
 
 word = "log"
-wn.download('oewn:2024')
-wn.add('oewn:2024')
+wn.download('oewn:2025')
+wn.add('oewn:2025')
 
 ewn = wn.Wordnet('oewn:2024', lang='en')
 
