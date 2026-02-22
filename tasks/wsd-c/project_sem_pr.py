@@ -43,7 +43,7 @@ word = "log"
 wn.download('oewn:2025')
 wn.add('oewn:2025')
 
-ewn = wn.Wordnet('oewn:2024', lang='en')
+ewn = wn.Wordnet('oewn:2025', lang='en')
 
 import json
 sentence = 'I entered it in the log.'
