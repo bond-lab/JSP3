@@ -28,14 +28,13 @@ time.sleep(5)
 
 #!ollama pull llama3
 
-#import wn
-#wn.download('oewn:2025+')
+import wn
+wn.download('oewn:2025+')
 
 import subprocess
 import threading
 import time
 #import ollama
-#import wn
 import argparse
 import logging
 import re
@@ -99,7 +98,7 @@ def process_concept(concept, wn_lang='en', args=None):
     lemma = concept['clemma']
     meanings = {}
 
-    ewn = wn.Wordnet('oewn:2024', lang='en')
+    ewn = wn.Wordnet('oewn:2025+', lang='en')
 
     synsets = ewn.synsets(lemma)
 
