@@ -28,8 +28,8 @@ time.sleep(5)
 
 #!ollama pull llama3
 
-import wn
-wn.download('oewn:2025+')
+#import wn
+#wn.download('oewn:2025+')
 
 import subprocess
 import threading
