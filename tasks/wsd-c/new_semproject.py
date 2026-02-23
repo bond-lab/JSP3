@@ -41,7 +41,7 @@ import logging
 import re
 import json
 #from ollama import generate
-#from tqdm import tqdm
+from tqdm import tqdm
 import os
 from collections import Counter
 import datetime
