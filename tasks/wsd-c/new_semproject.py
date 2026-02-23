@@ -16,7 +16,7 @@ Original file is located at
 import subprocess
 import threading
 import time
-import ollama
+#import ollama
 
 def run_ollama():
     subprocess.Popen(["ollama", "serve"])
