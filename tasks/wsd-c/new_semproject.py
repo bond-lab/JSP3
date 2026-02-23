@@ -39,7 +39,7 @@ import argparse
 import logging
 import re
 import json
-#from ollama import generate
+from ollama import generate
 import os
 from collections import Counter
 import datetime
