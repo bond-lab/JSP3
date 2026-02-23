@@ -34,14 +34,13 @@ time.sleep(5)
 import subprocess
 import threading
 import time
-import ollama
-import wn
+#import ollama
+#import wn
 import argparse
 import logging
 import re
 import json
 from ollama import generate
-import wn
 from tqdm import tqdm
 import os
 from collections import Counter
