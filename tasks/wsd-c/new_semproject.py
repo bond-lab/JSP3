@@ -371,19 +371,16 @@ def compute_accuracy(gold_path, pred_path):
     correct = 0
     total = 0
 
-    for sent_id in gold.get("conc", {}):
-        if sent_id not in pred.get("sent", {}):
-            continue
+    for sent_id, gold_concepts in gold.get("conc", {}.items():
+        pred_concepts = pred.get("sent", {}).get(sent_id, {}).get("concepts", {})
 
-        gold_concepts = gold["conc"].get(sent_id, {})
-        pred_concepts = pred["sent"].get(sent_id, {}).get("concepts", {})
+        for concept_id, gold_data in gold_concepts.items():
 
-        for concept_id in gold_sent["concepts"]:
-            if concept_id not in pred_sent["concepts"]:
+        if concept_id not in pred_concepts:
                 continue
 
-            gold_tag = gold_concepts[concept_id]["tag"]
-            pred_tag = pred_concepts[concept_id]["tag"]
+        gold_concepts = gold_data.get("tag")
+        pred_concepts = pred_concepts[concept_id].get("tag")
             
             if gold_tag == pred_tag:
                 correct += 1
@@ -404,7 +401,3 @@ for i in range(4):
         "twwtn-en_human (1).json",
         f"twwtn-en_human (1)_tagged_context{i}.json"
     )
-
-print(data.keys())
-print("Has conc:", "conc" in data)
-print("Has concepts in sent:", "concepts" in list(data["sent"].values())[0])
