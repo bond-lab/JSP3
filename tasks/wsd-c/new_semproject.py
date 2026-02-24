@@ -371,7 +371,7 @@ def compute_accuracy(gold_path, pred_path):
     correct = 0
     total = 0
 
-    for sent_id, gold_concepts in gold.get("conc", {}.items():
+    for sent_id, gold_concepts in gold.get("conc", {}).items():
         pred_concepts = pred.get("sent", {}).get(sent_id, {}).get("concepts", {})
 
         for concept_id, gold_data in gold_concepts.items():
