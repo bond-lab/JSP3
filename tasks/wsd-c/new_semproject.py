@@ -372,18 +372,20 @@ def compute_accuracy(gold_path, pred_path):
     total = 0
 
     for sent_id, gold_concepts in gold.get("conc", {}).items():
-        pred_concepts = pred.get("sent", {}).get(sent_id, {}).get("concepts", {})
+        pred_sent = pred.get("sent", {}).get(sent_id, {})
+        pred_concepts = pred_sent.get("concepts", {})
         
         for concept_id, gold_data in gold_concepts.items():
-            if concept_id not in pred_concepts:
-                continue
+            if concept_id in pred_concepts:
+                pred_data = pred_concepts[concept_id]
                 
-                gold_concepts = gold_data.get("tag")
-                pred_concepts = pred_concepts[concept_id].get("tag")
+                gold_tag = gold_data.get("tag")
+                pred_tag = pred_data.get("tag")
                 
-                if gold_tag == pred_tag:
-                    correct += 1
+                if pred_tag is not None and pred_tag != "None":
                     total += 1
+                    if gold_tag == pred_tag:
+                        correct += 1
 
     accuracy = (correct / total) * 100 if total > 0 else 0
 
