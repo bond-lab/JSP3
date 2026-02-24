@@ -395,16 +395,7 @@ def compute_accuracy(gold_path, pred_path):
 
     return accuracy
 
-for i in range(4):
-    print(f"\nContext {i}")
-    compute_accuracy(
-        "twwtn-en_human (1).json",
-        f"twwtn-en_human (1)_tagged_context{i}.json"
-    )
-
-print("\n" + "="*80)
-print("Accuracy for all contexts")
-print("="*80)
+print("ACCURACY for all contexts")
 
 for i in range(4):
     pred_file = f"twwtn-en_human (1)_tagged_context{i}.json"
