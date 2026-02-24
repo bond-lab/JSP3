@@ -401,3 +401,15 @@ for i in range(4):
         "twwtn-en_human (1).json",
         f"twwtn-en_human (1)_tagged_context{i}.json"
     )
+
+print("\n" + "="*80)
+print("Accuracy for all contexts")
+print("="*80)
+
+for i in range(4):
+    pred_file = f"twwtn-en_human (1)_tagged_context{i}.json"
+    if os.path.exists(pred_file):
+        print(f"\nContext {i}")
+        compute_accuracy("twwtn-en_human (1).json", pred_file)
+    else:
+        print(f"File not found: {pred_file}")
