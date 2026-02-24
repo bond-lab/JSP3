@@ -355,7 +355,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110020",
+        range_str="110001:110011",
         json_file="twwtn-en_human (1).json",
         model="llama3",
         context_window_size=size,
