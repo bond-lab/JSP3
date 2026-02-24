@@ -409,3 +409,7 @@ for i in range(4):
         "twwtn-en_human (1).json",
         f"twwtn-en_human (1)_tagged_context{i}.json"
     )
+
+print(data.keys())
+print("Has conc:", "conc" in data)
+print("Has concepts in sent:", "concepts" in list(data["sent"].values())[0])
