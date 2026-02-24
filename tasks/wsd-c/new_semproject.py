@@ -355,11 +355,60 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110011",
+        range_str="110001:11006",
         json_file="twwtn-en_human (1).json",
         model="llama3",
         context_window_size=size,
         dry_run=False,
         verbose=True,
         wn_only=False
+    )
+
+def compute_accuracy(gold_path, pred_path):
+    with open(gold_path, "r", encoding="utf-8") as f:
+        gold = json.load(f)
+
+    with open(pred_path, "r", encoding="utf-8") as f:
+        pred = json.load(f)
+
+    correct = 0
+    total = 0
+
+    for sent_id in gold["sent"]:
+        if sent_id not in pred["sent"]:
+            continue
+
+        gold_sent = gold["sent"][sent_id]
+        pred_sent = pred["sent"][sent_id]
+
+        if "concepts" not in gold_sent:
+            continue
+        if "concepts" not in pred_sent:
+            continue
+
+        for concept_id in gold_sent["concepts"]:
+            if concept_id not in pred_sent["concepts"]:
+                continue
+
+            gold_tag = gold_sent["concepts"][concept_id]["tag"]
+            pred_tag = pred_sent["concepts"][concept_id]["tag"]
+
+            if gold_tag == pred_tag:
+                correct += 1
+
+            total += 1
+
+    accuracy = (correct / total) * 100 if total > 0 else 0
+
+    print(f"Correct: {correct}")
+    print(f"Total: {total}")
+    print(f"Accuracy: {accuracy:.2f}%")
+
+    return accuracy
+
+for i in range(4):
+    print(f"\nContext {i}")
+    compute_accuracy(
+        "twwtn-en_human (1).json",
+        f"twwtn-en_human (1)_tagged_context{i}.json"
     )
