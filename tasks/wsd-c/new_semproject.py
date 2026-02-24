@@ -79,15 +79,12 @@ def load_corpus(json_path):
 
 def get_sentences_and_concepts(data, min_sid, max_sid):
     sentences = []
-    for sid_str in data.get('sent', {}):
+    for sid_str, sent_data in data.get('sent', {}).items():
         sid = int(sid_str)
         if min_sid <= sid <= max_sid:
-            sent = data['sent'][sid_str].copy()
+            sent = sent_data.copy()
             sent['sid'] = sid
-            sent_concepts = {}
-            if sid_str in data.get('conc', {}):
-                sent_concepts = data['conc'][sid_str]
-            sent['concepts'] = sent_concepts
+            sent['concepts'] = sent_data.get('concepts', {})
             sentences.append(sent)
     return sentences
 
