@@ -84,7 +84,7 @@ def get_sentences_and_concepts(data, min_sid, max_sid):
         if min_sid <= sid <= max_sid:
             sent = sent_data.copy()
             sent['sid'] = sid
-            sent['concepts'] = sent_data.get('concepts', {})
+            sent['concepts'] = data.get('conc', {}).get(sid_str, {})
             sentences.append(sent)
     return sentences
 
@@ -371,25 +371,20 @@ def compute_accuracy(gold_path, pred_path):
     correct = 0
     total = 0
 
-    for sent_id in gold["sent"]:
-        if sent_id not in pred["sent"]:
+    for sent_id in gold.get("conc", {}):
+        if sent_id not in pred.get("sent", {}):
             continue
 
-        gold_sent = gold["sent"][sent_id]
-        pred_sent = pred["sent"][sent_id]
-
-        if "concepts" not in gold_sent:
-            continue
-        if "concepts" not in pred_sent:
-            continue
+        gold_concepts = gold["conc"].get(sent_id, {})
+        pred_concepts = pred["sent"].get(sent_id, {}).get("concepts", {})
 
         for concept_id in gold_sent["concepts"]:
             if concept_id not in pred_sent["concepts"]:
                 continue
 
-            gold_tag = gold_sent["concepts"][concept_id]["tag"]
-            pred_tag = pred_sent["concepts"][concept_id]["tag"]
-
+            gold_tag = gold_concepts[concept_id]["tag"]
+            pred_tag = pred_concepts[concept_id]["tag"]
+            
             if gold_tag == pred_tag:
                 correct += 1
 
