@@ -382,9 +382,8 @@ def compute_accuracy(gold_path, pred_path):
                 pred_concepts = pred_concepts[concept_id].get("tag")
                 
                 if gold_tag == pred_tag:
-                correct += 1
-
-                total += 1
+                    correct += 1
+                    total += 1
 
     accuracy = (correct / total) * 100 if total > 0 else 0
 
