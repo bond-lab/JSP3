@@ -1,0 +1,262 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+    citecolor=OliveGreen, % a very dark green
+    linkcolor=NavyBlue,
+    urlcolor=NavyBlue
+  }
+ \usepackage{url}
+
+\title{JSP3: Report for task WSD-C}
+\author{%
+  Vira Yurchenko, Stanislav Lahno, Barbora Mahdalová \\
+  \href{mailto:yurcvi00@upol.cz}{yurcvi00@upol.cz},%
+  \href{mailto:lahnst00@upol.cz}{lahnst00@upol.cz},%
+  \href{mailto:mahdba00@upol.cz}{mahdba00@upol.cz} \\
+  \texttt{veray15, LStando, bmahdalova}%
+  }
+\date{January 2026}
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+The goal of this project is to automatically identifying the correct meaning (sense) of words in a text and give it a sentiment value.\\
+The main task is word sense disambiguation and lexical sentiment analysis for a JSON corpus with sentences.\\
+
+The assignment is:\\
+- Look at the context around each important word.\\
+- Choose which meaning of the word is most appropriate for that place.\\
+- Give the word a sentiment score: from -100 (negative) to +100 (positive) or 0 (neutral).\\
+
+Ollama, a small AI model used in the project, reads context and selects the appropriate meaning from the WordNet dictionary.\\
+
+This project aims to automatically add a sentiment and tag words in a text corpus with their most appropriate sense.\\
+
+\section{Background}
+In this project we used mainly Open English WordNet (oewn:2024) and Ollama for running large language models locally. We tested two models: qwen2.5:7b version (the size is 7B parametres, this model is much slower) and the qwen2.5:3b version (the size is 3B parametres, this model is faster).
+\subsection*{Update}
+After some improvements there were used Ollama model llama3 (the size is 8B parametres), which is bigger and should be more powerful and Open English WordNet (oewn:2025+), which is more actual. The code was run on the remote and powerful server nlplab. 
+\subsection*{Resources}
+\label{sec:resources}
+\begin{itemize}
+\item Open English WordNet (oewn:2024)
+\item Ollama model qwen2.5:7b
+\item Ollama model qwen2.5:3b
+\item Ollama model llama3 
+\item Open English WordNet (oewn:2025+)
+\item JSON file (twwtn-enhuman.json)
+\end{itemize}
+
+\section{Approach}
+\label{sec:approach}
+The full code is available here: \href{https://colab.research.google.com/drive/1yyH8mIXcxfvdz-Y_Dbwn9Z54pnOOAnBH?usp=sharing}{google colab}.\\
+
+First, we tried to test Ollama model locally on our computers. As we have regular notebooks, we couldn't test big models. So these models are quite small and don't work so fast as we expected.\\
+
+In the Google Collab we installed GPU and ran our code there. There was used JSON file with texts in English.\\
+
+Generally, we took each lemma and look at its context, used wn library for possible meanings and asked the model to give a sentiment score. We tested the size of context with such principle: 2 sentences before and after around the sentence.\\ 
+
+We started with the bigger model (7b), but it was too slow, one small test took more than 3 hours (we took the range 110001:110005). So we switched to the smaller 3b model, which finished the same test in 2 hours (nearly). In result we took a little bigger range (110001:110006). With the first range model processed 3 sentences, with the second one it processed 4 sentences. \\
+
+At the end we saved all the chosen meanings, scores and a summary: which meanings were chosen most often, what was the average sentiments of the words, etc. The results were saved in JSON files and simple statistics reports for each test.
+
+\subsection*{Update}
+I started to use the virtual environment, where were installed some packages like ollama and wn. The Ollama's model and Open English Wordnet were changed to the llama3 and WordNet (oewn:2025+). I connected to the github and if there were some errors I fixed the code right in the github. Then ran it on the server. \\
+
+Since the code was run on the powerful server, it was much faster, than in Google Colab. There were processed 100 sentences (the range is 110001:110101) and about 1400 concepts. First, I processed 100 sentences through night and there were the result, but I couldn't download the json files because of disconnection of the server(it was closed). So I ran it one more time, but the code stopped some times. I decided to cut the range on two parts, 50 sentences each. It worked, the code ran each part without stopping. The running of the code took nearly 4-5 hours (in total).\\
+
+This time were counted not only sentiment stats and summary of different size of concepts, but also accuracy, which is really important in this work. \\
+\section{Results}
+\label{sec:results}
+We tested four different context sizes (0, 1, 2, and 3 sentences before and after the current sentence). Here are the main results from the statistics files (output):\\
+
+\textbf{Context size 0}(only the current sentence):
+\begin{itemize}
+\item "processed sentences": 4,
+\item "total concepts": 11,
+\item "tag counts":
+    "per": 4,
+\item "sentiment stats": "mean": -6.8
+\item "non zero sentiments": 1\\
+
+\textbf{Context size 1}:
+
+\item "processed sentences": 4,
+\item "total concepts": 156,
+\item "tag counts":     "per": 3,
+    "w": 3,
+    "x": 3
+\item   "non zero sentiments": 5,
+\item "sentiment stats": "mean": -24.3\\
+
+\textbf{Context size 2}:
+
+\item "processed sentences": 4,
+\item  "total concepts": 241,
+\item  "tag counts":
+    "per": 3,
+    "x": 6,
+    "w": 1
+\item   "non zero sentiments": 3,
+\item "sentiment stats":
+    "mean": -33.0\\
+
+\textbf{Context size 3}:
+
+\item "processed sentences": 4,
+\item "total concepts": 270,
+\item  "tag counts":
+    "x": 5,
+    "per": 5,
+    "w": 1
+\item   "non zero sentiments": 6,
+\item "sentiment stats":
+    "mean": -44.0
+\end{itemize}
+
+\subsection*{Update}
+Evaluation of tag prediction accuracy (100 sentences): \\ 
+
+\textbf{Context size 0}
+Correct: 75,
+Total: 1404,
+Accuracy: 4.86%
+
+\textbf{Context size 1}
+Correct: 66,
+Total: 1390,
+Accuracy: 4.58%
+
+\textbf{Context size 2}
+Correct: 65,
+Total: 1384,
+Accuracy: 4.7%
+
+\textbf{Context size 3}
+Correct: 66,
+Total: 1404,
+Accuracy: 4.53% 
+\\
+
+The statistics results of testing different context sizes(for 50 sentences):\\
+
+\textbf{Context size 0}(only the current sentence):
+\begin{itemize}
+\item "total concepts": 485,
+\item "tag counts":
+    "w": 104,
+    "x": 20,
+    "per": 24,
+    "org": 3,
+    "loc": 21,
+    "e": 1,
+    "oth": 11
+
+\item "sentiment stats": "mean": 2.4
+\item "non zero sentiments": 107\\
+
+\textbf{Context size 1}:
+
+\item "total concepts": 507,
+\item "tag counts":     
+    "w": 102,
+    "x": 26,
+    "per": 22,
+    "org": 2,
+    "loc": 24,
+    "dat": 1,
+    "oth": 21
+\item   "non zero sentiments": 107,
+\item "sentiment stats": "mean": 1.6\\
+
+\textbf{Context size 2}:
+
+\item  "total concepts": 516,
+\item  "tag counts":
+       "w": 91,
+    "x": 17,
+    "per": 22,
+    "org": 1,
+    "loc": 29,
+    "oth": 15
+\item   "non zero sentiments": 97,
+\item "sentiment stats":
+    "mean": 1.6\\
+
+\textbf{Context size 3}:
+
+\item "total concepts": 533,
+\item  "tag counts":
+    "w": 95,
+    "x": 20,
+    "per": 27,
+    "org": 1,
+    "loc": 30,
+    "oth": 12
+\item   "non zero sentiments": 97,
+\item "sentiment stats":
+    "mean": 1.4
+\end{itemize}
+
+\section{Discussion}
+\label{sec:discussion}
+From the statistics, we can see, that small context (size 0) gives the most neutral sentiment (-6.8) and more "per" (person) tags (which is correct for names). Big context (size 3) makes sentiment too negative (-44.0) and increases "x".\\
+
+Therefore larger context increases the number of processed concepts, but also makes the model choose more "x" (closed-class words) and "w" (wrong sense) tags. Sentiment scores become more negative as context grows. It is too negative even for neutral words (names like "Karel", "Čapek", "David"..). Average sentiment drops from -6.8 (size 0) to -44.0 (size 3). This shows that the model qwen2.5:3b gets confused with long text. \\
+
+With larger context (size 2 and 3), the number of concepts grows a lot (from 11 to 270).\\
+
+This result shows that more context does not always help, the small model gets lost in long text.\\ 
+
+We had some challenges during this work. In general, it was quite new kind of project for us, because we have never used Ollama language model. Despite this, it was really useful and interesting experience for us.\\
+
+\subsection*{Update}
+Overall accuracy is quite low (4.5–4.9). \\ 
+
+The model was evaluated on 50 sentences (110001:110101) with four context sizes (0 to 3). Accuracy was calculated by comparison of predicted tags with gold tags from the original corpus. \\
+
+The highest accuracy was achieved with context size 0 (4.86). This means that the model performs slightly better, when relying only on the current sentence. Increasing the context size leads to a little decrease in accuracy (from 4.86 to 4.53). The difference of accuracy of all contexts is really small, about 0,3. I guess the reason is there are lots of word disambiguation.\\
+
+From the statistics we see that concepts increase with bigger size of context (from 485 to 533). This means, that the model finds more meanings with additional context. Sentiment is positive, but closer to neutral. It gets lower with bigger size of context (from 2.4 to 1.4). The tag "w" (wrong sense) is the most frequent, therefore there are many words for which WordNet is not suitable. \\
+
+
+\textbf{Problems we had} in this project:
+\begin{enumerate}
+    \item When we used the bigger model (qwen2.5:7b), one small test with only a few sentences took more than 3 hours. We chose the smaller one (qwen2.5:3b) and the same test was finished in 2 hours.
+    \item The model didn't always follow instructions. Sometimes it returned "None" (\textit{Selected key: None}) instead of choosing a tag from the list. Other times it picked tags like "x" or "w". This happened more often when the context was long (context size 2 or 3). We think the reason is that the prompt became very big and the small model got confused.
+    \item Also there is a lot of negative sentiment even if a word is neutral. \\
+\end{enumerate}
+    +
+\begin{enumerate}
+\item As the virtual environment is a new thing for me, in the begging it was difficult to run the code. There were various errors whether with WordNet or just in the code.\\
+\item There is still high level of wrong sense. Many words for WordNet is not suitable.
+\item There is a small difference of accuracy between all contexts. I would suggest, that the accuracy will increase with bigger context, but we see opposite result. It means the model doesn't take some advantages or benefit of using the additional context.\\
+    
+\end{enumerate}
+
+\textbf{For future work:}\\
+
+We should use a bigger model and better computer system to get better results. We could try to improve prompts, so the model never returns "None" and gives more neutral sentiment for names. Absolutely we need to test on a bigger range (for example, 110001:110031) to see if context helps with specific terms.\\
++
+
+I consider that whether this model (llama3) is not so good with WSD or the text is quite ambiguous, so it doesn't give improvements to the model. That's why it would be better to test different models and them compare them.
+
+\section{Conclusions}
+\label{sec:conclusions}
+We built and tested the code, that uses a JSON corpus to determine a word's correct sense and assign a sentiment score.  There was used small Ollama model for reading the context and choosing the meaning from WordNet. We ran tests with different context sizes: 0, 1, 2, and 3 sentences before and after the current sentence.\\
+
+The result showed that for this model, it is often better to use a small context, because long text makes it lose focus.\\
+
+Finally the code worked well. It processed the text, saved tagged JSON files and created statistics files for each context size. This helped us to easily compare the results. In the future we could use a bigger model, better prompts or test on more parts of text to get better results.\\
+
++\\
+The work was much better using the server. I'm really thankful for the opportunity to use it. The results showed that this model is better at using a small amount of context, because long text leads to smaller accuracy. \\
+
+* The main part of the work was done by Vira Yurchenko and Stanislav Lahno. We wrote the code from the beginning to the end. From the middle of the project Barbora Mahdalová helped by suggesting us her own ideas on how to improve the code (as she joined the group in the middle of the semester).
+
+
+\end{document}
