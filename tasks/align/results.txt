@@ -1,0 +1,22 @@
+Successfully aligned 2489 blocks.
+Rejected 353 Czech sentences due to low semantic match.
+--------------------------------------------------
+Score: 0.84
+CS: ANDRIAS SCHEUCHZERI
+EN: Andrias Sheuchzeri
+
+Score: 0.82
+CS: ale kdybyste se zeptali na palubě lodi Kandong Bandoeng kapitána J . van Tocha , co to je tahle Tana Masa , před kterou právě zakotvil , nadával by chvíli a pak by vám řekl , že to je ta nejšpinavější díra v celých Sundských ostrovech , ještě mizernější než Tana Bala a přinejmenším tak zatracená jako Pini nebo Banjak ; že jediný s odpuštěním člověk , který tam žije - nepočítáme - li ovšem tyhle všivé Bataky - , je opilý obchodní agent , kříženec mezi Kubu a Portugalcem a ještě větší zloděj , pohan a prase než celý Kubu a celý běloch dohromady ;
+EN: If you looked up the little island of Tana Masa on the map you would find it just on the Equator, not far south of Sumatra; but if you were on the deck of the Kandong Bandoeng and asked its captain, J. van Toch, what he thought of this Tana Masa where you’ve just dropped anchor he would first curse for a short while and then he would tell you that it’s the dirtiest hole all the Sunda Islands, even more loathsome than Tana Bala and easily as damnable as Pini or Banyak; that the only apology for a human being that lives there — not counting these louse-ridden Bataks, of course — is a drunken commercial agent, a cross between a Cuban and a Portuguese, and an even bigger thief, pagan and pig than the whole of Cuba and the whole of the white race put together; if there’s anything in this world that’s damnable then it’s the damned life on this damned Tana Masa.
+
+Score: 0.59
+CS: a že je - li na světě něco zatraceného , pak je to zatracený život na téhle zatracené Tana Masa , pane . Načež byste se ho patrně zeptali , proč tu tedy spustil ty zatracené kotvy , jako by tu chtěl zůstat zatracené tři dny ;
+EN: And then, you might cautiously ask him why it is that he’s just dropped his damned anchor as if he wanted to spend three damned days here; at which he would snort in irritation and grumble something about not being so damned stupid as to sail all the way to Kandon Bandoeng just to get this damned copra or palm oil, and there’s nothing else here, but I’ve got my damned orders, and you will please be so kind as to mind your own damned business.
+
+Score: 0.90
+CS: Ale kdybyste místo všetečných otázek nechali kapitána J . van Tocha , aby si bručel a proklínal pro sebe , mohli byste se dovědět víc .
+EN: But if, instead of asking all sorts of impertinent questions, you left Captain J. van Toch to grumble and curse by himself you might find out something more.   
+
+Score: 0.73
+CS: Jen ho nechte , jeho roztrpčenost si najde cestu sama .
+EN: Just leave him alone, he can sort out his foul mood by himself

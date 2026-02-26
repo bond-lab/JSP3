@@ -1,0 +1,245 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% Color configuration for code listings
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\geometry{a4paper, margin=1in}
+
+\title{JSP3: Report for Task: WordNet Alignment}
+\author{
+    \sffamily Vojtěch Mahdal \& Dominik Fránek \\ 
+    \vspace{0.2cm}
+    \small Palacký University Olomouc \\
+    \small Faculty of Arts, Department of General Linguistics \\
+    \vspace{0.2cm}
+    \small\texttt{vmahdal05@gmail.com, Dominik.franek@email.cz}
+}
+\date{\sffamily February 25, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report outlines the task of cross-lingual sentence alignment between Czech and English versions of Karel Čapek's \textit{Válka s mloky} (War with the Newts). The goal is to synchronize parallel corpora at the sentence level to support further linguistic research, specifically Word Sense Disambiguation (WSD). The task involves handling structural translation discrepancies, such as many-to-one sentence mappings, and correcting for sequential drift using semantic embeddings.
+
+\section{Background}
+\subsection{Resources}
+The primary data sources used for this project include:
+\begin{itemize}
+    \item \textbf{Parallel JSON Corpora}: \texttt{twwtn-cs\_human.json} (Czech) and \texttt{twwtn-en\_human.json} (English).
+    \item \textbf{Semantic Model}: The \textbf{LaBSE} (Language-Agnostic BERT Sentence Embedding) model, utilized via the \texttt{sentence-transformers} library to generate vector representations for cross-lingual comparison.
+    \item \textbf{Existing Work}: Reference was made to the \texttt{lingtrain-aligner} framework for paragraph-level synchronization logic.
+\end{itemize}
+
+\section{Approach}
+The alignment process follows a dynamic logic with drift correction. Below is the Python implementation used to extract sentences, encode them using LaBSE, and perform the sliding window alignment. 
+
+
+
+\begin{lstlisting}[language=Python, caption=Python implementation for LaBSE Alignment]
+import json
+import numpy as np
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+
+# ==========================================
+# 1. UPGRADED EXTRACTION FUNCTION
+# ==========================================
+def extract_sentences(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    sentences = []
+    
+    for sent_id, sent_data in data.get('sent', {}).items():
+        if 'text' in sent_data:
+            sentences.append((sent_id, sent_data['text']))
+        else:
+            words = []
+            word_keys = sorted([k for k in sent_data.keys() if k.isdigit()], key=int)
+            for key in word_keys:
+                word_info = sent_data[key]
+                # Prefer exact 'word' if it exists, otherwise use 'clemma' (lemma)
+                if 'word' in word_info:
+                    words.append(word_info['word'])
+                elif 'clemma' in word_info:
+                    words.append(word_info['clemma'])
+                    
+            if words:
+                sentences.append((sent_id, " ".join(words)))
+    
+    sentences.sort(key=lambda x: int(x[0]))
+    return sentences
+
+# --- Set your file paths here ---
+CS_FILE_PATH = r"C:\Users\Mahdal\Desktop\data 2\twwtn-cs_human.json"
+EN_FILE_PATH = r"C:\Users\Mahdal\Desktop\data 2\twwtn-en_human.json"
+
+cs_data = extract_sentences(CS_FILE_PATH)
+en_data = extract_sentences(EN_FILE_PATH)
+
+cs_sentences = [item[1] for item in cs_data]
+en_sentences = [item[1] for item in en_data]
+
+# ==========================================
+# 2. LOAD SEMANTIC MODEL (LaBSE)
+# ==========================================
+print("Loading LaBSE model...")
+model = SentenceTransformer('sentence-transformers/LaBSE')
+
+print("Encoding sentences (this may take a moment)...")
+cs_embeddings = model.encode(cs_sentences, show_progress_bar=True)
+en_embeddings = model.encode(en_sentences, show_progress_bar=True)
+
+# ==========================================
+# 3. ALIGNMENT WITH LOOKAHEAD RE-ANCHORING
+# ==========================================
+def align_with_drift_correction(src_sents, src_embs, tgt_sents, tgt_embs, threshold=0.55):
+    aligned_pairs = []
+    unmatched_src = []
+    merged_emb_cache = {}
+    
+    def get_merged_emb(text):
+        if text not in merged_emb_cache:
+            merged_emb_cache[text] = model.encode([text])[0]
+        return merged_emb_cache[text]
+
+    i, j = 0, 0
+    while i < len(src_sents) and j < len(tgt_sents):
+        sim_1_1 = cosine_similarity([src_embs[i]], [tgt_embs[j]])[0][0]
+        
+        sim_1_2 = 0
+        if j + 1 < len(tgt_sents):
+            sim_1_2 = cosine_similarity([src_embs[i]], [get_merged_emb(tgt_sents[j] + " " + tgt_sents[j+1])])[0][0]
+            
+        sim_2_1 = 0
+        if i + 1 < len(src_sents):
+            sim_2_1 = cosine_similarity([get_merged_emb(src_sents[i] + " " + src_sents[i+1])], [tgt_embs[j]])[0][0]
+            
+        sim_skip_tgt = 0
+        if j + 1 < len(tgt_sents):
+            sim_skip_tgt = cosine_similarity([src_embs[i]], [tgt_embs[j+1]])[0][0]
+
+        best_sim = max(sim_1_1, sim_1_2, sim_2_1, sim_skip_tgt)
+        
+        if best_sim < threshold:
+            best_lookahead_sim = 0
+            best_i_jump, best_j_jump = 1, 1
+            
+            for x in range(6):
+                for y in range(6):
+                    if x == 0 and y == 0: continue
+                    if i + x < len(src_sents) and j + y < len(tgt_sents):
+                        sim = cosine_similarity([src_embs[i+x]], [tgt_embs[j+y]])[0][0]
+                        if sim > best_lookahead_sim:
+                            best_lookahead_sim = sim
+                            best_i_jump, best_j_jump = x, y
+            
+            if best_lookahead_sim >= threshold:
+                for skipped_i in range(best_i_jump):
+                    unmatched_src.append(src_sents[i + skipped_i])
+                i += best_i_jump
+                j += best_j_jump
+            else:
+                unmatched_src.append(src_sents[i])
+                i += 1
+                j += 1
+        
+        elif best_sim == sim_1_2:
+            aligned_pairs.append({'czech': src_sents[i], 'english': tgt_sents[j] + " " + tgt_sents[j+1], 'score': float(sim_1_2)})
+            i += 1; j += 2
+        elif best_sim == sim_2_1:
+            aligned_pairs.append({'czech': src_sents[i] + " " + src_sents[i+1], 'english': tgt_sents[j], 'score': float(sim_2_1)})
+            i += 2; j += 1
+        elif best_sim == sim_skip_tgt:
+            j += 1 
+        else:
+            aligned_pairs.append({'czech': src_sents[i], 'english': tgt_sents[j], 'score': float(sim_1_1)})
+            i += 1; j += 1
+
+    return aligned_pairs, unmatched_src
+\end{lstlisting}
+
+\section{Results}
+The algorithm successfully processed the parallel corpus:
+\begin{itemize}
+    \item \textbf{Total Aligned Blocks}: 2,489.
+    \item \textbf{Rejected Czech Sentences}: 353 (due to low semantic match).
+\end{itemize}
+
+\section{Discussion}
+The high alignment rate (approx. 2,500 blocks) demonstrates that LaBSE is effective for mapping the complex literary style of Čapek. However, the rejection of 353 sentences suggests significant "drift" or liberal translation in certain segments. Future work should focus on lowering the rejection rate by integrating paragraph-level anchoring before sentence-level splitting.
+
+\section{Conclusions}
+We have implemented a functional pipeline for aligning Czech and English parallel texts. The resulting corpus is ready for integration into the NTU-MC or WSD-C projects. The next steps include getting \texttt{lingtrain-aligner} fully operational for expanded datasets.
+
+\section{Contributions}
+Regarding contributions, the code and methodology represent a collaborative effort resulting from profound research of the matter and extensive brainstorming of solutions to overcome technical bottlenecks. The workload included a comprehensive analysis of the source JSON files, the development of a custom regex-based pipeline to repair structural corruption, and the implementation of a semantic alignment strategy to mitigate sequential drift. The team collaborated closely on diagnosing the segmentation discrepancies inherent in human-translated texts and verifying the final interleaved output to ensure linguistic accuracy. The original report was drafted by Vojtěch Mahdal, with subsequent refinement and slight improvement propositions by Dominik Fránek.
+
+\section{Declaration}
+While the computational analysis, code development and the core research findings were developed independently by the authors, AI tools were utilized to optimize language clarity and grammar.
+
+\clearpage
+
+\begin{table}[h!]
+\centering
+\caption{Sample Alignment Output from LaBSE Model}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}p{0.42\textwidth}p{0.42\textwidth}c@{}}
+\toprule
+\textbf{Czech (CS)} & \textbf{English (EN)} & \textbf{Score} \\ \midrule
+ANDRIAS SCHEUCHZERI 
+& Andrias Sheuchzeri 
+& 0.84 \\
+
+ale kdybyste se zeptali na palubě lodi Kandong Bandoeng kapitána J . van Tocha , co to je tahle Tana Masa , před kterou právě zakotvil , nadával by chvíli a pak by vám řekl , že to je ta nejšpinavější díra v celých Sundských ostrovech , ještě mizernější než Tana Bala a přinejmenším tak zatracená jako Pini nebo Banjak ; že jediný s odpuštěním člověk , který tam žije - nepočítáme - li ovšem tyhle všivé Bataky - , je opilý obchodní agent , kříženec mezi Kubu a Portugalcem a ještě větší zloděj , pohan a prase než celý Kubu a celý běloch dohromady ; 
+& If you looked up the little island of Tana Masa on the map you would find it just on the Equator, not far south of Sumatra; but if you were on the deck of the Kandong Bandoeng and asked its captain, J. van Toch, what he thought of this Tana Masa where you’ve just dropped anchor he would first curse for a short while and then he would tell you that it’s the dirtiest hole all the Sunda Islands, even more loathsome than Tana Bala and easily as damnable as Pini or Banyak; that the only apology for a human being that lives there — not counting these louse-ridden Bataks, of course — is a drunken commercial agent, a cross between a Cuban and a Portuguese, and an even bigger thief, pagan and pig than the whole of Cuba and the whole of the white race put together; if there’s anything in this world that’s damnable then it’s the damned life on this damned Tana Masa. 
+& 0.82 \\
+
+a že je - li na světě něco zatraceného , pak je to zatracený život na téhle zatracené Tana Masa , pane . Načež byste se ho patrně zeptali , proč tu tedy spustil ty zatracené kotvy , jako by tu chtěl zůstat zatracené tři dny ; 
+& And then, you might cautiously ask him why it is that he’s just dropped his damned anchor as if he wanted to spend three damned days here; at which he would snort in irritation and grumble something about not being so damned stupid as to sail all the way to Kandon Bandoeng just to get this damned copra or palm oil, and there’s nothing else here, but I’ve got my damned orders, and you will please be so kind as to mind your own damned business. 
+& 0.59 \\
+
+Ale kdybyste místo všetečných otázek nechali kapitána J . van Tocha , aby si bručel a proklínal pro sebe , mohli byste se dovědět víc . 
+& But if, instead of asking all sorts of impertinent questions, you left Captain J. van Toch to grumble and curse by himself you might find out something more. 
+& 0.90 \\
+
+Jen ho nechte , jeho roztrpčenost si najde cestu sama . 
+& Just leave him alone, he can sort out his foul mood by himself. 
+& 0.73 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
