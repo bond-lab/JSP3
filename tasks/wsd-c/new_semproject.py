@@ -132,22 +132,26 @@ Context (several sentences around the target word):
 
 Target lemma: _{lemma}_
 
-Choose **exactly one** of the following senses that best fits the lemma in this context.
+Choose **exactly one** label from the list below that best fits the lemma in this context.
 If none of the WordNet senses fit well, prefer the special tags (per, loc, org, oth, w, x, e, bio, etc.).
 
 Rules:
-- Use 'per', 'loc', 'org', 'oth' for proper names that are clearly people/places/organizations/other
-- Use 'w' ONLY when WordNet has senses, but NONE of them is appropriate in context
-- Use 'x' for function words, punctuation, closed-class items, or when the token is part of a multi-word expression
-- Use 'e' only for obvious tokenization/lemmatization errors
-- Be conservative: do NOT guess rare senses unless context strongly supports them
+- Use 'per', 'loc', 'org', 'oth' for clear proper names that are clearly (people, places, organizations, other)
+- Use 'w' ONLY if NO WordNet sense fits the context
+- Use 'x' for function words, punctuation, closed-class items, or multi-word expression parts
+- Use 'e' ONLY for obvious tokenization/lemmatization errors
+- Be conservative: prefer special tags over rare WordNet senses
 
 Options:
 {options}
+Output format (strictly follow):
+KEY: <the chosen key only>
 
-First think step-by-step inside <thinking>...</thinking>, explain your reasoning briefly.
-Then on a new line output only the chosen key (example: per or oewn-12345678-n).
-Nothing else after that.
+Examples of correct output:
+KEY: per
+KEY: oewn-12345678-n
+KEY: x
+Your answer must be exactly one line starting with "KEY: " followed by the key. Nothing else.
 """
 
 def construct_context(index, sentences, context_size):
@@ -352,7 +356,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110051:110101",
+        range_str="110001:110011",
         json_file="twwtn-en_human (1).json",
         model="llama3",
         context_window_size=size,
