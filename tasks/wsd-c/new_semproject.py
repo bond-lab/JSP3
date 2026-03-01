@@ -61,7 +61,7 @@ def parse_arguments():
 
 def generate_and_extract(prompt, model='llama3'):
     result = generate(model=model, prompt=prompt, options={"temperature": 0.0})
-    response = result['response']
+    response = result['response'].strip()
     think_match = re.search(r'<thinking>(.*?)</thinking>', response, re.DOTALL)
     if think_match:
         thinking = think_match.group(1).strip()
@@ -167,19 +167,38 @@ def construct_context(index, sentences, context_size):
 
 def disambiguate(context, lemma, meanings, model):
     prompt = construct_prompt(context, lemma, meanings)
-    thinking, selected_key = generate_and_extract(prompt, model)
+    thinking, raw_response = generate_and_extract(prompt, model)
     
-    if selected_key and selected_key in meanings:
-        return selected_key, meanings[selected_key]
+    logger.debug(f"Raw model response: {raw_response[:300]}...")  
     
-    if selected_key:
-        for key in meanings.keys():
-            if key.lower().startswith(selected_key[:8]): 
-                logger.info(f"Fallback match: {selected_key} → {key}")
-                return key, meanings[key]
+    if thinking:
+        logger.debug(f"Model thinking: {thinking[:200]}...")
     
-    logger.warning(f"No valid key found for '{lemma}'. Using fallback 'w'")
-    return "w", meanings.get("w", "unknown word")
+    cleaned = raw_response.strip().lower()  
+    
+    cleaned = re.sub(r'^(the key is|key:|answer:|selected:|output:|final answer:)\s*', '', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'[^\w\-:]', '', cleaned)  
+    cleaned = cleaned.strip('.:;()[]{}')  
+    
+    logger.info(f"Cleaned key candidate: '{cleaned}'")
+    
+    if cleaned in meanings:
+        return cleaned, meanings[cleaned]
+    
+    if cleaned.startswith('oewn-'):
+        short_key = cleaned.replace('oewn-', '')
+        for k in meanings:
+            if k.endswith(short_key):
+                logger.info(f"Matched without oewn-: {cleaned} - {k}")
+                return k, meanings[k]
+    
+    for key in meanings:
+        if key.lower().startswith(cleaned[:10]):  
+            logger.info(f"Fuzzy match: {cleaned} - {key}")
+            return key, meanings[key]
+    
+    logger.warning(f"No match for lemma '{lemma}'. Raw: '{raw_response[:100]}'. Using fallback 'w'")
+    return "w", meanings.get("w", "fallback unknown")
 
 def sentimentalize(context, lemma, model, gloss=''):
     if gloss:
