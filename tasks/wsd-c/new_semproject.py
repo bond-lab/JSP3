@@ -70,6 +70,18 @@ def generate_and_extract(prompt, model='llama3'):
         thinking = None
         cleaned_response = response.strip()
     return thinking, cleaned_response
+    key_match = re.search(r'(?:KEY:\s*)?([a-z]+|oewn-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
+    if key_match:
+        selected_key = key_match.group(1).lower().strip()
+    else:
+        # fallback — первое слово, которое выглядит как ключ
+        words = re.findall(r'\b(oewn-\d+-[nvasr]|[a-z]{1,4})\b', response.lower())
+        selected_key = words[0] if words else None
+    
+    logger.info(f"Raw response: {response[:200]}...")
+    logger.info(f"Extracted key: '{selected_key}'")
+    
+    return thinking, selected_key
 
 def load_corpus(json_path):
     with open(json_path, 'r', encoding='utf-8') as f:
@@ -151,7 +163,7 @@ Examples of correct output:
 KEY: per
 KEY: oewn-12345678-n
 KEY: x
-Your answer must be exactly one line starting with "KEY: " followed by the key. Nothing else.
+Your answer must be one line: KEY: <label>. No other text.
 """
 
 def construct_context(index, sentences, context_size):
