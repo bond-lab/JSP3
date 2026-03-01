@@ -167,15 +167,19 @@ def construct_context(index, sentences, context_size):
 
 def disambiguate(context, lemma, meanings, model):
     prompt = construct_prompt(context, lemma, meanings)
-    thinking, cleaned_response = generate_and_extract(prompt, model)
-    logger.debug(f"Prompt: {prompt}")
-    if thinking:
-        logger.debug(f"Model thinking: {thinking}")
-    logger.info(f"Model response: {cleaned_response}")
-    selected_key = cleaned_response.strip()
-    if selected_key in meanings:
+    thinking, selected_key = generate_and_extract(prompt, model)
+    
+    if selected_key and selected_key in meanings:
         return selected_key, meanings[selected_key]
-    return None, None
+    
+    if selected_key:
+        for key in meanings.keys():
+            if key.lower().startswith(selected_key[:8]): 
+                logger.info(f"Fallback match: {selected_key} → {key}")
+                return key, meanings[key]
+    
+    logger.warning(f"No valid key found for '{lemma}'. Using fallback 'w'")
+    return "w", meanings.get("w", "unknown word")
 
 def sentimentalize(context, lemma, model, gloss=''):
     if gloss:
@@ -356,7 +360,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110011",
+        range_str="110001:110005",
         json_file="twwtn-en_human (1).json",
         model="llama3",
         context_window_size=size,
