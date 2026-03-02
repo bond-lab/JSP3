@@ -369,15 +369,22 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
     if not dry_run:
         base_name = os.path.splitext(json_file)[0]
         output_path = f"{base_name}_tagged_context{context_window_size}.json"
-        data_tagged = data.copy()
         for sid_str, updates in tagged.items():
-            if sid_str in data_tagged.get('sent', {}):
-                if 'concepts' in data_tagged['sent'][sid_str]:
-                    data_tagged['sent'][sid_str]['concepts'].update(updates['concepts'])
+            if 'conc' not in data:
+                data['conc'] = {}
+            if sid_str not in data['conc']:
+                data['conc'][sid_str] = {}
+
+            for cid, concept_info in updates['concepts'].items():
+                if cid in data['conc'][sid_str]:
+                    data['conc'][sid_str][cid]['tag'] = concept_info['tag']
+                    if concept_info['sentiment'] is not None:
+                        data['conc'][sid_str][cid]['sentiment'] = concept_info['sentiment']
                 else:
-                    data_tagged['sent'][sid_str]['concepts'] = updates['concepts']
+                    data['conc'][sid_str][cid] = concept_info
+                    
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(data_tagged, f, indent=2)
+            json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Tagged JSON saved to: {output_path}")
 
         #stats
@@ -411,8 +418,7 @@ def compute_accuracy(gold_path, pred_path):
     total = 0
 
     for sent_id, gold_concepts in gold.get("conc", {}).items():
-        pred_sent = pred.get("sent", {}).get(sent_id, {})
-        pred_concepts = pred_sent.get("concepts", {})
+        pred_concepts = pred.get("conc", {}).get(sent_id, {})
         
         for concept_id, gold_data in gold_concepts.items():
             if concept_id in pred_concepts:
