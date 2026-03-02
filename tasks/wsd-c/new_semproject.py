@@ -369,22 +369,32 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
     if not dry_run:
         base_name = os.path.splitext(json_file)[0]
         output_path = f"{base_name}_tagged_context{context_window_size}.json"
-        for sid_str, updates in tagged.items():
-            if 'conc' not in data:
-                data['conc'] = {}
-            if sid_str not in data['conc']:
-                data['conc'][sid_str] = {}
 
+        data_tagged = {
+            "sent": {},
+            "conc": {}
+        }
+        
+        for sid_str, updates in tagged.items():
+            if sid_str in data.get('sent', {}):
+                data_tagged['sent'][sid_str] = data['sent'][sid_str].copy()
+                
+            data_tagged['conc'][sid_str] = {}
+            
+            orig_concepts = data.get('conc', {}).get(sid_str, {})
             for cid, concept_info in updates['concepts'].items():
-                if cid in data['conc'][sid_str]:
-                    data['conc'][sid_str][cid]['tag'] = concept_info['tag']
+                if cid in orig_concepts:
+                    # Сохраняем оригинальные wids и clemma
+                    new_concept = orig_concepts[cid].copy()
+                    # Записываем найденный тег и тональность
+                    new_concept['tag'] = concept_info['tag']
                     if concept_info['sentiment'] is not None:
-                        data['conc'][sid_str][cid]['sentiment'] = concept_info['sentiment']
-                else:
-                    data['conc'][sid_str][cid] = concept_info
+                        new_concept['sentiment'] = concept_info['sentiment']
+                    
+                    data_tagged['conc'][sid_str][cid] = new_concept
                     
         with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+            json.dump(data_tagged, f, indent=2, ensure_ascii=False)
         print(f"Tagged JSON saved to: {output_path}")
 
         #stats
