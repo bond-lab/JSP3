@@ -74,7 +74,6 @@ def generate_and_extract(prompt, model='llama3'):
     if key_match:
         selected_key = key_match.group(1).lower().strip()
     else:
-        # fallback — первое слово, которое выглядит как ключ
         words = re.findall(r'\b(oewn-\d+-[nvasr]|[a-z]{1,4})\b', response.lower())
         selected_key = words[0] if words else None
     
