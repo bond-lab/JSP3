@@ -410,7 +410,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110101",
+        range_str="110001:110006",
         json_file="twwtn-en_human (1).json",
         model="llama3",
         context_window_size=size,
@@ -479,13 +479,19 @@ def evaluate(target_path, gold_path):
     correct_no_x = 0
     total_no_x = 0
 
-    for group_name in gold.get("conc", {}):
-        gold_group = gold["conc"][group_name]
-        target_group = target.get("conc", {}).get(group_name, {})
+    for group_name in target.get("conc", {}):
+        target_group = target["conc"][group_name]
+        gold_group = gold.get("conc", {}).get(group_name, {})
 
-        for item_name in gold_group:
-            gold_item = gold_group[item_name]
-            target_item = target_group.get(item_name)
+        if not gold_group:
+            continue
+
+        for item_name in target_group:
+            target_item = target_group[item_name]
+            gold_item = gold_group.get(item_name)
+
+            if not gold_item:
+                continue
 
             tag_g = gold_item.get("tag")
             
