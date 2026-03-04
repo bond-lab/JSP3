@@ -30,6 +30,7 @@ time.sleep(5)
 
 import wn
 wn.download('oewn:2025+')
+ewn = wn.Wordnet('oewn:2025+', lang='en')
 
 import subprocess
 import threading
