@@ -53,13 +53,13 @@ def parse_arguments():
     parser.add_argument("range", help="The range of text to tag, in the format from:to")
     parser.add_argument("json_file", help="Path to the JSON corpus file")
     parser.add_argument("--dry-run", action="store_true", help="Print the selected tags without updating JSON")
-    parser.add_argument("-m", "--model", default="llama3", help="Ollama model (default: llama3)")
+    parser.add_argument("-m", "--model", default="mistral-nemo:12b", help="Ollama model (default: mistral-nemo:12b)")
     parser.add_argument("--wn-only", action="store_true", help="Use only WordNet meanings, exclude additional tags")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose output for detailed logging")
     parser.add_argument("--context", type=int, default=2, help="Number of sentences before and after to include in context (default: 2)")
     return parser.parse_args()
 
-def generate_and_extract(prompt, model='llama3'):
+def generate_and_extract(prompt, model='mistral-nemo:12b'):
     result = generate(model=model, prompt=prompt, options={"temperature": 0.0})
     response = result['response'].strip()
     think_match = re.search(r'<thinking>(.*?)</thinking>', response, re.DOTALL)
@@ -105,8 +105,6 @@ def get_sids(from_sid, to_sid, margin):
 def process_concept(concept, wn_lang='en', args=None):
     lemma = concept['clemma']
     meanings = {}
-
-    ewn = wn.Wordnet('oewn:2025+', lang='en')
 
     synsets = ewn.synsets(lemma)
 
@@ -410,7 +408,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110051",
+        range_str="110001:110005",
         json_file="twwtn-en_human (1).json",
         model="llama3",
         context_window_size=size,
