@@ -411,7 +411,7 @@ for size in context_sizes:
     main(
         range_str="110001:110051",
         json_file="twwtn-en_human (1).json",
-        model="llama3",
+        model="mistral-nemo:12b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
