@@ -54,13 +54,13 @@ def parse_arguments():
     parser.add_argument("range", help="The range of text to tag, in the format from:to")
     parser.add_argument("json_file", help="Path to the JSON corpus file")
     parser.add_argument("--dry-run", action="store_true", help="Print the selected tags without updating JSON")
-    parser.add_argument("-m", "--model", default="qwen2.5:14b", help="Ollama model (default: qwen2.5:14b)")
+    parser.add_argument("-m", "--model", default="qwen2.5:7b", help="Ollama model (default: qwen2.5:7b)")
     parser.add_argument("--wn-only", action="store_true", help="Use only WordNet meanings, exclude additional tags")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose output for detailed logging")
     parser.add_argument("--context", type=int, default=2, help="Number of sentences before and after to include in context (default: 2)")
     return parser.parse_args()
 
-def generate_and_extract(prompt, model='qwen2.5:14b'):
+def generate_and_extract(prompt, model='qwen2.5:7b'):
     result = generate(model=model, prompt=prompt, options={"temperature": 0.0})
     response = result['response'].strip()
     think_match = re.search(r'<thinking>(.*?)</thinking>', response, re.DOTALL)
@@ -411,7 +411,7 @@ for size in context_sizes:
     main(
         range_str="110001:110051",
         json_file="twwtn-en_human (1).json",
-        model="qwen2.5:14b",
+        model="qwen2.5:7b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
