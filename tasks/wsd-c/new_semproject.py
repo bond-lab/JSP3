@@ -29,8 +29,8 @@ time.sleep(5)
 #!ollama pull llama3
 
 import wn
-wn.download('oewn:2025+')
-ewn = wn.Wordnet('oewn:2025+', lang='en')
+wn.download('oewn:2024')
+ewn = wn.Wordnet('oewn:2024', lang='en')
 
 import subprocess
 import threading
