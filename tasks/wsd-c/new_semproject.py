@@ -167,6 +167,9 @@ Your answer must be one line: KEY: <label>. No other text.
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
     end = index + 1 
+    
+    context_texts = [sent.get('text', '') for sent in sentences[start:end]]
+    return ' '.join(context_texts)
 
 def disambiguate(context, lemma, meanings, model_name):
     prompt = construct_prompt(context, lemma, meanings)
