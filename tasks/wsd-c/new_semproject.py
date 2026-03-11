@@ -158,10 +158,11 @@ Output format (strictly follow):
 KEY: <the chosen key only>
 
 Examples of correct output:
-KEY: per
-KEY: oewn-12345678-n
-KEY: x
-Your answer must be one line: KEY: <label>. No other text.
+Context: "Captain J. van Toch laughed loudly."
+Target: "Toch"
+Reasoning: "Toch is clearly a capitalized surname of a person (Captain J. van Toch). This is a proper name, not a dictionary word."
+Key: "per"
+First, briefly analyze the context. Then provide the exact key.
 """
 
 def construct_context(index, sentences, context_size):
