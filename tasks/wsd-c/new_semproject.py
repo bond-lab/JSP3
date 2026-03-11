@@ -146,10 +146,10 @@ Choose **exactly one** label from the list below that best fits the lemma in thi
 If none of the WordNet senses fit well, prefer the special tags (per, loc, org, oth, w, x, e, bio, etc.).
 
 Rules:
-- Use 'per', 'loc', 'org', 'oth' for clear proper names that are clearly (people, places, organizations, other)
-- Use 'w' ONLY if NO WordNet sense fits the context
-- Use 'x' for function words, punctuation, closed-class items, or multi-word expression parts
-- Use 'e' ONLY for obvious tokenization/lemmatization errors
+- per/loc/org/oth — proper names (people, places, organizations, other)
+- w - only if NO WordNet sense fits
+- x - function words, closed-class, multi-word parts
+- e - tokenization/lemmatization error only
 - Be conservative: prefer special tags over rare WordNet senses
 
 Options:
@@ -175,40 +175,34 @@ def construct_context(index, sentences, context_size):
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
 
-def disambiguate(context, lemma, meanings, model):
+def disambiguate(context, lemma, meanings, model_name):
     prompt = construct_prompt(context, lemma, meanings)
-    thinking, raw_response = generate_and_extract(prompt, model)
-    
-    logger.debug(f"Raw model response: {raw_response[:300]}...")  
-    
-    if thinking:
-        logger.debug(f"Model thinking: {thinking[:200]}...")
-    
-    cleaned = raw_response.strip().lower()  
-    
-    cleaned = re.sub(r'^(the key is|key:|answer:|selected:|output:|final answer:)\s*', '', cleaned, flags=re.IGNORECASE)
-    cleaned = re.sub(r'[^\w\-:]', '', cleaned)  
-    cleaned = cleaned.strip('.:;()[]{}')  
-    
-    logger.info(f"Cleaned key candidate: '{cleaned}'")
-    
-    if cleaned in meanings:
-        return cleaned, meanings[cleaned]
-    
-    if cleaned.startswith('oewn-'):
-        short_key = cleaned.replace('oewn-', '')
-        for k in meanings:
-            if k.endswith(short_key):
-                logger.info(f"Matched without oewn-: {cleaned} - {k}")
-                return k, meanings[k]
-    
-    for key in meanings:
-        if key.lower().startswith(cleaned[:10]):  
-            logger.info(f"Fuzzy match: {cleaned} - {key}")
+    logger.debug(f"Prompt: {prompt}")
+
+    schema = {
+        "type": "object",
+        "properties": {"key": {"type": "string", "enum": list(meanings.keys())}},
+        "required": ["key"],
+    }
+    try:
+        result = generate(model=model_name, prompt=prompt, format=schema)
+        response_json = json.loads(result['response'])
+        key = response_json.get('key', '').strip()
+
+        if key in meanings:
+            logger.info(f"Structured success: '{key}'")
             return key, meanings[key]
-    
-    logger.warning(f"No match for lemma '{lemma}'. Raw: '{raw_response[:100]}'. Using fallback 'w'")
-    return "w", meanings.get("w", "fallback unknown")
+    except Exception as e:
+        logger.debug(f"Structured output failed ({e}), falling back to text parsing")
+
+    thinking, cleaned_response = generate_and_extract(prompt, model=model_name)
+    if thinking is not None:
+        logger.debug(f"Model thinking: {thinking}")
+    logger.info(f"Model response: {cleaned_response}")
+    selected_key = extract_key(cleaned_response, meanings)
+    if selected_key in meanings:
+        return selected_key, meanings[selected_key]
+    return None, None
 
 def sentimentalize(context, lemma, model, gloss=''):
     if gloss:
@@ -409,9 +403,9 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110051",
+        range_str="110001:110007",
         json_file="twwtn-en_human (1).json",
-        model="gemma2:9b",
+        model="llama3",
         context_window_size=size,
         dry_run=False,
         verbose=True,
