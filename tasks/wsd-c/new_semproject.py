@@ -401,7 +401,7 @@ for size in context_sizes:
     main(
         range_str="110001:110007",
         json_file="twwtn-en_human (1).json",
-        model="ollama run qwen2.5:14b",
+        model="qwen2.5:14b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
