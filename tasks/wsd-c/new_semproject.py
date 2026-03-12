@@ -135,6 +135,18 @@ def process_concept(concept, wn_lang='en', args=None):
 
 def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
+    json_instruction = """
+You must respond ONLY with valid JSON in this exact format, nothing else:
+{"key": "chosen_label_here"}
+
+Where "chosen_label_here" is EXACTLY one of the keys from the list below.
+Do NOT add thinking, explanations, key: markdown or any extra text.
+Examples of CORRECT output:
+{"key": "per"}
+{"key": "oewn-12345678-n"}
+{"key": "x"}
+
+"""
     return f"""You are a precise linguistic annotator doing word sense disambiguation.
 
 Context (several sentences around the target word):
@@ -154,14 +166,7 @@ Rules:
 
 Options:
 {options}
-Output format (strictly follow):
-KEY: <the chosen key only>
-
-Examples of correct output:
-KEY: per
-KEY: oewn-12345678-n
-KEY: x
-Your answer must be one line: KEY: <label>. No other text.
+{json_instruction}
 """
 
 def construct_context(index, sentences, context_size):
@@ -181,10 +186,13 @@ def disambiguate(context, lemma, meanings, model_name):
         "required": ["key"],
     }
     try:
-        result = generate(model=model_name, prompt=prompt, format=schema)
-        response_json = json.loads(result['response'])
-        key = response_json.get('key', '').strip()
+        result = generate(model=model_name, prompt=prompt, format="json", options={"temperature": 0.0})
+        response_text = result['response'].strip()
+        logger.debug(f"Raw JSON attempt: {response_text}...")
 
+        response_json = json.loads(response_text)
+        key = response_json.get('key', '').strip()
+        
         if key in meanings:
             logger.info(f"Structured success: '{key}'")
             return key, meanings[key]
@@ -399,7 +407,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110101",
+        range_str="110001:110005",
         json_file="twwtn-en_human (1).json",
         model="mistral-nemo:12b",
         context_window_size=size,
