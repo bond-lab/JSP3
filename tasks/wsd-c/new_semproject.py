@@ -426,9 +426,9 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110021",
+        range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
-        model="mistral-nemo:12b",
+        model="qwen2.5:7b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
@@ -545,7 +545,7 @@ def evaluate(target_path, gold_path):
             total += 1
             tag_type_total[g_pos] = tag_type_total.get(g_pos, 0) + 1
             
-            '''
+
             gold_syn = tag_to_synset(tag_g)
             pred_syn = tag_to_synset(tag_t)
                         
@@ -573,7 +573,7 @@ def evaluate(target_path, gold_path):
                 else:
                     weighted_fp += 1
                     weighted_fn += 1
-                '''
+                
             if str(tag_g).strip().lower() == str(tag_t).strip().lower():
                 correct += 1
                 tag_correct_total[g_pos] = tag_correct_total.get(g_pos, 0) + 1
@@ -585,7 +585,7 @@ def evaluate(target_path, gold_path):
                 elif g_pos != t_pos:
                     errors["mismatch_pos"] += 1
 
-                '''
+                
                 elif gold_syn and pred_syn and gold_syn.offset() != pred_syn.offset():
                     errors["mismatch_offset"] += 1
                 else:
@@ -611,7 +611,7 @@ def evaluate(target_path, gold_path):
 
             if g_key != MISSING and t_key != MISSING:
                 confusion_synset[g_key][t_key] += 1
-            '''
+            
                 
     print(f"\n\033[1m---Total accuracy---\033[0m")
     accuracy = correct / total if total > 0 else 0
