@@ -176,6 +176,25 @@ def construct_context(index, sentences, context_size):
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
 
+def extract_key(response, meanings):
+    text = response.strip().lower()
+    
+    try:
+        data = json.loads(text)
+        if 'key' in data:
+            key = data['key'].strip().lower()
+            if key in meanings:
+                return key
+    except:
+        pass 
+    
+    for key in meanings:
+        if key.lower() in text:
+            return key
+    
+    logger.warning(f"Не нашли ключ в ответе: {text[:100]}...")
+    return None
+
 def disambiguate(context, lemma, meanings, model_name):
     prompt = construct_prompt(context, lemma, meanings)
     logger.debug(f"Prompt: {prompt}")
