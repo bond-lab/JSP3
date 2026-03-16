@@ -29,8 +29,12 @@ time.sleep(5)
 #!ollama pull llama3
 
 import wn
-wn.download('oewn:2024')
-ewn = wn.Wordnet('oewn:2024', lang='en')
+
+installed_lexicons = [lex.id for lex in wn.lexicons()]
+if 'ntumc' not in installed_lexicons:
+    wn.add('wn-ntumc-eng.xml')
+
+ewn = wn.Wordnet('ntumc:3.0')
 
 import subprocess
 import threading
