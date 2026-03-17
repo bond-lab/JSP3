@@ -32,7 +32,7 @@ import wn
 
 installed_lexicons = [lex.id for lex in wn.lexicons()]
 if 'ntumc' not in installed_lexicons:
-    wn.add('wn-ntumc-eng.xml')
+    wn.add('wn-ntumc-eng.xml.xz')
 
 ewn = wn.Wordnet('ntumc:3.0')
 
