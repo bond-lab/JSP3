@@ -286,9 +286,10 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
     print(f"Processing {total_concepts} concepts with context_size={context_window_size}...")
 
     tagged = {}
+    start_time_dt = datetime.datetime.now()
     run_stats = {
         'context_size': context_window_size,
-        'start_time': datetime.datetime.now().isoformat(),
+        'start_time': start_time_dt.isoformat(),
         'processed_sentences': 0,
         'total_concepts': total_concepts,
         'tag_counts': Counter(),
@@ -353,7 +354,9 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         run_stats['processed_sentences'] += 1
         run_stats['per_sentence'][sid_str] = sentence_stats
 
-    run_stats['end_time'] = datetime.datetime.now().isoformat()
+    end_time_dt = datetime.datetime.now()
+    run_stats['end_time'] = end_time_dt.isoformat()
+    run_stats['total_execution_time'] = str(end_time_dt - start_time_dt).split('.')[0]
     if run_stats['sentiments']:
         sentiments_list = run_stats['sentiments']
         run_stats['sentiment_stats'] = {
@@ -367,6 +370,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
     #summarz
     print("\n" + "="*60)
     print(f"STATISTICS FOR CONTEXT SIZE = {context_window_size}")
+    print(f"Total Execution Time: {run_stats['total_execution_time']}")
     print(f"Processed sentences: {run_stats['processed_sentences']}")
     print(f"Total concepts: {run_stats['total_concepts']}")
 
@@ -398,6 +402,8 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         if "meta" in data:
             data_tagged["meta"] = data["meta"].copy()
         data_tagged["meta"]["annotator"] = f"ollama-{model}"
+
+        data_tagged["meta"]["total_execution_time"] = run_stats['total_execution_time']
         
         for sid_str, updates in tagged.items():
             if sid_str in data.get('sent', {}):
