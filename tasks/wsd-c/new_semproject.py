@@ -73,8 +73,8 @@ def generate_and_extract(prompt, model='gemma2:9b'):
         cleaned_response = re.sub(r'<thinking>.*?</thinking>', '', response, flags=re.DOTALL).strip()
     else:
         thinking = None
-        cleaned_response = response.strip()
-    return thinking, cleaned_response
+        ed_response = response.strip()
+    return thinking, ed_response
     key_match = re.search(r'(?:KEY:\s*)?([a-z]+|ntumc-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
     if key_match:
         selected_key = key_match.group(1).lower().strip()
@@ -222,11 +222,11 @@ def disambiguate(context, lemma, meanings, model_name):
     except Exception as e:
         logger.debug(f"Structured output failed ({e}), falling back to text parsing")
 
-    thinking, cleaned_response = generate_and_extract(prompt, model=model_name)
+    thinking, ed_response = generate_and_extract(prompt, model=model_name)
     if thinking is not None:
         logger.debug(f"Model thinking: {thinking}")
-    logger.info(f"Model response: {cleaned_response}")
-    selected_key = extract_key(cleaned_response, meanings)
+    logger.info(f"Model response: {ed_response}")
+    selected_key = extract_key(ed_response, meanings)
     if selected_key in meanings:
         return selected_key, meanings[selected_key]
     return None, None
@@ -486,7 +486,7 @@ def tag_to_synset(tag):
         
         offset = int(offset_str)
         pos = pos.lower()
-            return nltk_wn.synset_from_pos_and_offset(pos, int(offset))
+        return nltk_wn.synset_from_pos_and_offset(pos, int(offset))
     except Exception:
         return None
 
