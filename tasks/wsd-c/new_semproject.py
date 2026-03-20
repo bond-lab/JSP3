@@ -74,7 +74,7 @@ def generate_and_extract(prompt, model='gemma2:9b'):
     else:
         thinking = None
         cleaned_response = response.strip()
-    return thinking, ed_response
+    return thinking, cleaned_response
     key_match = re.search(r'(?:KEY:\s*)?([a-z]+|ntumc-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
     if key_match:
         selected_key = key_match.group(1).lower().strip()
@@ -222,11 +222,11 @@ def disambiguate(context, lemma, meanings, model_name):
     except Exception as e:
         logger.debug(f"Structured output failed ({e}), falling back to text parsing")
 
-    thinking, ed_response = generate_and_extract(prompt, model=model_name)
+    thinking, cleaned_response = generate_and_extract(prompt, model=model_name)
     if thinking is not None:
         logger.debug(f"Model thinking: {thinking}")
-    logger.info(f"Model response: {ed_response}")
-    selected_key = extract_key(ed_response, meanings)
+    logger.info(f"Model response: {cleaned_response}")
+    selected_key = extract_key(cleaned_response, meanings)
     if selected_key in meanings:
         return selected_key, meanings[selected_key]
     return None, None
