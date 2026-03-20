@@ -73,7 +73,7 @@ def generate_and_extract(prompt, model='gemma2:9b'):
         cleaned_response = re.sub(r'<thinking>.*?</thinking>', '', response, flags=re.DOTALL).strip()
     else:
         thinking = None
-        ed_response = response.strip()
+        cleaned_response = response.strip()
     return thinking, ed_response
     key_match = re.search(r'(?:KEY:\s*)?([a-z]+|ntumc-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
     if key_match:
