@@ -354,8 +354,10 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         run_stats['processed_sentences'] += 1
         run_stats['per_sentence'][sid_str] = sentence_stats
 
-    run_stats['end_time'] = datetime.datetime.now().isoformat()
+    end_time_dt = datetime.datetime.now()
+    run_stats['end_time'] = end_time_dt.isoformat()
     run_stats['total_execution_time'] = str(end_time_dt - start_time_dt).split('.')[0]
+    
     if run_stats['sentiments']:
         sentiments_list = run_stats['sentiments']
         run_stats['sentiment_stats'] = {
