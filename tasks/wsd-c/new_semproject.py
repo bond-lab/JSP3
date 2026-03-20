@@ -75,11 +75,11 @@ def generate_and_extract(prompt, model='gemma2:9b'):
         thinking = None
         cleaned_response = response.strip()
     return thinking, cleaned_response
-    key_match = re.search(r'(?:KEY:\s*)?([a-z]+|oewn-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
+    key_match = re.search(r'(?:KEY:\s*)?([a-z]+|ntumc-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
     if key_match:
         selected_key = key_match.group(1).lower().strip()
     else:
-        words = re.findall(r'\b(oewn-\d+-[nvasr]|[a-z]{1,4})\b', response.lower())
+        words = re.findall(r'\b(ntumc-\d+-[nvasr]|[a-z]{1,4})\b', response.lower())
         selected_key = words[0] if words else None
     
     logger.info(f"Raw response: {response[:200]}...")
@@ -147,7 +147,7 @@ Where "chosen_label_here" is EXACTLY one of the keys from the list below.
 Do NOT add thinking, explanations, key: markdown or any extra text.
 Examples of CORRECT output:
 {"key": "per"}
-{"key": "oewn-12345678-n"}
+{"key": "ntumc-12345678-n"}
 {"key": "x"}
 
 """
@@ -481,15 +481,11 @@ def tag_to_synset(tag):
     if not tag or not isinstance(tag, str) or tag.lower() == "none" or "-" not in tag:
         return None
     try:
-        # format oewn-12345678-n
-        parts = tag.split("-")
-        if len(parts) >= 3 and parts[0] == "oewn":
-            offset = int(parts[1])
-            pos = parts[2].lower()
-            return nltk_wn.synset_from_pos_and_offset(pos, offset)
-        else:
-            offset, pos = tag.rsplit("-", 1)
-            pos = pos.lower()
+        clean_tag = str(tag).replace('ntumc-', '').replace('oewn-', '')
+        offset_str, pos = clean_tag.rsplit("-", 1)
+        
+        offset = int(offset_str)
+        pos = pos.lower()
             return nltk_wn.synset_from_pos_and_offset(pos, int(offset))
     except Exception:
         return None
@@ -549,6 +545,11 @@ def evaluate(target_path, gold_path):
             # if pred tag is empty - missing 
             if tag_t is None or str(tag_t).lower() == "none":
                  tag_t = None
+
+            if tag_g:
+                tag_g = str(tag_g).replace('ntumc-', '')
+            if tag_t:
+                tag_t = str(tag_t).replace('ntumc-', '')
 
             if not target_item or not tag_t:
                 errors["missing_target_tag"] += 1
