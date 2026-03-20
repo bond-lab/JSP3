@@ -354,8 +354,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         run_stats['processed_sentences'] += 1
         run_stats['per_sentence'][sid_str] = sentence_stats
 
-    end_time_dt = datetime.datetime.now()
-    run_stats['end_time'] = end_time_dt.isoformat()
+    run_stats['end_time'] = datetime.datetime.now().isoformat()
     run_stats['total_execution_time'] = str(end_time_dt - start_time_dt).split('.')[0]
     if run_stats['sentiments']:
         sentiments_list = run_stats['sentiments']
@@ -370,7 +369,6 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
     #summarz
     print("\n" + "="*60)
     print(f"STATISTICS FOR CONTEXT SIZE = {context_window_size}")
-    print(f"Total Execution Time: {run_stats['total_execution_time']}")
     print(f"Processed sentences: {run_stats['processed_sentences']}")
     print(f"Total concepts: {run_stats['total_concepts']}")
 
@@ -402,8 +400,6 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         if "meta" in data:
             data_tagged["meta"] = data["meta"].copy()
         data_tagged["meta"]["annotator"] = f"ollama-{model}"
-
-        data_tagged["meta"]["total_execution_time"] = run_stats['total_execution_time']
         
         for sid_str, updates in tagged.items():
             if sid_str in data.get('sent', {}):
@@ -432,6 +428,9 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         print(f"Statistics saved to: {stats_path}")
 
 #test diff context sizes
+global_start_time = datetime.datetime.now()
+json_filename = "twwtn-en_human (1).json"
+
 context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
@@ -444,6 +443,27 @@ for size in context_sizes:
         verbose=True,
         wn_only=False
     )
+global_end_time = datetime.datetime.now()
+total_global_time = str(global_end_time - global_start_time).split('.')[0]
+
+base_name = os.path.splitext(json_filename)[0]
+for size in context_sizes:
+    file_path = f"{base_name}_tagged_context{size}.json"
+    if os.path.exists(file_path):
+        with open(file_path, 'r', encoding='utf-8') as f:
+            file_data = json.load(f)
+        
+        if "meta" not in file_data:
+            file_data["meta"] = {}
+            
+        file_data["meta"]["global_start_time"] = global_start_time.isoformat()
+        file_data["meta"]["global_end_time"] = global_end_time.isoformat()
+        file_data["meta"]["total_execution_time"] = total_global_time
+        
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(file_data, f, indent=2, ensure_ascii=False)
+
+print(f"Total execution time: {total_global_time}")
 
 #evaluation 
 import nltk
