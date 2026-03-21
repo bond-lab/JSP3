@@ -75,17 +75,6 @@ def generate_and_extract(prompt, model='gemma2:9b'):
         thinking = None
         cleaned_response = response.strip()
     return thinking, cleaned_response
-    key_match = re.search(r'(?:KEY:\s*)?([a-z]+|ntumc-\d+-[nvasr]|per|loc|org|oth|x|w|e|num|dat|year|bio)', response, re.IGNORECASE)
-    if key_match:
-        selected_key = key_match.group(1).lower().strip()
-    else:
-        words = re.findall(r'\b(ntumc-\d+-[nvasr]|[a-z]{1,4})\b', response.lower())
-        selected_key = words[0] if words else None
-    
-    logger.info(f"Raw response: {response[:200]}...")
-    logger.info(f"Extracted key: '{selected_key}'")
-    
-    return thinking, selected_key
 
 def load_corpus(json_path):
     with open(json_path, 'r', encoding='utf-8') as f:
