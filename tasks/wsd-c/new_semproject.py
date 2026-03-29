@@ -128,18 +128,7 @@ def process_concept(concept, wn_lang='en', args=None):
 
 def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
-    json_instruction = """
-You must respond ONLY with valid JSON in this exact format, nothing else:
-{"key": "chosen_label_here"}
-
-Where "chosen_label_here" is EXACTLY one of the keys from the list below.
-Do NOT add thinking, explanations, key: markdown or any extra text.
-Examples of CORRECT output:
-{"key": "per"}
-{"key": "ntumc-12345678-n"}
-{"key": "x"}
-
-"""
+    
     return f"""You are a precise linguistic annotator doing word sense disambiguation.
 
 Context (several sentences around the target word):
@@ -147,24 +136,16 @@ Context (several sentences around the target word):
 
 Target lemma: _{lemma}_
 
-Choose **exactly one** label from the list below that best fits the lemma in this context.
-If none of the WordNet senses fit well, prefer the special tags (per, loc, org, oth, w, x, e, bio, etc.).
-
-Rules:
-- per/loc/org/oth — proper names (people, places, organizations, other)
-- w - only if NO WordNet sense fits
-- x - function words, closed-class, multi-word parts
-- e - tokenization/lemmatization error only
-- Be conservative: prefer special tags over rare WordNet senses
-
-Options:
+Choose **exactly one** label from the list that best fits the context:
 {options}
-{json_instruction}
+
+Respond ONLY with a valid JSON object containing your choice. Example:
+{{"key": "chosen_label"}}
 """
 
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
-    end = index + 1 
+    end = min(len(sentences), index + context_size + 1)
     
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
