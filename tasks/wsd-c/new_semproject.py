@@ -130,6 +130,7 @@ def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
     
     return f"""You are a precise linguistic annotator doing word sense disambiguation.
+    Your task is to determine the single most appropriate sense for the target lemma in the given context.
     
 Context (several sentences around the target word):
 > {context}
@@ -139,8 +140,18 @@ Target lemma: _{lemma}_
 Choose **exactly one** label from the list that best fits the context:
 {options}
 
-Respond ONLY with a valid JSON object containing your choice. Example:
-{{"key": "chosen_label"}}
+Respond ONLY with a valid JSON object containing your choice.
+Use this structure:
+{{
+  "key": "chosen_label_here",
+  "reasoning": "Brief explanation of why this sense was chosen (1-2 sentences)"
+}}
+
+Example:
+{{
+  "key": "wn-ntumc-02345678-n",
+  "reasoning": "In this context 'bank' clearly refers to a financial institution, not a river bank or other meanings."
+}}
 """
 
 def construct_context(index, sentences, context_size):
