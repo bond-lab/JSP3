@@ -143,14 +143,14 @@ Choose **exactly one** label from the list that best fits the context:
 Respond ONLY with a valid JSON object containing your choice.
 Use this structure:
 {{
-  "key": "chosen_label_here",
-  "reasoning": "Brief explanation of why this sense was chosen (1-2 sentences)"
+  "reasoning": "Brief explanation of why this sense was chosen (1-2 sentences)",
+  "key": "chosen_label_here"
 }}
 
 Example:
 {{
-  "key": "wn-ntumc-02345678-n",
-  "reasoning": "In this context 'bank' clearly refers to a financial institution, not a river bank or other meanings."
+  "reasoning": "In this context 'bank' clearly refers to a financial institution, not a river bank or other meanings.",
+  "key": "wn-ntumc-02345678-n"
 }}
 """
 
