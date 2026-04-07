@@ -383,6 +383,10 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         if "meta" in data:
             data_tagged["meta"] = data["meta"].copy()
         data_tagged["meta"]["annotator"] = f"ollama-{model}"
+
+        data_tagged["meta"]["context_start_time"] = start_time_dt.isoformat()
+        data_tagged["meta"]["context_end_time"] = end_time_dt.isoformat()
+        data_tagged["meta"]["context_execution_time"] = run_stats['total_execution_time']
         
         for sid_str, updates in tagged.items():
             if sid_str in data.get('sent', {}):
