@@ -156,7 +156,7 @@ Example:
 
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
-    end = index + 1
+    end = min(len(sentences), index + context_size + 1)
     
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
@@ -424,7 +424,7 @@ for size in context_sizes:
     main(
         range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
-        model="qwen2.5:7b",
+        model="gemma4:e4b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
