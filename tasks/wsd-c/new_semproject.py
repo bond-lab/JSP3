@@ -177,7 +177,7 @@ def extract_key(response, meanings):
         if key.lower() in text:
             return key
     
-    logger.warning(f"Не нашли ключ в ответе: {text[:100]}...")
+    logger.warning(f"Didn't find the key in the response: {text[:100]}...")
     return None
 
 def disambiguate(context, lemma, meanings, model_name):
@@ -424,7 +424,7 @@ for size in context_sizes:
     main(
         range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
-        model="mistral-nemo:12b",
+        model="gemma2:9b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
