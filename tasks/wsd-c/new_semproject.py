@@ -156,7 +156,7 @@ Example:
 
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
-    end = index + 1 
+    end = min(len(sentences), index + context_size + 1)
     
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
