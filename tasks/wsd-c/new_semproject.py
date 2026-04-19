@@ -102,6 +102,12 @@ def process_concept(concept, wn_lang='en', args=None):
 
     wn_lemma = lemma.replace(' ', '_')
     synsets = ewn.synsets(wn_lemma)
+
+    if ' ' in lemma:
+        print(f"\n [EXPRESSION] Lemma: '{lemma}' - Finding in WordNet: '{wn_lemma}'")
+        print(f"Found {len(synsets)} options in WordNet:")
+        for ss in synsets:
+            print(f"  - {ss.id}: {ss.definition()}")
     
     for ss in synsets:
         defn = ss.definition() or ""
@@ -423,7 +429,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110101",
+        range_str="110001:110011",
         json_file="twwtn-en_human (1).json",
         model="gemma2:9b",
         context_window_size=size,
