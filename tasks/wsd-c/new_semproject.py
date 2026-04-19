@@ -100,8 +100,9 @@ def process_concept(concept, wn_lang='en', args=None):
     lemma = concept['clemma']
     meanings = {}
 
-    synsets = ewn.synsets(lemma)
-
+    wn_lemma = lemma.replace(' ', '_')
+    synsets = ewn.synsets(wn_lemma)
+    
     for ss in synsets:
         defn = ss.definition() or ""
         lemmas = ", ".join(ss.lemmas())
@@ -130,12 +131,12 @@ def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
     
     return f"""You are a precise linguistic annotator doing word sense disambiguation.
-    Your task is to determine the single most appropriate sense for the target lemma in the given context.
+    Your task is to determine the single most appropriate sense for the target expression in the given context.
     
 Context (several sentences around the target word):
 > {context}
 
-Target lemma: _{lemma}_
+Target expression: _{lemma}_
 
 Choose **exactly one** label from the list that best fits the context:
 {options}
