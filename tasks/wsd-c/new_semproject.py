@@ -109,12 +109,6 @@ def process_concept(concept, wn_lang='en', args=None):
             all_synsets.extend(ewn.synsets(word))
 
     unique_synsets = {ss.id: ss for ss in all_synsets}
-
-    if ' ' in lemma:
-        print(f"\n [EXPRESSION] Lemma: '{lemma}' - Finding in WordNet: '{wn_lemma}'")
-        print(f"Found {len(synsets)} options in WordNet:")
-        for ss in synsets:
-            print(f"  - {ss.id}: {ss.definition()}")
     
     for ss_id, ss in unique_synsets.items():
         defn = ss.definition() or ""
