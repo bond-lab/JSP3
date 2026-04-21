@@ -101,7 +101,14 @@ def process_concept(concept, wn_lang='en', args=None):
     meanings = {}
 
     wn_lemma = lemma.replace(' ', '_')
-    synsets = ewn.synsets(wn_lemma)
+    all_synsets = ewn.synsets(wn_lemma)
+
+    if ' ' in lemma:
+        words = lemma.split(' ')
+        for word in words:
+            all_synsets.extend(ewn.synsets(word))
+
+    unique_synsets = {ss.id: ss for ss in all_synsets}
 
     if ' ' in lemma:
         print(f"\n [EXPRESSION] Lemma: '{lemma}' - Finding in WordNet: '{wn_lemma}'")
@@ -109,12 +116,12 @@ def process_concept(concept, wn_lang='en', args=None):
         for ss in synsets:
             print(f"  - {ss.id}: {ss.definition()}")
     
-    for ss in synsets:
+    for ss_id, ss in unique_synsets.items():
         defn = ss.definition() or ""
         lemmas = ", ".join(ss.lemmas())
         examples = "; ".join(ss.examples()) if ss.examples() else ""
         example_text = f" ({examples})" if examples else ""
-        meanings[ss.id] = f"[{lemmas}] {defn}{example_text}"
+        meanings[ss_id] = f"[{lemmas}] {defn}{example_text}"
 
     if args is None or not args.wn_only:
         meanings.update({
