@@ -51,6 +51,19 @@ import datetime
 import statistics
 from tqdm import tqdm
 
+def save_prompt_to_py(prompt, sid, cid, task_type="WSD"):
+   
+    log_filename = "python_prompts_log.py"
+    
+    if not os.path.exists(log_filename):
+        with open(log_filename, 'w', encoding='utf-8') as f:
+            f.write("# -*- coding: utf-8 -*-\n# Log prompts \n\nall_prompts = []\n")
+
+    with open(log_filename, 'a', encoding='utf-8') as f:
+        safe_prompt = prompt.replace('"""', '\\"\\"\\"')
+        f.write(f"\n# --- SID: {sid}, CID: {cid}, Task: {task_type} ---\n")
+        f.write(f"prompt_entry = \"\"\"{safe_prompt}\"\"\"\n")
+        f.write("all_prompts.append(prompt_entry)\n")
 logger = logging.getLogger(__name__)
 
 def parse_arguments():
@@ -188,8 +201,10 @@ def extract_key(response, meanings):
     logger.warning(f"Didn't find the key in the response: {text[:100]}...")
     return None
 
-def disambiguate(context, lemma, meanings, model_name):
+def disambiguate(context, lemma, meanings, model_name, sid=None, cid=None):
     prompt = construct_prompt(context, lemma, meanings)
+    save_prompt_to_py(prompt, sid, cid, task_type="WSD")
+    
     logger.debug(f"Prompt: {prompt}")
 
     schema = {
@@ -220,7 +235,7 @@ def disambiguate(context, lemma, meanings, model_name):
         return selected_key, meanings[selected_key]
     return None, None
 
-def sentimentalize(context, lemma, model, gloss=''):
+def sentimentalize(context, lemma, model, sid=None, cid=None, gloss=''):
     if gloss:
         gloss = f' ({gloss})'
     sentiment_prompt = f"""You are assigning lexical sentiment ONLY for the word itself in isolation, NOT the overall sentence sentiment.
@@ -247,6 +262,8 @@ Rules:
 
 First think briefly in <thinking>...</thinking>, then output ONLY the number.
 """
+    save_prompt_to_py(sentiment_prompt, sid, cid, task_type="Sentiment")
+    
     thinking, sentiment_response = generate_and_extract(sentiment_prompt, model)
     logger.debug(f"Sentiment prompt: {sentiment_prompt}")
     if thinking:
@@ -308,11 +325,11 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
 
         for sub_concept_key, concept_data_dict in sentence['concepts'].items():
             lemma, meanings = process_concept(concept_data_dict, args=local_args)
-            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model)
+            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model, sid=sid_str, cid=sub_concept_key)
             sentiment = None
             if selected_key and selected_key not in ['x', 'e']:
-                sentiment = sentimentalize(text_context, lemma, model, selected_value)
-
+                sentiment = sentimentalize(text_context, lemma, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value)
+                
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
             print(f"  Context words: {context_word_count}")
