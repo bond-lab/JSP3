@@ -333,7 +333,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
             'sentiments': []
         }
 
-            mwe_wids = set()
+        mwe_wids = set()
         for cdata in sentence['concepts'].values():
             if ' ' in cdata.get('clemma', ''): 
                 mwe_wids.update(cdata.get('wids', []))
