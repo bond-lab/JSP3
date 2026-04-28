@@ -324,11 +324,27 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
         }
 
         for sub_concept_key, concept_data_dict in sentence['concepts'].items():
-            lemma, meanings = process_concept(concept_data_dict, args=local_args)
-            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model, sid=sid_str, cid=sub_concept_key)
-            sentiment = None
-            if selected_key and selected_key not in ['x', 'e']:
-                sentiment = sentimentalize(text_context, lemma, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value)
+            mwe_wids = set()
+        for cdata in sentence['concepts'].values():
+            if ' ' in cdata.get('clemma', ''): 
+                mwe_wids.update(cdata.get('wids', []))
+
+        for sub_concept_key, concept_data_dict in sentence['concepts'].items():
+            lemma = concept_data_dict.get('clemma', '')
+            wids = concept_data_dict.get('wids', [])
+            
+            is_part_of_mwe = (' ' not in lemma) and wids and all(w in mwe_wids for w in wids)
+
+            if is_part_of_mwe:
+                selected_key = 'x'
+                selected_value = 'part of a multiword expression (auto-tagged)'
+                sentiment = None
+            else:
+                lemma_out, meanings = process_concept(concept_data_dict, args=local_args)
+                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key)
+                sentiment = None
+                if selected_key and selected_key not in ['x', 'e']:
+                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value)
                 
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
@@ -447,7 +463,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110101",
+        range_str="110001:110051",
         json_file="twwtn-en_human (1).json",
         model="qwen2.5:7b",
         context_window_size=size,
