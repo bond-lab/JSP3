@@ -269,14 +269,16 @@ Rules:
 - Evaluate the lemma as a dictionary entry, not as it appears in this particular sentence
 
 First think briefly in <thinking>...</thinking>, then output ONLY the number.
-"""
-    save_prompt_to_py(sentiment_prompt, sid, cid, task_type="Sentiment")
-    
+"""    
     thinking, sentiment_response = generate_and_extract(sentiment_prompt, model)
     logger.debug(f"Sentiment prompt: {sentiment_prompt}")
     if thinking:
         logger.debug(f"Model thinking: {thinking}")
     logger.info(f"Sentiment response: {sentiment_response}")
+    
+    if log_enabled:
+        save_prompt_to_py(sentiment_prompt, thinking, sentiment_response, sid, cid, task_type="Sentiment")
+        
     try:
         score = float(sentiment_response)
     except ValueError:
@@ -331,7 +333,6 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
             'sentiments': []
         }
 
-        for sub_concept_key, concept_data_dict in sentence['concepts'].items():
             mwe_wids = set()
         for cdata in sentence['concepts'].values():
             if ' ' in cdata.get('clemma', ''): 
@@ -352,7 +353,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
                 selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key, log_enabled=log_prompts)
                 sentiment = None
                 if selected_key and selected_key not in ['x', 'e']:
-                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value)
+                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value, log_enabled=log_prompts)
                 
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
