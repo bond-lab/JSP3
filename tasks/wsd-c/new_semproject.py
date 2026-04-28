@@ -51,19 +51,23 @@ import datetime
 import statistics
 from tqdm import tqdm
 
-def save_prompt_to_py(prompt, sid, cid, task_type="WSD"):
-   
+def save_prompt_to_py(prompt, reasoning, answer, sid, cid, task_type="WSD"):
     log_filename = "python_prompts_log.py"
     
     if not os.path.exists(log_filename):
         with open(log_filename, 'w', encoding='utf-8') as f:
-            f.write("# -*- coding: utf-8 -*-\n# Log prompts \n\nall_prompts = []\n")
-
+            f.write("# -*- coding: utf-8 -*-\n# Log prompts \n\nall_interactions = []\n")
+            
     with open(log_filename, 'a', encoding='utf-8') as f:
         safe_prompt = prompt.replace('"""', '\\"\\"\\"')
+        safe_reasoning = str(reasoning).replace('"""', '\\"\\"\\"') if reasoning else "No reasoning provided"
+        safe_answer = str(answer).replace('"""', '\\"\\"\\"') if answer else "No answer"
         f.write(f"\n# --- SID: {sid}, CID: {cid}, Task: {task_type} ---\n")
-        f.write(f"prompt_entry = \"\"\"{safe_prompt}\"\"\"\n")
-        f.write("all_prompts.append(prompt_entry)\n")
+        f.write("all_interactions.append({\n")
+        f.write(f"    'prompt': \"\"\"{safe_prompt}\"\"\",\n")
+        f.write(f"    'reasoning': \"\"\"{safe_reasoning}\"\"\",\n")
+        f.write(f"    'answer': \"\"\"{safe_answer}\"\"\"\n")
+        f.write("})\n")
 logger = logging.getLogger(__name__)
 
 def parse_arguments():
@@ -201,10 +205,8 @@ def extract_key(response, meanings):
     logger.warning(f"Didn't find the key in the response: {text[:100]}...")
     return None
 
-def disambiguate(context, lemma, meanings, model_name, sid=None, cid=None):
+def disambiguate(context, lemma, meanings, model_name, sid=None, cid=None, log_enabled=False):
     prompt = construct_prompt(context, lemma, meanings)
-    save_prompt_to_py(prompt, sid, cid, task_type="WSD")
-    
     logger.debug(f"Prompt: {prompt}")
 
     schema = {
@@ -219,8 +221,12 @@ def disambiguate(context, lemma, meanings, model_name, sid=None, cid=None):
 
         response_json = json.loads(response_text)
         key = response_json.get('key', '').strip()
+        reasoning = response_json.get('reasoning', '').strip()
         
         if key in meanings:
+            if log_enabled:
+                save_prompt_to_py(prompt, reasoning, key, sid, cid, task_type="WSD")
+                
             logger.info(f"Structured success: '{key}'")
             return key, meanings[key]
     except Exception as e:
@@ -232,10 +238,12 @@ def disambiguate(context, lemma, meanings, model_name, sid=None, cid=None):
     logger.info(f"Model response: {cleaned_response}")
     selected_key = extract_key(cleaned_response, meanings)
     if selected_key in meanings:
+        if log_enabled:
+            save_prompt_to_py(prompt, thinking, selected_key, sid, cid, task_type="WSD-Fallback")
         return selected_key, meanings[selected_key]
     return None, None
 
-def sentimentalize(context, lemma, model, sid=None, cid=None, gloss=''):
+def sentimentalize(context, lemma, model, sid=None, cid=None, gloss='', log_enabled=False):
     if gloss:
         gloss = f' ({gloss})'
     sentiment_prompt = f"""You are assigning lexical sentiment ONLY for the word itself in isolation, NOT the overall sentence sentiment.
@@ -275,7 +283,7 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
         score = None
     return score
 
-def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only):
+def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only, log_prompts):
     logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
     logging.getLogger("httpx").setLevel(logging.WARNING)
 
@@ -341,7 +349,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
                 sentiment = None
             else:
                 lemma_out, meanings = process_concept(concept_data_dict, args=local_args)
-                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key)
+                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key, log_enabled=log_prompts)
                 sentiment = None
                 if selected_key and selected_key not in ['x', 'e']:
                     sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value)
@@ -463,13 +471,14 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110051",
+        range_str="110001:110011",
         json_file="twwtn-en_human (1).json",
         model="qwen2.5:7b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
-        wn_only=False
+        wn_only=False,
+        log_prompts=True
     )
 global_end_time = datetime.datetime.now()
 total_global_time = str(global_end_time - global_start_time).split('.')[0]
