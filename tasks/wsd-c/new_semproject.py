@@ -118,12 +118,7 @@ def process_concept(concept, wn_lang='en', args=None):
     meanings = {}
 
     wn_lemma = lemma.replace(' ', '_')
-    all_synsets = ewn.synsets(wn_lemma)
-
-    if ' ' in lemma:
-        words = lemma.split(' ')
-        for word in words:
-            all_synsets.extend(ewn.synsets(word))
+    all_synsets = list(ewn.synsets(wn_lemma))
 
     unique_synsets = {ss.id: ss for ss in all_synsets}
     
