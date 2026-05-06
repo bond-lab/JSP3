@@ -266,7 +266,7 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
         score = None
     return score
 
-def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only, log_prompts):
+def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only):
     logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
     logging.getLogger("httpx").setLevel(logging.WARNING)
 
@@ -440,7 +440,7 @@ for size in context_sizes:
     main(
         range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
-        model="ollama-gemma4:e4b",
+        model="gemma4:e4b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
