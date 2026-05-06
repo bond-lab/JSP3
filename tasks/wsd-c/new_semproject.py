@@ -116,23 +116,13 @@ def get_sids(from_sid, to_sid, margin):
 def process_concept(concept, wn_lang='en', args=None):
     lemma = concept['clemma']
     meanings = {}
-
-    wn_lemma = lemma.replace(' ', '_')
-    all_synsets = list(ewn.synsets(wn_lemma))
-
-    if ' ' in lemma:
-        words = lemma.split(' ') 
-        for word in words:
-            all_synsets.extend(ewn.synsets(word))
-
-    unique_synsets = {ss.id: ss for ss in all_synsets}
-    
-    for ss_id, ss in unique_synsets.items():
+    synsets = ewn.synsets(lemma)
+    for ss in synsets:
         defn = ss.definition() or ""
         lemmas = ", ".join(ss.lemmas())
         examples = "; ".join(ss.examples()) if ss.examples() else ""
         example_text = f" ({examples})" if examples else ""
-        meanings[ss_id] = f"[{lemmas}] {defn}{example_text}"
+        meanings[ss.id] = f"[{lemmas}] {defn}{example_text}"
 
     if args is None or not args.wn_only:
         meanings.update({
@@ -155,13 +145,12 @@ def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
     
     return f"""You are a precise linguistic annotator doing word sense disambiguation.
-    Your task is to determine the single most appropriate sense for the target expression in the given context.
-    
+    Your task is to determine the single most appropriate sense for the target lemma in the given context.
+
 Context (several sentences around the target word):
 > {context}
 
-Target expression: _{lemma}_
-
+Target lemma: _{lemma}_
 Choose **exactly one** label from the list that best fits the context:
 {options}
 
@@ -171,21 +160,20 @@ Use this structure:
   "reasoning": "Brief explanation of why this sense was chosen (1-2 sentences)",
   "key": "chosen_label_here"
 }}
-
 Example:
 {{
   "reasoning": "In this context 'bank' clearly refers to a financial institution, not a river bank or other meanings.",
   "key": "wn-ntumc-02345678-n"
 }}
-"""
 
+"""
+    
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
-    end = min(len(sentences), index + context_size + 1)
-    
+    end = index + 1
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
-
+    
 def extract_key(response, meanings):
     text = response.strip().lower()
     
@@ -205,49 +193,44 @@ def extract_key(response, meanings):
     logger.warning(f"Didn't find the key in the response: {text[:100]}...")
     return None
 
-def disambiguate(context, lemma, meanings, model_name, sid=None, cid=None, log_enabled=False):
+def disambiguate(context, lemma, meanings, model_name):
     prompt = construct_prompt(context, lemma, meanings)
     logger.debug(f"Prompt: {prompt}")
-
     schema = {
         "type": "object",
         "properties": {"key": {"type": "string", "enum": list(meanings.keys())}},
         "required": ["key"],
     }
+    
     try:
         result = generate(model=model_name, prompt=prompt, format="json", options={"temperature": 0.0})
         response_text = result['response'].strip()
         logger.debug(f"Raw JSON attempt: {response_text}...")
-
         response_json = json.loads(response_text)
         key = response_json.get('key', '').strip()
-        reasoning = response_json.get('reasoning', '').strip()
         
         if key in meanings:
-            if log_enabled:
-                save_prompt_to_py(prompt, reasoning, key, sid, cid, task_type="WSD")
-                
             logger.info(f"Structured success: '{key}'")
             return key, meanings[key]
+
     except Exception as e:
         logger.debug(f"Structured output failed ({e}), falling back to text parsing")
-
     thinking, cleaned_response = generate_and_extract(prompt, model=model_name)
+    
     if thinking is not None:
         logger.debug(f"Model thinking: {thinking}")
     logger.info(f"Model response: {cleaned_response}")
     selected_key = extract_key(cleaned_response, meanings)
+
     if selected_key in meanings:
-        if log_enabled:
-            save_prompt_to_py(prompt, thinking, selected_key, sid, cid, task_type="WSD-Fallback")
         return selected_key, meanings[selected_key]
     return None, None
 
-def sentimentalize(context, lemma, model, sid=None, cid=None, gloss='', log_enabled=False):
+def sentimentalize(context, lemma, model, gloss=''):
     if gloss:
         gloss = f' ({gloss})'
     sentiment_prompt = f"""You are assigning lexical sentiment ONLY for the word itself in isolation, NOT the overall sentence sentiment.
-
+    
 Target word: _{lemma}_ {gloss}
 
 Context (for disambiguation only, ignore for sentiment value):
@@ -272,13 +255,11 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
 """    
     thinking, sentiment_response = generate_and_extract(sentiment_prompt, model)
     logger.debug(f"Sentiment prompt: {sentiment_prompt}")
+                 
     if thinking:
         logger.debug(f"Model thinking: {thinking}")
     logger.info(f"Sentiment response: {sentiment_response}")
-    
-    if log_enabled:
-        save_prompt_to_py(sentiment_prompt, thinking, sentiment_response, sid, cid, task_type="Sentiment")
-        
+
     try:
         score = float(sentiment_response)
     except ValueError:
@@ -333,28 +314,13 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
             'sentiments': []
         }
 
-        mwe_wids = set()
-        for cdata in sentence['concepts'].values():
-            if ' ' in cdata.get('clemma', ''): 
-                mwe_wids.update(cdata.get('wids', []))
-
         for sub_concept_key, concept_data_dict in sentence['concepts'].items():
-            lemma = concept_data_dict.get('clemma', '')
-            wids = concept_data_dict.get('wids', [])
-            
-            is_part_of_mwe = (' ' not in lemma) and wids and all(w in mwe_wids for w in wids)
+            lemma, meanings = process_concept(concept_data_dict, args=local_args)
+            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model)
+            sentiment = None
+            if selected_key and selected_key not in ['x', 'e']:
+                sentiment = sentimentalize(text_context, lemma, model, selected_value)
 
-            if is_part_of_mwe:
-                selected_key = 'x'
-                selected_value = 'part of a multiword expression (auto-tagged)'
-                sentiment = None
-            else:
-                lemma_out, meanings = process_concept(concept_data_dict, args=local_args)
-                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key, log_enabled=log_prompts)
-                sentiment = None
-                if selected_key and selected_key not in ['x', 'e']:
-                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value, log_enabled=log_prompts)
-                
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
             print(f"  Context words: {context_word_count}")
@@ -472,14 +438,13 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110051",
+        range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
-        model="llama3.1:8b",
+        model="ollama-gemma4:e4b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
         wn_only=False,
-        log_prompts=True
     )
 global_end_time = datetime.datetime.now()
 total_global_time = str(global_end_time - global_start_time).split('.')[0]
