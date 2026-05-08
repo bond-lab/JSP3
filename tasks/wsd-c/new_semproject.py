@@ -338,7 +338,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
             selected_key, selected_value = disambiguate(text_context, lemma, meanings, model, sid_str, sub_concept_key, log_prompts)
             sentiment = None
             if selected_key and selected_key not in ['x', 'e']:
-                sentiment = sentimentalize(text_context, lemma, model, selected_value)
+                sentiment = sentimentalize(text_context, lemma, model, sid_str, sub_concept_key, log_prompts, selected_value))
 
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
