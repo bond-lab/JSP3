@@ -51,7 +51,16 @@ import datetime
 import statistics
 from tqdm import tqdm
 
+logger = logging.getLogger(__name__)
+max_logs = 200 
+log_counter = 0
+MISSING = "MISSING"
+
 def save_prompt_to_py(prompt, reasoning, answer, sid, cid, task_type="WSD"):
+    global log_counter
+    if log_counter >= max_logs:
+        return
+        
     log_filename = "python_prompts_log.py"
     
     if not os.path.exists(log_filename):
@@ -64,11 +73,14 @@ def save_prompt_to_py(prompt, reasoning, answer, sid, cid, task_type="WSD"):
         safe_answer = str(answer).replace('"""', '\\"\\"\\"') if answer else "No answer"
         f.write(f"\n# --- SID: {sid}, CID: {cid}, Task: {task_type} ---\n")
         f.write("all_interactions.append({\n")
+        f.write(f"    'sid': '{sid}',\n")
+        f.write(f"    'cid': '{cid}',\n")
         f.write(f"    'prompt': \"\"\"{safe_prompt}\"\"\",\n")
         f.write(f"    'reasoning': \"\"\"{safe_reasoning}\"\"\",\n")
         f.write(f"    'answer': \"\"\"{safe_answer}\"\"\"\n")
         f.write("})\n")
-logger = logging.getLogger(__name__)
+        
+    log_counter += 1
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Tag concepts in the JSON corpus using ollama and wordnet.")
@@ -79,6 +91,7 @@ def parse_arguments():
     parser.add_argument("--wn-only", action="store_true", help="Use only WordNet meanings, exclude additional tags")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose output for detailed logging")
     parser.add_argument("--context", type=int, default=2, help="Number of sentences before and after to include in context (default: 2)")
+    parser.add_argument("--log-prompts", action="store_true", help="Save prompts to python_prompts_log.py")
     return parser.parse_args()
 
 def generate_and_extract(prompt, model='gemma2:9b'):
@@ -170,7 +183,7 @@ Example:
     
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
-    end = index + 1
+    end = min(len(sentences), index + context_size + 1)
     context_texts = [sent.get('text', '') for sent in sentences[start:end]]
     return ' '.join(context_texts)
     
@@ -193,7 +206,7 @@ def extract_key(response, meanings):
     logger.warning(f"Didn't find the key in the response: {text[:100]}...")
     return None
 
-def disambiguate(context, lemma, meanings, model_name):
+def disambiguate(context, lemma, meanings, model_name, sid, cid, log_prompts=True):
     prompt = construct_prompt(context, lemma, meanings)
     logger.debug(f"Prompt: {prompt}")
     schema = {
@@ -221,12 +234,15 @@ def disambiguate(context, lemma, meanings, model_name):
         logger.debug(f"Model thinking: {thinking}")
     logger.info(f"Model response: {cleaned_response}")
     selected_key = extract_key(cleaned_response, meanings)
+    
+    if log_prompts:
+        save_prompt_to_py(prompt, thinking, cleaned_response, sid, cid, "WSD_TEXT")
 
     if selected_key in meanings:
         return selected_key, meanings[selected_key]
     return None, None
 
-def sentimentalize(context, lemma, model, gloss=''):
+def sentimentalize(context, lemma, model, sid, cid, log_prompts=True, gloss=''):
     if gloss:
         gloss = f' ({gloss})'
     sentiment_prompt = f"""You are assigning lexical sentiment ONLY for the word itself in isolation, NOT the overall sentence sentiment.
@@ -255,10 +271,13 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
 """    
     thinking, sentiment_response = generate_and_extract(sentiment_prompt, model)
     logger.debug(f"Sentiment prompt: {sentiment_prompt}")
-                 
+
     if thinking:
         logger.debug(f"Model thinking: {thinking}")
     logger.info(f"Sentiment response: {sentiment_response}")
+
+    if log_prompts:
+        save_prompt_to_py(sentiment_prompt, thinking, sentiment_response, sid, cid, "Sentiment")
 
     try:
         score = float(sentiment_response)
@@ -266,7 +285,7 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
         score = None
     return score
 
-def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only):
+def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only, log_prompts=True):
     logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
     logging.getLogger("httpx").setLevel(logging.WARNING)
 
@@ -316,7 +335,7 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
 
         for sub_concept_key, concept_data_dict in sentence['concepts'].items():
             lemma, meanings = process_concept(concept_data_dict, args=local_args)
-            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model)
+            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model, sid_str, sub_concept_key, log_prompts)
             sentiment = None
             if selected_key and selected_key not in ['x', 'e']:
                 sentiment = sentimentalize(text_context, lemma, model, selected_value)
@@ -445,6 +464,7 @@ for size in context_sizes:
         dry_run=False,
         verbose=True,
         wn_only=False,
+        log_prompts=True
     )
 global_end_time = datetime.datetime.now()
 total_global_time = str(global_end_time - global_start_time).split('.')[0]
