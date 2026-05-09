@@ -52,7 +52,7 @@ import statistics
 from tqdm import tqdm
 
 logger = logging.getLogger(__name__)
-max_logs = 200 
+max_logs = 100 
 log_counter = 0
 MISSING = "MISSING"
 
