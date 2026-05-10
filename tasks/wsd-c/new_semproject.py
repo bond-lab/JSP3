@@ -129,13 +129,23 @@ def get_sids(from_sid, to_sid, margin):
 def process_concept(concept, wn_lang='en', args=None):
     lemma = concept['clemma']
     meanings = {}
-    synsets = ewn.synsets(lemma)
-    for ss in synsets:
+    
+    wn_lemma = lemma.replace(' ', '_')
+    all_synsets = ewn.synsets(wn_lemma)
+
+    if ' ' in lemma:
+        words = lemma.split(' ')
+        for word in words:
+            all_synsets.extend(ewn.synsets(word))
+
+    unique_synsets = {ss.id: ss for ss in all_synsets}
+    
+    for ss_id, ss in unique_synsets.items():
         defn = ss.definition() or ""
         lemmas = ", ".join(ss.lemmas())
         examples = "; ".join(ss.examples()) if ss.examples() else ""
         example_text = f" ({examples})" if examples else ""
-        meanings[ss.id] = f"[{lemmas}] {defn}{example_text}"
+        meanings[ss_id] = f"[{lemmas}] {defn}{example_text}"
 
     if args is None or not args.wn_only:
         meanings.update({
@@ -157,13 +167,13 @@ def process_concept(concept, wn_lang='en', args=None):
 def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
     
-    return f"""You are a precise linguistic annotator doing word sense disambiguation.
-    Your task is to determine the single most appropriate sense for the target lemma in the given context.
+    return f"""You are a precise linguistic annotator doing multi-word expressions (MWE).
+    Your task is to determine the single most appropriate sense for the target expression in the given context.
 
 Context (several sentences around the target word):
 > {context}
 
-Target lemma: _{lemma}_
+Target expression: _{lemma}_
 Choose **exactly one** label from the list that best fits the context:
 {options}
 
@@ -333,12 +343,27 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
             'sentiments': []
         }
 
+        mwe_wids = set()
+        for cdata in sentence['concepts'].values():
+            if ' ' in cdata.get('clemma', ''): 
+                mwe_wids.update(cdata.get('wids', []))
+
         for sub_concept_key, concept_data_dict in sentence['concepts'].items():
-            lemma, meanings = process_concept(concept_data_dict, args=local_args)
-            selected_key, selected_value = disambiguate(text_context, lemma, meanings, model, sid_str, sub_concept_key, log_prompts)
-            sentiment = None
-            if selected_key and selected_key not in ['x', 'e']:
-                sentiment = sentimentalize(text_context, lemma, model, sid_str, sub_concept_key, log_prompts, selected_value)
+            lemma = concept_data_dict.get('clemma', '')
+            wids = concept_data_dict.get('wids', [])
+            
+            is_part_of_mwe = (' ' not in lemma) and wids and all(w in mwe_wids for w in wids)
+
+            if is_part_of_mwe:
+                selected_key = 'x'
+                selected_value = 'part of a multiword expression (auto-tagged)'
+                sentiment = None
+            else:
+                lemma_out, meanings = process_concept(concept_data_dict, args=local_args)
+                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key, log_enabled=log_prompts)
+                sentiment = None
+                if selected_key and selected_key not in ['x', 'e']:
+                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value, log_enabled=log_prompts)
 
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
