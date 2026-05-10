@@ -360,10 +360,10 @@ def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_
                 sentiment = None
             else:
                 lemma_out, meanings = process_concept(concept_data_dict, args=local_args)
-                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key, log_enabled=log_prompts)
+                selected_key, selected_value = disambiguate(text_context, lemma_out, meanings, model, sid=sid_str, cid=sub_concept_key, log_prompts=log_prompts)
                 sentiment = None
                 if selected_key and selected_key not in ['x', 'e']:
-                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value, log_enabled=log_prompts)
+                    sentiment = sentimentalize(text_context, lemma_out, model, sid=sid_str, cid=sub_concept_key, gloss=selected_value, log_prompts=log_prompts)
 
             print(f"\nSID {sid_str}, Sub-Concept Key: {sub_concept_key}:")
             print(f"  Lemma: {lemma}")
