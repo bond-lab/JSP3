@@ -52,7 +52,7 @@ import statistics
 from tqdm import tqdm
 
 logger = logging.getLogger(__name__)
-max_logs = 100 
+max_logs = 30 
 log_counter = 0
 MISSING = "MISSING"
 
@@ -484,7 +484,7 @@ for size in context_sizes:
     main(
         range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
-        model="gemma4:e4b",
+        model="mistral-nemo:12b",
         context_window_size=size,
         dry_run=False,
         verbose=True,
