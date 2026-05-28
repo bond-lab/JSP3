@@ -284,7 +284,7 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
 
     if log_prompts:
         save_prompt_to_py(sentiment_prompt, thinking, sentiment_response, sid, cid, "Sentiment")
-***
+
     try:
         score = float(sentiment_response)
     except ValueError:
