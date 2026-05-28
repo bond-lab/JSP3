@@ -186,7 +186,6 @@ Respond ONLY with valid JSON, no markdown:
   "reasoning": "One sentence: what does this word mean HERE, and why this sense fits.",
   "key": "chosen_label_here"
 }}"""
-"""
     
 def construct_context(index, sentences, context_size):
     start = max(0, index - context_size)
@@ -285,13 +284,12 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
 
     if log_prompts:
         save_prompt_to_py(sentiment_prompt, thinking, sentiment_response, sid, cid, "Sentiment")
-
+***
     try:
         score = float(sentiment_response)
     except ValueError:
         score = None
     return score
-    """
 
 def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only, log_prompts=True):
     logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
