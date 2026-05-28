@@ -291,6 +291,7 @@ First think briefly in <thinking>...</thinking>, then output ONLY the number.
     except ValueError:
         score = None
     return score
+    """
 
 def main(range_str, json_file, model, context_window_size, dry_run, verbose, wn_only, log_prompts=True):
     logging.basicConfig(level=logging.DEBUG if verbose else logging.INFO)
