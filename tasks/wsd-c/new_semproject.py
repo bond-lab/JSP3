@@ -162,28 +162,48 @@ def process_concept(concept, wn_lang='en', args=None):
 def construct_prompt(context, lemma, meanings):
     options = "\n".join([f"{key}: {value}" for key, value in meanings.items()])
 
-    return f"""You are a precise linguistic annotator doing multi-word expressions (MWE).
-Your task is to determine the single most appropriate sense for the target expression in the given context from the list of options.
+    return f"""You are a precise linguistic annotator specializing in Word Sense Disambiguation (WSD) and Multi-Word Expressions (MWE).
 
-Context sentence(s):
-\"\"\"{context}\"\"\"
+Your task: select the single best sense label for the target expression as it is used in the given context.
 
-Target word: **{lemma}**
+Context:
+<context>
+{context}
+</context>
 
-Choose the single best sense from these options:
+Target expression: **{lemma}**
+
+Available sense labels:
 {options}
 
-Rules:
-1. Read the full context carefully before choosing.
-2. Match the grammatical role: if the word is a verb, pick a verb sense; noun → noun sense.
-3. Named entity tags (per, loc, org, dat, year, num) beat synsets when the word is a proper name or number.
-4. Tag 'x' only for function words, punctuation, or clear multiword components.
-5. Tag 'w' only if NO sense matches and it is clearly missing from WordNet.
-6. Do NOT choose based on the lemma alone — context is the deciding factor.
+HOW TO CHOOSE:
 
-Respond ONLY with valid JSON, no markdown:
+Step 1: Identify the grammatical role of **{lemma}** in the sentence (adverb, noun, adjective, etc.).
+Step 2: Determine what **{lemma}** means in THIS sentence, not in general.
+Step 3: Match that meaning to the closest label. For multi-word expressions, treat the whole phrase as a unit.
+Step 4: Eliminate labels that belong to the wrong part of speech or wrong meaning.
+
+EXAMPLE (it is for illustration only):
+  Context: "He was no longer young but still active."
+  Target: **no longer**
+  Correct reasoning: "No longer" is an adverbial phrase meaning "not anymore / not at this point in time". 
+  It modifies the adjective "young" and expresses cessation of a state.
+  The label ntumc-00050681-r [no, no more] "referring to the degree to which a certain quality is present" fits best,
+  because it captures the adverbial, degree-modifying function of "no longer".
+  Labels for nouns (person, number) or interjections are clearly wrong here.
+
+RULES:
+- Always treat multi-word expressions (like "no longer", "of course", "at least") as a single unit - do not analyze individual words separately.
+- Match the part of speech first: adverb labels for adverbial uses, noun labels for noun uses, etc.
+- Named entity tags (per, loc, org, dat, year, num) take priority when the expression is a proper name or number.
+- Use 'x' only for function words, punctuation, or a word that is clearly part of a larger MWE already tagged elsewhere.
+- Use 'w' only if the correct sense is genuinely missing from WordNet.
+- Never guess based on the lemma string alone - the context is decisive.
+
+First write your reasoning, then state the key.
+Respond ONLY with valid JSON, no extra text:
 {{
-  "reasoning": "One sentence: what does this word mean HERE, and why this sense fits.",
+  "reasoning": "One or two sentences: what does **{lemma}** mean in THIS context, and why does this label fit better than the alternatives.",
   "key": "chosen_label_here"
 }}"""
     
