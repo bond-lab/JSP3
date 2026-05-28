@@ -165,40 +165,27 @@ def construct_prompt(context, lemma, meanings):
     return f"""You are a precise linguistic annotator doing multi-word expressions (MWE).
 Your task is to determine the single most appropriate sense for the target expression in the given context from the list of options.
 
-Context:
+Context sentence(s):
 \"\"\"{context}\"\"\"
 
-Target Expression:
-**{lemma}**
+Target word: **{lemma}**
 
-Available Options:
+Choose the single best sense from these options:
 {options}
 
-Instructions:
-1. **Look at the whole phrase:** Do NOT define the words one by one. Understand what the whole phrase means together.
-2. **Avoid literal traps:** Ignore options that define just one word out of context (for example, do not choose "nobelium" for the word "no").
-3. **Pick the best match:** Choose the option that best explains the whole phrase. If it is a special idiom or grammar rule that is missing, choose the 'x' tag.
-4. You must answer ONLY with a valid JSON format. Do not use markdown like ```json.
+Rules:
+1. Read the full context carefully before choosing.
+2. Match the grammatical role: if the word is a verb, pick a verb sense; noun → noun sense.
+3. Named entity tags (per, loc, org, dat, year, num) beat synsets when the word is a proper name or number.
+4. Tag 'x' only for function words, punctuation, or clear multiword components.
+5. Tag 'w' only if NO sense matches and it is clearly missing from WordNet.
+6. Do NOT choose based on the lemma alone — context is the deciding factor.
 
-Use this exact format:
+Respond ONLY with valid JSON, no markdown:
 {{
-  "reasoning": "First, explain what the whole phrase means in the text. Second, explain why the chosen option is the best.",
+  "reasoning": "One sentence: what does this word mean HERE, and why this sense fits.",
   "key": "chosen_label_here"
-}}
-
-Example for "no longer":
-Context: "...from a sea captain who was no longer young but still lively for his age."
-Target Expression: "no longer"
-Options:
-ntumc-10270878-n: [longer, thirster] a person with a strong desire...
-ntumc-00050681-r: [no, no more] referring to the degree...
-ntumc-00392690-r: [longer] for more time.
-
-JSON Output:
-{{
-  "reasoning": "The phrase 'no longer' means 'not anymore'. We must look at the phrase together, so 'nobelium' or 'thirster' are wrong because they define isolated words. The option '[no, no more]' correctly explains the meaning of the whole phrase.",
-  "key": "ntumc-00050681-r"
-}}
+}}"""
 """
     
 def construct_context(index, sentences, context_size):
