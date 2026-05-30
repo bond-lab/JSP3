@@ -193,12 +193,12 @@ EXAMPLE (it is for illustration only):
   Labels for nouns (person, number) or interjections are clearly wrong here.
 
 RULES:
-- Always treat multi-word expressions (like "no longer", "of course", "at least") as a single unit - do not analyze individual words separately.
+- Always treat multi-word expressions (like "no longer", "of course", "at least") as a single unit, do not analyze individual words separately.
 - Match the part of speech first: adverb labels for adverbial uses, noun labels for noun uses, etc.
 - Named entity tags (per, loc, org, dat, year, num) take priority when the expression is a proper name or number.
 - Use 'x' only for function words, punctuation, or a word that is clearly part of a larger MWE already tagged elsewhere.
 - Use 'w' only if the correct sense is genuinely missing from WordNet.
-- Never guess based on the lemma string alone - the context is decisive.
+- Never guess based on the lemma string alone, the context is decisive.
 
 First write your reasoning, then state the key.
 Respond ONLY with valid JSON, no extra text:
@@ -498,7 +498,7 @@ context_sizes = [0, 1, 2, 3]
 for size in context_sizes:
     print(f"\n=== Testing context size {size} ===")
     main(
-        range_str="110001:110011",
+        range_str="110001:110101",
         json_file="twwtn-en_human (1).json",
         model="mistral-nemo:12b",
         context_window_size=size,
