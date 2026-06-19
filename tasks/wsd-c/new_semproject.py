@@ -126,12 +126,14 @@ def get_sentences_and_concepts(data, min_sid, max_sid):
 def get_sids(from_sid, to_sid, margin):
     return list(range(from_sid - margin, to_sid + margin + 1))
 
-def process_concept(concept, wn_lang='en', args=None):
+def process_concept(concept, wn_lang='en', args=None, top_mean=3):
     lemma = concept['clemma']
     meanings = {}
     
     wn_lemma = lemma.replace(' ', '_')
     all_synsets = list(ewn.synsets(wn_lemma))
+
+    top_synsets = all_synsets[:top_mean]
 
     unique_synsets = {ss.id: ss for ss in all_synsets}
     
@@ -164,7 +166,7 @@ def construct_prompt(context, lemma, meanings):
 
     return f"""You are a precise linguistic annotator specializing in Word Sense Disambiguation (WSD) and Multi-Word Expressions (MWE).
 
-Your task: select the single best sense label for the target expression as it is used in the given context.
+Your task: select the single best sense label for the target expression as it is used in the given context. Choose from the TOP 3 best options of the meanings. 
 
 Context:
 <context>
@@ -193,9 +195,8 @@ EXAMPLE (it is for illustration only):
   Labels for nouns (person, number) or interjections are clearly wrong here.
 
 RULES:
-- Always treat multi-word expressions (like "no longer", "of course", "at least") as a single unit, do not analyze individual words separately.
+- Always treat multi-word expressions (like "no longer", "of course", "at least") as a single unit.
 - Match the part of speech first: adverb labels for adverbial uses, noun labels for noun uses, etc.
-- Named entity tags (per, loc, org, dat, year, num) take priority when the expression is a proper name or number.
 - Use 'x' only for function words, punctuation, or a word that is clearly part of a larger MWE already tagged elsewhere.
 - Use 'w' only if the correct sense is genuinely missing from WordNet.
 - Never guess based on the lemma string alone, the context is decisive.
