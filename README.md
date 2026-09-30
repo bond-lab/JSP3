@@ -60,6 +60,9 @@ Semester project 3 for Linguistics
 		* [Derivational Relations in Czech WordNe](https://aclanthology.org/W07-1710.pdf)
         * [Overview and Future of Czech Wordnet](https://ceur-ws.org/Vol-1899/CfWNs_2017_proc3-paper_9.pdf) (note the open release did not happen)
          * [Validating and Improving the Czech WordNet via Lexico-Semantic Annotation of the Prague Dependency Treebank](https://ufal.mff.cuni.cz/~pecina/files/lrec-2004.pdf)
+         * https://deb.fi.muni.cz:8005/debdict/
+         * https://cygnet.maudslay.eu/
+         * https://pypi.org/project/wn/
 		
 ## Goals
 * get something useful for each task
