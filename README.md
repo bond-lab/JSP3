@@ -31,7 +31,7 @@ Semester project 3 for Linguistics
 	   * READ [Self-control and Body-focused Repetitive Behaviors](https://clinicaltrials.gov/study/NCT04455152)
 	   * look at [Books about Trichotillomania and Dermatillomania](https://www.goodreads.com/list/show/97993.Books_about_Trichotillomania_Dermatillomania) could we analyze these? Are there similar books in Czech?
  
-* LLM text vs Human text    **Anna**
+* LLM text vs Human text    
     * what is different (test for Czech?)
 	* I have data for English
 	* TASK: Read these papers:
@@ -46,7 +46,7 @@ Semester project 3 for Linguistics
 	    * [ChainNet: Structured Metaphor and Metonymy in WordNet](https://aclanthology.org/2024.lrec-main.266/)
 		* [Teaching Through Tagging — Interactive Lexical Semantics](https://aclanthology.org/2021.gwc-1.32/)
 		
-* Improve Czech wordnet
+* Improve Czech wordnet  **Zuzana**
     * fill in Czech specific patterns 
 	    * adverbs [of languages]
 	    * diminutives
@@ -59,6 +59,7 @@ Semester project 3 for Linguistics
 	    * [Czech Wordnet 1.9](https://lindat.mff.cuni.cz/repository/items/7960f676-e7d3-4536-8f2c-deee56f7aec1) (note we have a private copy of Czech Wordnet 2.1 from Adam Rambousek).
 		* [Derivational Relations in Czech WordNe](https://aclanthology.org/W07-1710.pdf)
         * [Overview and Future of Czech Wordnet](https://ceur-ws.org/Vol-1899/CfWNs_2017_proc3-paper_9.pdf) (note the open release did not happen)
+         * [Validating and Improving the Czech WordNet via Lexico-Semantic Annotation of the Prague Dependency Treebank](https://ufal.mff.cuni.cz/~pecina/files/lrec-2004.pdf)
 		
 ## Goals
 * get something useful for each task
