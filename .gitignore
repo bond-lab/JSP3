@@ -1,5 +1,21 @@
-# Emacs backup
+# Emacs backup, autosave and lock files
 *~
+\#*#
+.#*
+# LibreOffice and vim lock/swap files
+.~lock.*#
+*.swp
+# LaTeX build artifacts
+*.aux
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
 README.html
 # databases
 *.db
